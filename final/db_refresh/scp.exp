@@ -1,0 +1,21 @@
+#!/usr/bin/expect -f
+set timeout -1
+set sourcehost [lindex $argv 0]
+set sourceuser [lindex $argv 1]
+set sourcepassword [lindex $argv 2]
+set sourcedbsid [lindex $argv 3]
+set targethost [lindex $argv 4]
+set targetdbuser [lindex $argv 5]
+set targetdbuserpass [lindex $argv 6]
+set targetdbsid [lindex $argv 7]
+set sourcefile [lindex $argv 8]
+spawn ssh -o StrictHostKeyChecking=no $sourceuser@$sourcehost
+expect "*Password* "
+send -- "$sourcepassword\r"
+expect "*$sourcehost*"
+send -- "scp -r $sourcefile $targetdbuser@$targethost:/oracle/$targetdbsid\r"
+expect "*password* "
+send -- "$targetdbuserpass\r"
+expect "*$sourcehost*"
+send -- "exit\r"
+expect eof

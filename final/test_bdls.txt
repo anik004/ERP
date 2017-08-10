@@ -1,0 +1,1418 @@
+TBTCO
+sudo su - oradrp -c "echo 'drop index TBTCO_RECLOGSYS;' | sqlplus / as sysdba"
+ZSHBDLS
+sudo su - oradrp -c "echo 'drop index ZSHBDLS_LOGSYS;' | sqlplus / as sysdba"
+/SAPPO/LGSYS
+/SAPPO/LGSYS_AS
+/SAPPO/ORDER_HDR
+/SAPPO/ORDER_HDR
+/SAPPO/ORDER_HDR
+/SAPPO/ORDER_HDR
+/SAPPO/ORDER_HDR
+/SAPPO/ORDER_MSG
+/SAPPO/ORDER_OBJ
+/SAPSLL/TLSDST
+/SAPTRX/TRXSERV
+/SCMB/DF_DOC
+AGR_LOGSYS
+sudo su - oradrp -c "echo 'drop index AGR_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+AMYOTREE
+sudo su - oradrp -c "echo 'drop index AMYOTREE_LOGSYS;' | sqlplus / as sysdba"
+BBP_CAT_ENTITY
+sudo su - oradrp -c "echo 'drop index BBP_CAT_ENTITY_CATALOG_LOGSYS;' | sqlplus / as sysdba"
+BCST_BOR
+sudo su - oradrp -c "echo 'drop index BCST_BOR_LOGSYS;' | sqlplus / as sysdba"
+BDAUDQUEUE
+sudo su - oradrp -c "echo 'drop index BDAUDQUEUE_SND_SYSTEM;' | sqlplus / as sysdba"
+BDAUDQUEUE
+sudo su - oradrp -c "echo 'drop index BDAUDQUEUE_RCV_SYSTEM;' | sqlplus / as sysdba"
+BDAUDSTATE
+sudo su - oradrp -c "echo 'drop index BDAUDSTATE_SND_SYSTEM;' | sqlplus / as sysdba"
+BDAUDSTATE
+sudo su - oradrp -c "echo 'drop index BDAUDSTATE_RCV_SYSTEM;' | sqlplus / as sysdba"
+BDLSHDR
+sudo su - oradrp -c "echo 'drop index BDLSHDR_LOGSYS_OLD;' | sqlplus / as sysdba"
+BDLSHDR
+sudo su - oradrp -c "echo 'drop index BDLSHDR_LOGSYS_NEW;' | sqlplus / as sysdba"
+BDOC_TRACK
+sudo su - oradrp -c "echo 'drop index BDOC_TRACK_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDSX_CON04
+sudo su - oradrp -c "echo 'drop index BDSX_CON04_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_BAR_IN
+sudo su - oradrp -c "echo 'drop index BDS_BAR_IN_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_BAR_IN_REF
+sudo su - oradrp -c "echo 'drop index BDS_BAR_IN_REF_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CON020
+sudo su - oradrp -c "echo 'drop index BDS_CON020_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN00
+sudo su - oradrp -c "echo 'drop index BDS_CONN00_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN01
+sudo su - oradrp -c "echo 'drop index BDS_CONN01_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN02
+sudo su - oradrp -c "echo 'drop index BDS_CONN02_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN03
+sudo su - oradrp -c "echo 'drop index BDS_CONN03_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN04
+sudo su - oradrp -c "echo 'drop index BDS_CONN04_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN05
+sudo su - oradrp -c "echo 'drop index BDS_CONN05_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN06
+sudo su - oradrp -c "echo 'drop index BDS_CONN06_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN07
+sudo su - oradrp -c "echo 'drop index BDS_CONN07_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN08
+sudo su - oradrp -c "echo 'drop index BDS_CONN08_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN09
+sudo su - oradrp -c "echo 'drop index BDS_CONN09_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN111
+sudo su - oradrp -c "echo 'drop index BDS_CONN111_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN14
+sudo su - oradrp -c "echo 'drop index BDS_CONN14_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN16
+sudo su - oradrp -c "echo 'drop index BDS_CONN16_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN18
+sudo su - oradrp -c "echo 'drop index BDS_CONN18_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN20
+sudo su - oradrp -c "echo 'drop index BDS_CONN20_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN21
+sudo su - oradrp -c "echo 'drop index BDS_CONN21_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN22
+sudo su - oradrp -c "echo 'drop index BDS_CONN22_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN24A
+sudo su - oradrp -c "echo 'drop index BDS_CONN24A_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_CONN31
+sudo su - oradrp -c "echo 'drop index BDS_CONN31_LOG_SYSTEM;' | sqlplus / as sysdba"
+BDS_LOG
+sudo su - oradrp -c "echo 'drop index BDS_LOG_LOG_SYSTEM;' | sqlplus / as sysdba"
+BRR_HEADER
+sudo su - oradrp -c "echo 'drop index BRR_HEADER_CREA_SYS;' | sqlplus / as sysdba"
+BRR_HEADER
+sudo su - oradrp -c "echo 'drop index BRR_HEADER_CHG_SYS;' | sqlplus / as sysdba"
+BRR_HEADER_C
+sudo su - oradrp -c "echo 'drop index BRR_HEADER_C_CREA_SYS;' | sqlplus / as sysdba"
+BRR_HEADER_C
+sudo su - oradrp -c "echo 'drop index BRR_HEADER_C_CHG_SYS;' | sqlplus / as sysdba"
+BUT000
+sudo su - oradrp -c "echo 'drop index BUT000_BU_LOGSYS;' | sqlplus / as sysdba"
+BUT000_TD
+sudo su - oradrp -c "echo 'drop index BUT000_TD_BU_LOGSYS;' | sqlplus / as sysdba"
+BUT000_TDS
+sudo su - oradrp -c "echo 'drop index BUT000_TDS_BU_LOGSYS;' | sqlplus / as sysdba"
+BUT0VP
+sudo su - oradrp -c "echo 'drop index BUT0VP_LOGSYS;' | sqlplus / as sysdba"
+BUT_FRG0010
+sudo su - oradrp -c "echo 'drop index BUT_FRG0010_HOME_SYSTEM;' | sqlplus / as sysdba"
+BUT_HIER_TREE
+sudo su - oradrp -c "echo 'drop index BUT_HIER_TREE_HOME_SYSTEM;' | sqlplus / as sysdba"
+CCC_CHECK
+sudo su - oradrp -c "echo 'drop index CCC_CHECK_LOGSYS;' | sqlplus / as sysdba"
+CHARACTERTEXT
+sudo su - oradrp -c "echo 'drop index CHARACTERTEXT_LOGSYS;' | sqlplus / as sysdba"
+CHARACTERTEXTH
+sudo su - oradrp -c "echo 'drop index CHARACTERTEXTH_LOGSYS;' | sqlplus / as sysdba"
+CHARACTER_DMLDB
+sudo su - oradrp -c "echo 'drop index CHARACTER_DMLDB_ORG_SYSTEM;' | sqlplus / as sysdba"
+CHARACTER_DMLH
+sudo su - oradrp -c "echo 'drop index CHARACTER_DMLH_ORG_SYSTEM;' | sqlplus / as sysdba"
+CME_ST_CHARATR
+sudo su - oradrp -c "echo 'drop index CME_ST_CHARATR_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_FORMAT
+sudo su - oradrp -c "echo 'drop index CME_ST_FORMAT_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_FORMAT1
+sudo su - oradrp -c "echo 'drop index CME_ST_FORMAT1_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_ISO_AT1
+sudo su - oradrp -c "echo 'drop index CME_ST_ISO_AT1_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_ISO_ATA
+sudo su - oradrp -c "echo 'drop index CME_ST_ISO_ATA_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_ISO_ATB
+sudo su - oradrp -c "echo 'drop index CME_ST_ISO_ATB_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_ISO_ATBH
+sudo su - oradrp -c "echo 'drop index CME_ST_ISO_ATBH_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_R3_ATTR
+sudo su - oradrp -c "echo 'drop index CME_ST_R3_ATTR_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_R3_DEP
+sudo su - oradrp -c "echo 'drop index CME_ST_R3_DEP_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_R3_DEPH
+sudo su - oradrp -c "echo 'drop index CME_ST_R3_DEPH_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_REF
+sudo su - oradrp -c "echo 'drop index CME_ST_REF_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_REFH
+sudo su - oradrp -c "echo 'drop index CME_ST_REFH_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_VALUE
+sudo su - oradrp -c "echo 'drop index CME_ST_VALUE_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_VALUEH
+sudo su - oradrp -c "echo 'drop index CME_ST_VALUEH_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_VAL_TXT
+sudo su - oradrp -c "echo 'drop index CME_ST_VAL_TXT_LOGSYS;' | sqlplus / as sysdba"
+CME_ST_VAL_TXTH
+sudo su - oradrp -c "echo 'drop index CME_ST_VAL_TXTH_LOGSYS;' | sqlplus / as sysdba"
+COMC_CLEAR_ACT
+sudo su - oradrp -c "echo 'drop index COMC_CLEAR_ACT_SOURCE;' | sqlplus / as sysdba"
+COMC_KEYTYPE_CST
+sudo su - oradrp -c "echo 'drop index COMC_KEYTYPE_CST_LOGSYS;' | sqlplus / as sysdba"
+COMC_KEYTYPE_PCU
+sudo su - oradrp -c "echo 'drop index COMC_KEYTYPE_PCU_LOGSYS;' | sqlplus / as sysdba"
+COMC_LOGSYS_MAP
+sudo su - oradrp -c "echo 'drop index COMC_LOGSYS_MAP_ZIEL;' | sqlplus / as sysdba"
+COMC_LOGSYS_MAP
+sudo su - oradrp -c "echo 'drop index COMC_LOGSYS_MAP_QUELLE;' | sqlplus / as sysdba"
+COMC_MINITP_DATA
+sudo su - oradrp -c "echo 'drop index COMC_MINITP_DATA_LOGSYS;' | sqlplus / as sysdba"
+COMC_MINITP_DATH
+sudo su - oradrp -c "echo 'drop index COMC_MINITP_DATH_LOGSYS;' | sqlplus / as sysdba"
+COMC_MINITP_DATS
+sudo su - oradrp -c "echo 'drop index COMC_MINITP_DATS_LOGSYS;' | sqlplus / as sysdba"
+COMC_MINITP_REG
+sudo su - oradrp -c "echo 'drop index COMC_MINITP_REG_LOGSYS;' | sqlplus / as sysdba"
+COMC_MINITP_REGH
+sudo su - oradrp -c "echo 'drop index COMC_MINITP_REGH_LOGSYS;' | sqlplus / as sysdba"
+COMC_MINITP_REL
+sudo su - oradrp -c "echo 'drop index COMC_MINITP_REL_LOGSYS;' | sqlplus / as sysdba"
+COMC_MINITP_RELH
+sudo su - oradrp -c "echo 'drop index COMC_MINITP_RELH_LOGSYS;' | sqlplus / as sysdba"
+COMC_PR_LOGSYS
+sudo su - oradrp -c "echo 'drop index COMC_PR_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+COMC_PR_RFCDEST
+sudo su - oradrp -c "echo 'drop index COMC_PR_RFCDEST_LOGSYS;' | sqlplus / as sysdba"
+COMC_PR_TEMPLATE
+sudo su - oradrp -c "echo 'drop index COMC_PR_TEMPLATE_LOGSYS;' | sqlplus / as sysdba"
+COMC_SETTYPE
+sudo su - oradrp -c "echo 'drop index COMC_SETTYPE_LOGSYS;' | sqlplus / as sysdba"
+COMC_VALAREA_R3
+sudo su - oradrp -c "echo 'drop index COMC_VALAREA_R3_LOGSYS;' | sqlplus / as sysdba"
+COMM_ATTR_ALIAS
+sudo su - oradrp -c "echo 'drop index COMM_ATTR_ALIAS_LOGSYS;' | sqlplus / as sysdba"
+COMM_ATTR_ALIASH
+sudo su - oradrp -c "echo 'drop index COMM_ATTR_ALIASH_LOGSYS;' | sqlplus / as sysdba"
+COMM_CATEGORY
+sudo su - oradrp -c "echo 'drop index COMM_CATEGORY_LOGSYS;' | sqlplus / as sysdba"
+COMM_CATEGORYDEL
+sudo su - oradrp -c "echo 'drop index COMM_CATEGORYDEL_LOGSYS;' | sqlplus / as sysdba"
+COMM_CATEGORYH
+sudo su - oradrp -c "echo 'drop index COMM_CATEGORYH_LOGSYS;' | sqlplus / as sysdba"
+COMM_CATEGORYT
+sudo su - oradrp -c "echo 'drop index COMM_CATEGORYT_LOGSYS;' | sqlplus / as sysdba"
+COMM_CATEGORYTH
+sudo su - oradrp -c "echo 'drop index COMM_CATEGORYTH_LOGSYS;' | sqlplus / as sysdba"
+COMM_CATFRGR
+sudo su - oradrp -c "echo 'drop index COMM_CATFRGR_LOGSYS;' | sqlplus / as sysdba"
+COMM_CATFRGRH
+sudo su - oradrp -c "echo 'drop index COMM_CATFRGRH_LOGSYS;' | sqlplus / as sysdba"
+COMM_CLEAR_STACK
+sudo su - oradrp -c "echo 'drop index COMM_CLEAR_STACK_SOURCE;' | sqlplus / as sysdba"
+COMM_EXTENSIONH
+sudo su - oradrp -c "echo 'drop index COMM_EXTENSIONH_LOGSYS;' | sqlplus / as sysdba"
+COMM_FRGTYPE
+sudo su - oradrp -c "echo 'drop index COMM_FRGTYPE_LOGSYS;' | sqlplus / as sysdba"
+COMM_HIERARCHY
+sudo su - oradrp -c "echo 'drop index COMM_HIERARCHY_LOGSYS;' | sqlplus / as sysdba"
+COMM_HIERARCHYH
+sudo su - oradrp -c "echo 'drop index COMM_HIERARCHYH_LOGSYS;' | sqlplus / as sysdba"
+COMM_HIERARCHYT
+sudo su - oradrp -c "echo 'drop index COMM_HIERARCHYT_LOGSYS;' | sqlplus / as sysdba"
+COMM_HIERARCHYTH
+sudo su - oradrp -c "echo 'drop index COMM_HIERARCHYTH_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_ACCESS
+sudo su - oradrp -c "echo 'drop index COMM_IL_ACCESS_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_ACCESS_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_ACCESS_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_COMPET
+sudo su - oradrp -c "echo 'drop index COMM_IL_COMPET_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_DSCOPE
+sudo su - oradrp -c "echo 'drop index COMM_IL_DSCOPE_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_DSCOPE_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_DSCOPE_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_DTYPE
+sudo su - oradrp -c "echo 'drop index COMM_IL_DTYPE_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_DTYPE_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_DTYPE_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_ECMCHG
+sudo su - oradrp -c "echo 'drop index COMM_IL_ECMCHG_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_ECMCHG_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_ECMCHG_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDBP
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDBP_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDBP_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDBP_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDCPN
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCPN_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDCPN_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCPN_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDCTP
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCTP_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDCTP_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCTP_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDMPN
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMPN_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDMPN_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMPN_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDMRK
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMRK_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDMRK_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMRK_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDVND
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDVND_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PRDVND_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_PRDVND_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PROREF
+sudo su - oradrp -c "echo 'drop index COMM_IL_PROREF_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_PROREF_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_PROREF_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_SCPCHR
+sudo su - oradrp -c "echo 'drop index COMM_IL_SCPCHR_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_SCPCHR_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_SCPCHR_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_SERVI
+sudo su - oradrp -c "echo 'drop index COMM_IL_SERVI_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_SERVI_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_SERVI_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_SPARE
+sudo su - oradrp -c "echo 'drop index COMM_IL_SPARE_LOGSYS;' | sqlplus / as sysdba"
+COMM_IL_SPARE_H
+sudo su - oradrp -c "echo 'drop index COMM_IL_SPARE_H_LOGSYS;' | sqlplus / as sysdba"
+COMM_IPRODUCT
+sudo su - oradrp -c "echo 'drop index COMM_IPRODUCT_LOGSYS;' | sqlplus / as sysdba"
+COMM_PME_CAT_MAP
+sudo su - oradrp -c "echo 'drop index COMM_PME_CAT_MAP_LOGSYS;' | sqlplus / as sysdba"
+COMM_PME_PRD_MAP
+sudo su - oradrp -c "echo 'drop index COMM_PME_PRD_MAP_LOGSYS;' | sqlplus / as sysdba"
+COMM_PME_SET_MAP
+sudo su - oradrp -c "echo 'drop index COMM_PME_SET_MAP_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRCAT
+sudo su - oradrp -c "echo 'drop index COMM_PRCAT_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRCATFRGR
+sudo su - oradrp -c "echo 'drop index COMM_PRCATFRGR_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRCATFRGRH
+sudo su - oradrp -c "echo 'drop index COMM_PRCATFRGRH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRCATH
+sudo su - oradrp -c "echo 'drop index COMM_PRCATH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRCAT_IL
+sudo su - oradrp -c "echo 'drop index COMM_PRCAT_IL_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRCAT_ILH
+sudo su - oradrp -c "echo 'drop index COMM_PRCAT_ILH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRFREEATTR
+sudo su - oradrp -c "echo 'drop index COMM_PRFREEATTR_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRFREEATTRH
+sudo su - oradrp -c "echo 'drop index COMM_PRFREEATTRH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRODUCT
+sudo su - oradrp -c "echo 'drop index COMM_PRODUCT_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRODUCTH
+sudo su - oradrp -c "echo 'drop index COMM_PRODUCTH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRODUCT_IDX
+sudo su - oradrp -c "echo 'drop index COMM_PRODUCT_IDX_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRPRDCATR
+sudo su - oradrp -c "echo 'drop index COMM_PRPRDCATR_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRPRDCATRH
+sudo su - oradrp -c "echo 'drop index COMM_PRPRDCATRH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRSHTEXT
+sudo su - oradrp -c "echo 'drop index COMM_PRSHTEXT_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRSHTEXTH
+sudo su - oradrp -c "echo 'drop index COMM_PRSHTEXTH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRVIEW
+sudo su - oradrp -c "echo 'drop index COMM_PRVIEW_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRVIEWH
+sudo su - oradrp -c "echo 'drop index COMM_PRVIEWH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRVIEWT
+sudo su - oradrp -c "echo 'drop index COMM_PRVIEWT_LOGSYS;' | sqlplus / as sysdba"
+COMM_PRVIEWTH
+sudo su - oradrp -c "echo 'drop index COMM_PRVIEWTH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_FRG_REG
+sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_REG_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_FRG_REGH
+sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_REGH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_FRG_REL
+sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_REL_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_FRG_RELH
+sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_RELH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_GTIN
+sudo su - oradrp -c "echo 'drop index COMM_PR_GTIN_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_GTINH
+sudo su - oradrp -c "echo 'drop index COMM_PR_GTINH_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_PUR_1
+sudo su - oradrp -c "echo 'drop index COMM_PR_PUR_1_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_UNIT
+sudo su - oradrp -c "echo 'drop index COMM_PR_UNIT_LOGSYS;' | sqlplus / as sysdba"
+COMM_PR_UNITH
+sudo su - oradrp -c "echo 'drop index COMM_PR_UNITH_LOGSYS;' | sqlplus / as sysdba"
+COMM_SCHEME
+sudo su - oradrp -c "echo 'drop index COMM_SCHEME_LOGSYS;' | sqlplus / as sysdba"
+COMM_SETTP_TEMP
+sudo su - oradrp -c "echo 'drop index COMM_SETTP_TEMP_LOGSYS;' | sqlplus / as sysdba"
+COMS_KEYTYPE_PCU
+sudo su - oradrp -c "echo 'drop index COMS_KEYTYPE_PCU_LOGSYS;' | sqlplus / as sysdba"
+COMT_EXT_TEMP
+sudo su - oradrp -c "echo 'drop index COMT_EXT_TEMP_LOGSYS;' | sqlplus / as sysdba"
+COMT_EXT_TEMPH
+sudo su - oradrp -c "echo 'drop index COMT_EXT_TEMPH_LOGSYS;' | sqlplus / as sysdba"
+COMT_EXT_TEMP_DB
+sudo su - oradrp -c "echo 'drop index COMT_EXT_TEMP_DB_LOGSYS;' | sqlplus / as sysdba"
+COMT_SETT
+sudo su - oradrp -c "echo 'drop index COMT_SETT_LOGSYS;' | sqlplus / as sysdba"
+COMT_SETT_ML
+sudo su - oradrp -c "echo 'drop index COMT_SETT_ML_LOGSYS;' | sqlplus / as sysdba"
+COMT_SETT_ML_H
+sudo su - oradrp -c "echo 'drop index COMT_SETT_ML_H_LOGSYS;' | sqlplus / as sysdba"
+COMT_SETT_X
+sudo su - oradrp -c "echo 'drop index COMT_SETT_X_LOGSYS;' | sqlplus / as sysdba"
+COMT_SETT_XML
+sudo su - oradrp -c "echo 'drop index COMT_SETT_XML_LOGSYS;' | sqlplus / as sysdba"
+COMT_SETT_XML_H
+sudo su - oradrp -c "echo 'drop index COMT_SETT_XML_H_LOGSYS;' | sqlplus / as sysdba"
+COMT_SETT_X_H
+sudo su - oradrp -c "echo 'drop index COMT_SETT_X_H_LOGSYS;' | sqlplus / as sysdba"
+COMT_TEMPLATE
+sudo su - oradrp -c "echo 'drop index COMT_TEMPLATE_LOGSYS;' | sqlplus / as sysdba"
+COMT_TEMP_MR
+sudo su - oradrp -c "echo 'drop index COMT_TEMP_MR_LOGSYS;' | sqlplus / as sysdba"
+COMT_TEMP_MRH
+sudo su - oradrp -c "echo 'drop index COMT_TEMP_MRH_LOGSYS;' | sqlplus / as sysdba"
+COMT_TEMP_MR_DB
+sudo su - oradrp -c "echo 'drop index COMT_TEMP_MR_DB_LOGSYS;' | sqlplus / as sysdba"
+COM_COMMERCIAL
+sudo su - oradrp -c "echo 'drop index COM_COMMERCIAL_LOGSYS;' | sqlplus / as sysdba"
+COM_COMMERCIALH
+sudo su - oradrp -c "echo 'drop index COM_COMMERCIALH_LOGSYS;' | sqlplus / as sysdba"
+COM_TA_MANUFAC
+sudo su - oradrp -c "echo 'drop index COM_TA_MANUFAC_LOGSYS;' | sqlplus / as sysdba"
+COM_TA_MANUFACH
+sudo su - oradrp -c "echo 'drop index COM_TA_MANUFACH_LOGSYS;' | sqlplus / as sysdba"
+COM_TA_R3_ID
+sudo su - oradrp -c "echo 'drop index COM_TA_R3_ID_LOGSYS;' | sqlplus / as sysdba"
+COM_TA_R3_IDH
+sudo su - oradrp -c "echo 'drop index COM_TA_R3_IDH_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CALCRULE
+sudo su - oradrp -c "echo 'drop index CPEC_CALCRULE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CALCRULE_T
+sudo su - oradrp -c "echo 'drop index CPEC_CALCRULE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CHNGCONTROL
+sudo su - oradrp -c "echo 'drop index CPEC_CHNGCONTROL_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CNVSRCUSED
+sudo su - oradrp -c "echo 'drop index CPEC_CNVSRCUSED_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CONVERSION
+sudo su - oradrp -c "echo 'drop index CPEC_CONVERSION_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CONVERS_T
+sudo su - oradrp -c "echo 'drop index CPEC_CONVERS_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CONVPLACE
+sudo su - oradrp -c "echo 'drop index CPEC_CONVPLACE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_CONVPLACE_T
+sudo su - oradrp -c "echo 'drop index CPEC_CONVPLACE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_COVMOVE
+sudo su - oradrp -c "echo 'drop index CPEC_COVMOVE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_COVMOVE_T
+sudo su - oradrp -c "echo 'drop index CPEC_COVMOVE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_EXTENSION
+sudo su - oradrp -c "echo 'drop index CPEC_EXTENSION_LOGSYS;' | sqlplus / as sysdba"
+CPEC_EXTENSION_T
+sudo su - oradrp -c "echo 'drop index CPEC_EXTENSION_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_FA_FIELDREL
+sudo su - oradrp -c "echo 'drop index CPEC_FA_FIELDREL_LOGSYS;' | sqlplus / as sysdba"
+CPEC_FA_PRIORITY
+sudo su - oradrp -c "echo 'drop index CPEC_FA_PRIORITY_LOGSYS;' | sqlplus / as sysdba"
+CPEC_FILTER
+sudo su - oradrp -c "echo 'drop index CPEC_FILTER_LOGSYS;' | sqlplus / as sysdba"
+CPEC_FORMCONV
+sudo su - oradrp -c "echo 'drop index CPEC_FORMCONV_LOGSYS;' | sqlplus / as sysdba"
+CPEC_FORMROUND
+sudo su - oradrp -c "echo 'drop index CPEC_FORMROUND_LOGSYS;' | sqlplus / as sysdba"
+CPEC_FORMULA
+sudo su - oradrp -c "echo 'drop index CPEC_FORMULA_LOGSYS;' | sqlplus / as sysdba"
+CPEC_FORMULA_T
+sudo su - oradrp -c "echo 'drop index CPEC_FORMULA_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_LOGSUBMOD
+sudo su - oradrp -c "echo 'drop index CPEC_LOGSUBMOD_LOGSYS;' | sqlplus / as sysdba"
+CPEC_LOGSUBMOD_T
+sudo su - oradrp -c "echo 'drop index CPEC_LOGSUBMOD_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_MAPPING
+sudo su - oradrp -c "echo 'drop index CPEC_MAPPING_LOGSYS;' | sqlplus / as sysdba"
+CPEC_PERIODDET
+sudo su - oradrp -c "echo 'drop index CPEC_PERIODDET_LOGSYS;' | sqlplus / as sysdba"
+CPEC_PERIODDET_T
+sudo su - oradrp -c "echo 'drop index CPEC_PERIODDET_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_PRCFIXRULE
+sudo su - oradrp -c "echo 'drop index CPEC_PRCFIXRULE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_PRCFIXRULET
+sudo su - oradrp -c "echo 'drop index CPEC_PRCFIXRULET_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QTYCNVSRC
+sudo su - oradrp -c "echo 'drop index CPEC_QTYCNVSRC_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QTYCNVSRC_T
+sudo su - oradrp -c "echo 'drop index CPEC_QTYCNVSRC_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUANCONV
+sudo su - oradrp -c "echo 'drop index CPEC_QUANCONV_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUANCONV_T
+sudo su - oradrp -c "echo 'drop index CPEC_QUANCONV_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTGROUP
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTGROUP_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTGROUP_T
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTGROUP_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTGRPPOS
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTGRPPOS_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTNAME
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTNAME_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTNAME_T
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTNAME_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTRULE
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTRULE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTRULE_T
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTRULE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTSRC
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTSRC_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTSRC_T
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTSRC_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTTYPE
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTTYPE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_QUOTTYPE_T
+sudo su - oradrp -c "echo 'drop index CPEC_QUOTTYPE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_REFDATEROUT
+sudo su - oradrp -c "echo 'drop index CPEC_REFDATEROUT_LOGSYS;' | sqlplus / as sysdba"
+CPEC_REFDATERT_T
+sudo su - oradrp -c "echo 'drop index CPEC_REFDATERT_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_RFCDEST
+sudo su - oradrp -c "echo 'drop index CPEC_RFCDEST_LOGSYS;' | sqlplus / as sysdba"
+CPEC_ROUNDRULE
+sudo su - oradrp -c "echo 'drop index CPEC_ROUNDRULE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_ROUNDRULE_T
+sudo su - oradrp -c "echo 'drop index CPEC_ROUNDRULE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_ROUTINE
+sudo su - oradrp -c "echo 'drop index CPEC_ROUTINE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_ROUTINE_T
+sudo su - oradrp -c "echo 'drop index CPEC_ROUTINE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_SURCHARGE
+sudo su - oradrp -c "echo 'drop index CPEC_SURCHARGE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_SURCHARGE_T
+sudo su - oradrp -c "echo 'drop index CPEC_SURCHARGE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERM
+sudo su - oradrp -c "echo 'drop index CPEC_TERM_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERMCONV
+sudo su - oradrp -c "echo 'drop index CPEC_TERMCONV_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERMGRP
+sudo su - oradrp -c "echo 'drop index CPEC_TERMGRP_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERMROUND
+sudo su - oradrp -c "echo 'drop index CPEC_TERMROUND_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERMRULE
+sudo su - oradrp -c "echo 'drop index CPEC_TERMRULE_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERMRULE_T
+sudo su - oradrp -c "echo 'drop index CPEC_TERMRULE_T_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERMTYPEFLD
+sudo su - oradrp -c "echo 'drop index CPEC_TERMTYPEFLD_LOGSYS;' | sqlplus / as sysdba"
+CPEC_TERM_T
+sudo su - oradrp -c "echo 'drop index CPEC_TERM_T_LOGSYS;' | sqlplus / as sysdba"
+CPED_FORMDOC
+sudo su - oradrp -c "echo 'drop index CPED_FORMDOC_LOGSYS;' | sqlplus / as sysdba"
+CPED_PRCQUOT_SIM
+sudo su - oradrp -c "echo 'drop index CPED_PRCQUOT_SIM_LOGSYS;' | sqlplus / as sysdba"
+CPED_PRICEQUOT
+sudo su - oradrp -c "echo 'drop index CPED_PRICEQUOT_LOGSYS;' | sqlplus / as sysdba"
+CRMD_ORDERADM_H
+sudo su - oradrp -c "echo 'drop index CRMD_ORDERADM_H_LOGICAL_SYSTEM;' | sqlplus / as sysdba"
+CRMD_ORDERADM_I
+sudo su - oradrp -c "echo 'drop index CRMD_ORDERADM_I_PRODUCT_SRC_SYS;' | sqlplus / as sysdba"
+CRMD_ORDERADM_I
+sudo su - oradrp -c "echo 'drop index CRMD_ORDERADM_I_LOG_SYSTEM_EXT;' | sqlplus / as sysdba"
+CRMD_PARTNER
+sudo su - oradrp -c "echo 'drop index CRMD_PARTNER_PARTNER_SRC_SYS;' | sqlplus / as sysdba"
+CRMFILTAB
+sudo su - oradrp -c "echo 'drop index CRMFILTAB_REM_LOGSYS;' | sqlplus / as sysdba"
+CRMM_BUT_FRG0060
+sudo su - oradrp -c "echo 'drop index CRMM_BUT_FRG0060_HOME_SYSTEM;' | sqlplus / as sysdba"
+CRMM_PR_TAX
+sudo su - oradrp -c "echo 'drop index CRMM_PR_TAX_LOGSYS;' | sqlplus / as sysdba"
+CRMM_PR_TAXH
+sudo su - oradrp -c "echo 'drop index CRMM_PR_TAXH_LOGSYS;' | sqlplus / as sysdba"
+CRMOBJECT
+sudo su - oradrp -c "echo 'drop index CRMOBJECT_REM_LOGSYS;' | sqlplus / as sysdba"
+CRMOBJTAB
+sudo su - oradrp -c "echo 'drop index CRMOBJTAB_REM_LOGSYS;' | sqlplus / as sysdba"
+CRMPRLS
+sudo su - oradrp -c "echo 'drop index CRMPRLS_LOGSYS;' | sqlplus / as sysdba"
+CRMRFCPAR
+sudo su - oradrp -c "echo 'drop index CRMRFCPAR_REM_LOGSYS;' | sqlplus / as sysdba"
+CSL_CCL
+sudo su - oradrp -c "echo 'drop index CSL_CCL_CPPSY;' | sqlplus / as sysdba"
+CSL_CCL
+sudo su - oradrp -c "echo 'drop index CSL_CCL_CPLSY;' | sqlplus / as sysdba"
+CSL_CCL
+sudo su - oradrp -c "echo 'drop index CSL_CCL_CIRSY;' | sqlplus / as sysdba"
+CSL_CCP
+sudo su - oradrp -c "echo 'drop index CSL_CCP_CPPSY;' | sqlplus / as sysdba"
+CSL_CCP
+sudo su - oradrp -c "echo 'drop index CSL_CCP_CIRSY;' | sqlplus / as sysdba"
+CSL_EOAC
+sudo su - oradrp -c "echo 'drop index CSL_EOAC_MSY;' | sqlplus / as sysdba"
+CSL_M
+sudo su - oradrp -c "echo 'drop index CSL_M_MSY;' | sqlplus / as sysdba"
+CSL_MEOM
+sudo su - oradrp -c "echo 'drop index CSL_MEOM_MSY;' | sqlplus / as sysdba"
+CSL_MTLK
+sudo su - oradrp -c "echo 'drop index CSL_MTLK_MVODSSY;' | sqlplus / as sysdba"
+CSL_MTLK
+sudo su - oradrp -c "echo 'drop index CSL_MTLK_MVISRSY;' | sqlplus / as sysdba"
+CSL_MTLK
+sudo su - oradrp -c "echo 'drop index CSL_MTLK_MSY;' | sqlplus / as sysdba"
+CSL_UBR
+sudo su - oradrp -c "echo 'drop index CSL_UBR_MSY;' | sqlplus / as sysdba"
+DEFSCOPETEXT
+sudo su - oradrp -c "echo 'drop index DEFSCOPETEXT_LOGSYS;' | sqlplus / as sysdba"
+DEFSCOPETEXTH
+sudo su - oradrp -c "echo 'drop index DEFSCOPETEXTH_LOGSYS;' | sqlplus / as sysdba"
+DEFSCOPE_DMLDB
+sudo su - oradrp -c "echo 'drop index DEFSCOPE_DMLDB_ORG_SYSTEM;' | sqlplus / as sysdba"
+DEFSCOPE_DMLH
+sudo su - oradrp -c "echo 'drop index DEFSCOPE_DMLH_ORG_SYSTEM;' | sqlplus / as sysdba"
+DML_LH_FRG_REG
+sudo su - oradrp -c "echo 'drop index DML_LH_FRG_REG_LOGSYS;' | sqlplus / as sysdba"
+DML_LH_FRG_REGH
+sudo su - oradrp -c "echo 'drop index DML_LH_FRG_REGH_LOGSYS;' | sqlplus / as sysdba"
+DML_ST_TEXT
+sudo su - oradrp -c "echo 'drop index DML_ST_TEXT_LOGSYS;' | sqlplus / as sysdba"
+DML_ST_TEXTH
+sudo su - oradrp -c "echo 'drop index DML_ST_TEXTH_LOGSYS;' | sqlplus / as sysdba"
+DTYPETEXT
+sudo su - oradrp -c "echo 'drop index DTYPETEXT_LOGSYS;' | sqlplus / as sysdba"
+DTYPETEXTH
+sudo su - oradrp -c "echo 'drop index DTYPETEXTH_LOGSYS;' | sqlplus / as sysdba"
+DTYPE_DMLDB
+sudo su - oradrp -c "echo 'drop index DTYPE_DMLDB_ORG_SYSTEM;' | sqlplus / as sysdba"
+DTYPE_DMLH
+sudo su - oradrp -c "echo 'drop index DTYPE_DMLH_ORG_SYSTEM;' | sqlplus / as sysdba"
+ECM_ADM
+sudo su - oradrp -c "echo 'drop index ECM_ADM_LOGSYS;' | sqlplus / as sysdba"
+ECM_ORD
+sudo su - oradrp -c "echo 'drop index ECM_ORD_LOGSYS;' | sqlplus / as sysdba"
+ECM_VAL
+sudo su - oradrp -c "echo 'drop index ECM_VAL_LOGSYS;' | sqlplus / as sysdba"
+ECM_VALH
+sudo su - oradrp -c "echo 'drop index ECM_VALH_LOGSYS;' | sqlplus / as sysdba"
+ESH_ADM_EXCFLDS
+sudo su - oradrp -c "echo 'drop index ESH_ADM_EXCFLDS_LOGSYS;' | sqlplus / as sysdba"
+ESH_ADM_PARAM
+sudo su - oradrp -c "echo 'drop index ESH_ADM_PARAM_LOGSYS;' | sqlplus / as sysdba"
+ESH_ADM_RFCDEST
+sudo su - oradrp -c "echo 'drop index ESH_ADM_RFCDEST_LOGSYS;' | sqlplus / as sysdba"
+ESH_ADM_RFC_CON1
+sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CON1_LOGSYS_EXT;' | sqlplus / as sysdba"
+ESH_ADM_RFC_CON1
+sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CON1_LOGSYS;' | sqlplus / as sysdba"
+ESH_ADM_RFC_CONN
+sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CONN_LOGSYS_EXT;' | sqlplus / as sysdba"
+ESH_ADM_RFC_CONN
+sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CONN_LOGSYS;' | sqlplus / as sysdba"
+ESH_ADM_SC
+sudo su - oradrp -c "echo 'drop index ESH_ADM_SC_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_AUTH_DATA
+sudo su - oradrp -c "echo 'drop index ESH_AU_AUTH_DATA_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_PRF_AOB
+sudo su - oradrp -c "echo 'drop index ESH_AU_PRF_AOB_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_PSIZE
+sudo su - oradrp -c "echo 'drop index ESH_AU_PSIZE_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_ROL_PRF
+sudo su - oradrp -c "echo 'drop index ESH_AU_ROL_PRF_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_USR_AUTH
+sudo su - oradrp -c "echo 'drop index ESH_AU_USR_AUTH_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_USR_MAP
+sudo su - oradrp -c "echo 'drop index ESH_AU_USR_MAP_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_USR_PRF
+sudo su - oradrp -c "echo 'drop index ESH_AU_USR_PRF_LOGSYS;' | sqlplus / as sysdba"
+ESH_AU_USR_ROL
+sudo su - oradrp -c "echo 'drop index ESH_AU_USR_ROL_LOGSYS;' | sqlplus / as sysdba"
+ESH_BIN_EXCFLDS
+sudo su - oradrp -c "echo 'drop index ESH_BIN_EXCFLDS_LOGSYS;' | sqlplus / as sysdba"
+ESH_BI_USER_EXTR
+sudo su - oradrp -c "echo 'drop index ESH_BI_USER_EXTR_SOURCE_SYSTEM;' | sqlplus / as sysdba"
+ESH_BOS_INDEX
+sudo su - oradrp -c "echo 'drop index ESH_BOS_INDEX_LOGSYS;' | sqlplus / as sysdba"
+ESH_BOS_INDEXING
+sudo su - oradrp -c "echo 'drop index ESH_BOS_INDEXING_LOGSYS;' | sqlplus / as sysdba"
+ESH_BOS_NODE_IND
+sudo su - oradrp -c "echo 'drop index ESH_BOS_NODE_IND_LOGSYS;' | sqlplus / as sysdba"
+ESH_BOS_SCHEDULE
+sudo su - oradrp -c "echo 'drop index ESH_BOS_SCHEDULE_LOGSYS;' | sqlplus / as sysdba"
+ESH_BOS_STATUS
+sudo su - oradrp -c "echo 'drop index ESH_BOS_STATUS_LOGSYS;' | sqlplus / as sysdba"
+ESH_CNT_PROC_CHN
+sudo su - oradrp -c "echo 'drop index ESH_CNT_PROC_CHN_LOGSYS;' | sqlplus / as sysdba"
+ESH_CRT_AUTHSTAT
+sudo su - oradrp -c "echo 'drop index ESH_CRT_AUTHSTAT_LOGSYS;' | sqlplus / as sysdba"
+ESH_CRT_INDEX
+sudo su - oradrp -c "echo 'drop index ESH_CRT_INDEX_LOGSYS;' | sqlplus / as sysdba"
+ESH_CRT_INDEXING
+sudo su - oradrp -c "echo 'drop index ESH_CRT_INDEXING_LOGSYS;' | sqlplus / as sysdba"
+ESH_CRT_OWNER
+sudo su - oradrp -c "echo 'drop index ESH_CRT_OWNER_LOGSYS;' | sqlplus / as sysdba"
+ESH_CRT_PSIZE
+sudo su - oradrp -c "echo 'drop index ESH_CRT_PSIZE_LOGSYS;' | sqlplus / as sysdba"
+ESH_CRT_SCHEDULE
+sudo su - oradrp -c "echo 'drop index ESH_CRT_SCHEDULE_LOGSYS;' | sqlplus / as sysdba"
+ESH_CRT_STATUS
+sudo su - oradrp -c "echo 'drop index ESH_CRT_STATUS_LOGSYS;' | sqlplus / as sysdba"
+ESH_CU_FL_SET
+sudo su - oradrp -c "echo 'drop index ESH_CU_FL_SET_LOGSYS;' | sqlplus / as sysdba"
+ESH_DBT_ADMIN
+sudo su - oradrp -c "echo 'drop index ESH_DBT_ADMIN_LOGSYS;' | sqlplus / as sysdba"
+ESH_DBT_CONN
+sudo su - oradrp -c "echo 'drop index ESH_DBT_CONN_LOGSYS;' | sqlplus / as sysdba"
+ESH_EX_CP_STATUS
+sudo su - oradrp -c "echo 'drop index ESH_EX_CP_STATUS_LOGSYS;' | sqlplus / as sysdba"
+ESH_EX_EXTR_USER
+sudo su - oradrp -c "echo 'drop index ESH_EX_EXTR_USER_LOGSYS;' | sqlplus / as sysdba"
+ESH_EX_FU_ADM
+sudo su - oradrp -c "echo 'drop index ESH_EX_FU_ADM_LOGSYS;' | sqlplus / as sysdba"
+ESH_EX_FU_FBK
+sudo su - oradrp -c "echo 'drop index ESH_EX_FU_FBK_LOGSYS;' | sqlplus / as sysdba"
+ESH_HDB_BINQ
+sudo su - oradrp -c "echo 'drop index ESH_HDB_BINQ_LOGSYS;' | sqlplus / as sysdba"
+ESH_HDB_CALC
+sudo su - oradrp -c "echo 'drop index ESH_HDB_CALC_LOGSYS;' | sqlplus / as sysdba"
+ESH_HDB_CONSTR
+sudo su - oradrp -c "echo 'drop index ESH_HDB_CONSTR_LOGSYS;' | sqlplus / as sysdba"
+ESH_HDB_DBSCHEMA
+sudo su - oradrp -c "echo 'drop index ESH_HDB_DBSCHEMA_LOGSYS;' | sqlplus / as sysdba"
+ESH_HDB_FTX
+sudo su - oradrp -c "echo 'drop index ESH_HDB_FTX_LOGSYS;' | sqlplus / as sysdba"
+ESH_LOGSYS
+sudo su - oradrp -c "echo 'drop index ESH_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+ESH_QL_AGG_FBK
+sudo su - oradrp -c "echo 'drop index ESH_QL_AGG_FBK_LOGSYS;' | sqlplus / as sysdba"
+ESH_SE_AUTH_OBJ
+sudo su - oradrp -c "echo 'drop index ESH_SE_AUTH_OBJ_LOGSYS;' | sqlplus / as sysdba"
+ESH_SE_AUTH_PATH
+sudo su - oradrp -c "echo 'drop index ESH_SE_AUTH_PATH_LOGSYS;' | sqlplus / as sysdba"
+ESH_SE_LOGEX
+sudo su - oradrp -c "echo 'drop index ESH_SE_LOGEX_LOGSYS;' | sqlplus / as sysdba"
+ESH_URL_EXCFLDS
+sudo su - oradrp -c "echo 'drop index ESH_URL_EXCFLDS_LOGSYS;' | sqlplus / as sysdba"
+GEOLOC
+sudo su - oradrp -c "echo 'drop index GEOLOC_ADDRLOGSYS;' | sqlplus / as sysdba"
+GEOOBJR
+sudo su - oradrp -c "echo 'drop index GEOOBJR_LOGSYS;' | sqlplus / as sysdba"
+HRMDORIGIN
+sudo su - oradrp -c "echo 'drop index HRMDORIGIN_ORIGSYSTEM;' | sqlplus / as sysdba"
+HRMDRGIN
+sudo su - oradrp -c "echo 'drop index HRMDRGIN_SNDSYSTEM;' | sqlplus / as sysdba"
+HRMDRGOUT
+sudo su - oradrp -c "echo 'drop index HRMDRGOUT_RCVSYSTEM;' | sqlplus / as sysdba"
+HRWL_SUBST
+sudo su - oradrp -c "echo 'drop index HRWL_SUBST_LOGSYS;' | sqlplus / as sysdba"
+KFM_KF_ADM_VAR
+sudo su - oradrp -c "echo 'drop index KFM_KF_ADM_VAR_KF_SRC_SYSTEM;' | sqlplus / as sysdba"
+KFM_KF_ADM_VAR_H
+sudo su - oradrp -c "echo 'drop index KFM_KF_ADM_VAR_H_KF_SRC_SYSTEM;' | sqlplus / as sysdba"
+LHM_LEGAL_HOLDS
+sudo su - oradrp -c "echo 'drop index LHM_LEGAL_HOLDS_LOGSYS;' | sqlplus / as sysdba"
+LISLOGSYS
+sudo su - oradrp -c "echo 'drop index LISLOGSYS_ALESYSNAM;' | sqlplus / as sysdba"
+LXE_CSN_HD2
+sudo su - oradrp -c "echo 'drop index LXE_CSN_HD2_LOGSYS;' | sqlplus / as sysdba"
+OXT_SYSTAB
+sudo su - oradrp -c "echo 'drop index OXT_SYSTAB_LOGSYS;' | sqlplus / as sysdba"
+PCA_BLOCK_ADMIN
+sudo su - oradrp -c "echo 'drop index PCA_BLOCK_ADMIN_HOME_SYSTEM;' | sqlplus / as sysdba"
+PCA_MASTER_ADMIN
+sudo su - oradrp -c "echo 'drop index PCA_MASTER_ADMIN_HOME_SYSTEM;' | sqlplus / as sysdba"
+PLMM_ACT_BREL
+sudo su - oradrp -c "echo 'drop index PLMM_ACT_BREL_LOGSYS_B;' | sqlplus / as sysdba"
+PLMM_ACT_BREL
+sudo su - oradrp -c "echo 'drop index PLMM_ACT_BREL_LOGSYS_A;' | sqlplus / as sysdba"
+PLMM_ACT_BREL
+sudo su - oradrp -c "echo 'drop index PLMM_ACT_BREL_HOMESYS;' | sqlplus / as sysdba"
+PPFTSFFXRU
+sudo su - oradrp -c "echo 'drop index PPFTSFFXRU_SD_LOGSYST;' | sqlplus / as sysdba"
+PPFTSFFXRU
+sudo su - oradrp -c "echo 'drop index PPFTSFFXRU_RP_LOGSYST;' | sqlplus / as sysdba"
+PPFTSFFXT2
+sudo su - oradrp -c "echo 'drop index PPFTSFFXT2_RP_LOGSYST;' | sqlplus / as sysdba"
+PPFTSFFXTE
+sudo su - oradrp -c "echo 'drop index PPFTSFFXTE_RP_LOGSYST;' | sqlplus / as sysdba"
+PPFTSFMLRU
+sudo su - oradrp -c "echo 'drop index PPFTSFMLRU_SD_LOGSYST;' | sqlplus / as sysdba"
+PPFTSFMLRU
+sudo su - oradrp -c "echo 'drop index PPFTSFMLRU_RP_LOGSYST;' | sqlplus / as sysdba"
+PPFTSFMLT2
+sudo su - oradrp -c "echo 'drop index PPFTSFMLT2_RP_LOGSYST;' | sqlplus / as sysdba"
+PPFTSFMLTE
+sudo su - oradrp -c "echo 'drop index PPFTSFMLTE_RP_LOGSYST;' | sqlplus / as sysdba"
+PRREF
+sudo su - oradrp -c "echo 'drop index PRREF_LOGSYS;' | sqlplus / as sysdba"
+PRREFH
+sudo su - oradrp -c "echo 'drop index PRREFH_LOGSYS;' | sqlplus / as sysdba"
+QRETSTATE
+sudo su - oradrp -c "echo 'drop index QRETSTATE_BRSYSTEM;' | sqlplus / as sysdba"
+RMPS_AI_LOCATION
+sudo su - oradrp -c "echo 'drop index RMPS_AI_LOCATION_LOGSYSTEM;' | sqlplus / as sysdba"
+RMPS_AI_SESS
+sudo su - oradrp -c "echo 'drop index RMPS_AI_SESS_LOGSYSTEM;' | sqlplus / as sysdba"
+ROAUTH
+sudo su - oradrp -c "echo 'drop index ROAUTH_LOGSYS;' | sqlplus / as sysdba"
+ROBWQTSTAT
+sudo su - oradrp -c "echo 'drop index ROBWQTSTAT_RLOGSYS;' | sqlplus / as sysdba"
+RODCHABGEN
+sudo su - oradrp -c "echo 'drop index RODCHABGEN_SLOGSYS;' | sqlplus / as sysdba"
+RODCHABGEN
+sudo su - oradrp -c "echo 'drop index RODCHABGEN_RLOGSYS;' | sqlplus / as sysdba"
+ROIDOCPRMS
+sudo su - oradrp -c "echo 'drop index ROIDOCPRMS_SLOGSYS;' | sqlplus / as sysdba"
+ROISGEN
+sudo su - oradrp -c "echo 'drop index ROISGEN_SLOGSYS;' | sqlplus / as sysdba"
+ROISGEN
+sudo su - oradrp -c "echo 'drop index ROISGEN_RLOGSYS;' | sqlplus / as sysdba"
+ROOSGEN
+sudo su - oradrp -c "echo 'drop index ROOSGEN_SLOGSYS;' | sqlplus / as sysdba"
+ROOSGEN
+sudo su - oradrp -c "echo 'drop index ROOSGEN_RLOGSYS;' | sqlplus / as sysdba"
+ROOSGENDLM
+sudo su - oradrp -c "echo 'drop index ROOSGENDLM_SLOGSYS;' | sqlplus / as sysdba"
+ROOSGENRT
+sudo su - oradrp -c "echo 'drop index ROOSGENRT_SLOGSYS;' | sqlplus / as sysdba"
+ROOSGENRT
+sudo su - oradrp -c "echo 'drop index ROOSGENRT_RLOGSYS;' | sqlplus / as sysdba"
+ROOSGENSEG
+sudo su - oradrp -c "echo 'drop index ROOSGENSEG_SLOGSYS;' | sqlplus / as sysdba"
+ROOSGENSEG
+sudo su - oradrp -c "echo 'drop index ROOSGENSEG_RLOGSYS;' | sqlplus / as sysdba"
+ROOSGENTFSTR
+sudo su - oradrp -c "echo 'drop index ROOSGENTFSTR_SLOGSYS;' | sqlplus / as sysdba"
+ROOSGENTFSTR
+sudo su - oradrp -c "echo 'drop index ROOSGENTFSTR_RLOGSYS;' | sqlplus / as sysdba"
+ROOSPRMS
+sudo su - oradrp -c "echo 'drop index ROOSPRMS_SRLOGSYS;' | sqlplus / as sysdba"
+ROOSPRMS
+sudo su - oradrp -c "echo 'drop index ROOSPRMS_RLOGSYS;' | sqlplus / as sysdba"
+ROOSPRMSC
+sudo su - oradrp -c "echo 'drop index ROOSPRMSC_SLOGSYS;' | sqlplus / as sysdba"
+ROOSPRMSC
+sudo su - oradrp -c "echo 'drop index ROOSPRMSC_RLOGSYS;' | sqlplus / as sysdba"
+ROOSPRMSF
+sudo su - oradrp -c "echo 'drop index ROOSPRMSF_SLOGSYS;' | sqlplus / as sysdba"
+ROOSPRMSF
+sudo su - oradrp -c "echo 'drop index ROOSPRMSF_RLOGSYS;' | sqlplus / as sysdba"
+ROPROXCONF
+sudo su - oradrp -c "echo 'drop index ROPROXCONF_REQUESTER;' | sqlplus / as sysdba"
+ROPXCONF
+sudo su - oradrp -c "echo 'drop index ROPXCONF_REQUESTER;' | sqlplus / as sysdba"
+ROREQUESTPRMS
+sudo su - oradrp -c "echo 'drop index ROREQUESTPRMS_SLOGSYS;' | sqlplus / as sysdba"
+RS3RDFLD
+sudo su - oradrp -c "echo 'drop index RS3RDFLD_RFCLOGSYS;' | sqlplus / as sysdba"
+RS3RDFLDNEW
+sudo su - oradrp -c "echo 'drop index RS3RDFLDNEW_RFCLOGSYS;' | sqlplus / as sysdba"
+RS3RDFLDNEWT
+sudo su - oradrp -c "echo 'drop index RS3RDFLDNEWT_RFCLOGSYS;' | sqlplus / as sysdba"
+RS3RDFLDT
+sudo su - oradrp -c "echo 'drop index RS3RDFLDT_RFCLOGSYS;' | sqlplus / as sysdba"
+RSBASIDOC
+sudo su - oradrp -c "echo 'drop index RSBASIDOC_SLOGSYS;' | sqlplus / as sysdba"
+RSBASIDOC
+sudo su - oradrp -c "echo 'drop index RSBASIDOC_RLOGSYS;' | sqlplus / as sysdba"
+RSBBS_RSRR_URL
+sudo su - oradrp -c "echo 'drop index RSBBS_RSRR_URL_LOGSYS;' | sqlplus / as sysdba"
+RSBFILE
+sudo su - oradrp -c "echo 'drop index RSBFILE_DOTNETLS;' | sqlplus / as sysdba"
+RSBIWBENCH
+sudo su - oradrp -c "echo 'drop index RSBIWBENCH_LOGSYS;' | sqlplus / as sysdba"
+RSBOBJDS_LOGSYS
+sudo su - oradrp -c "echo 'drop index RSBOBJDS_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+RSBOHDEST
+sudo su - oradrp -c "echo 'drop index RSBOHDEST_SOURCELOGSYS;' | sqlplus / as sysdba"
+RSCONTACT_COL
+sudo su - oradrp -c "echo 'drop index RSCONTACT_COL_SOURCE;' | sqlplus / as sysdba"
+RSCONTACT_SIZE
+sudo su - oradrp -c "echo 'drop index RSCONTACT_SIZE_RSLOGSYS;' | sqlplus / as sysdba"
+RSCONTACT_SOURCE
+sudo su - oradrp -c "echo 'drop index RSCONTACT_SOURCE_SOURCE;' | sqlplus / as sysdba"
+RSCONTACT_SOUR_2
+sudo su - oradrp -c "echo 'drop index RSCONTACT_SOUR_2_SOURCE;' | sqlplus / as sysdba"
+RSCONTCHECKCROSS
+sudo su - oradrp -c "echo 'drop index RSCONTCHECKCROSS_LOGSYS;' | sqlplus / as sysdba"
+RSCONTENTCHECK
+sudo su - oradrp -c "echo 'drop index RSCONTENTCHECK_LOGSYS;' | sqlplus / as sysdba"
+RSCONTENTCHECK_C
+sudo su - oradrp -c "echo 'drop index RSCONTENTCHECK_C_LOGSYS;' | sqlplus / as sysdba"
+RSCONTENTPROP
+sudo su - oradrp -c "echo 'drop index RSCONTENTPROP_LOGSYS;' | sqlplus / as sysdba"
+RSCONT_T_SYSSET
+sudo su - oradrp -c "echo 'drop index RSCONT_T_SYSSET_LOGSYS;' | sqlplus / as sysdba"
+RSCRT_DTA_DS_LG
+sudo su - oradrp -c "echo 'drop index RSCRT_DTA_DS_LG_LOGSYS;' | sqlplus / as sysdba"
+RSCRT_RDA_LOG
+sudo su - oradrp -c "echo 'drop index RSCRT_RDA_LOG_LOGSYS;' | sqlplus / as sysdba"
+RSCRT_RDA_TID
+sudo su - oradrp -c "echo 'drop index RSCRT_RDA_TID_LOGSYS;' | sqlplus / as sysdba"
+RSCURR
+sudo su - oradrp -c "echo 'drop index RSCURR_LOGSYS;' | sqlplus / as sysdba"
+RSDCHABAS
+sudo su - oradrp -c "echo 'drop index RSDCHABAS_OBN_SYS_ALIAS;' | sqlplus / as sysdba"
+RSDCUBE
+sudo su - oradrp -c "echo 'drop index RSDCUBE_SVSLOGSYS;' | sqlplus / as sysdba"
+RSDCUBE
+sudo su - oradrp -c "echo 'drop index RSDCUBE_SLOGSYS;' | sqlplus / as sysdba"
+RSDDSTATDTP
+sudo su - oradrp -c "echo 'drop index RSDDSTATDTP_LOGSYS;' | sqlplus / as sysdba"
+RSDDSTATEXTRACT
+sudo su - oradrp -c "echo 'drop index RSDDSTATEXTRACT_LOGSYS;' | sqlplus / as sysdba"
+RSDDSTATWHM
+sudo su - oradrp -c "echo 'drop index RSDDSTATWHM_LOGSYS;' | sqlplus / as sysdba"
+RSDLTABLES
+sudo su - oradrp -c "echo 'drop index RSDLTABLES_LOGSYS;' | sqlplus / as sysdba"
+RSDMCHGRQ
+sudo su - oradrp -c "echo 'drop index RSDMCHGRQ_RLOGSYS;' | sqlplus / as sysdba"
+RSDMCHGRQ
+sudo su - oradrp -c "echo 'drop index RSDMCHGRQ_REQUID;' | sqlplus / as sysdba"
+RSDMDELTA
+sudo su - oradrp -c "echo 'drop index RSDMDELTA_RLOGSYS;' | sqlplus / as sysdba"
+RSDMSTAT
+sudo su - oradrp -c "echo 'drop index RSDMSTAT_RLOGSYS;' | sqlplus / as sysdba"
+RSDS
+sudo su - oradrp -c "echo 'drop index RSDS_LOGSYS;' | sqlplus / as sysdba"
+RSDSACCESSACTLOG
+sudo su - oradrp -c "echo 'drop index RSDSACCESSACTLOG_LOGSYS;' | sqlplus / as sysdba"
+RSDSACCESSATTR
+sudo su - oradrp -c "echo 'drop index RSDSACCESSATTR_LOGSYS;' | sqlplus / as sysdba"
+RSDSESRMAP
+sudo su - oradrp -c "echo 'drop index RSDSESRMAP_LOGSYS;' | sqlplus / as sysdba"
+RSDSEXPORT
+sudo su - oradrp -c "echo 'drop index RSDSEXPORT_LOGSYS;' | sqlplus / as sysdba"
+RSDSEXTOBJ
+sudo su - oradrp -c "echo 'drop index RSDSEXTOBJ_LOGSYS;' | sqlplus / as sysdba"
+RSDSGENDELTA
+sudo su - oradrp -c "echo 'drop index RSDSGENDELTA_LOGSYS;' | sqlplus / as sysdba"
+RSDSGENDELTADP
+sudo su - oradrp -c "echo 'drop index RSDSGENDELTADP_LOGSYS;' | sqlplus / as sysdba"
+RSDSRTCOUNT
+sudo su - oradrp -c "echo 'drop index RSDSRTCOUNT_LOGSYS;' | sqlplus / as sysdba"
+RSDSRTSEGCOUNT
+sudo su - oradrp -c "echo 'drop index RSDSRTSEGCOUNT_LOGSYS;' | sqlplus / as sysdba"
+RSDSSEG
+sudo su - oradrp -c "echo 'drop index RSDSSEG_LOGSYS;' | sqlplus / as sysdba"
+RSDSSEGFD
+sudo su - oradrp -c "echo 'drop index RSDSSEGFD_LOGSYS;' | sqlplus / as sysdba"
+RSDSSEGFDT
+sudo su - oradrp -c "echo 'drop index RSDSSEGFDT_LOGSYS;' | sqlplus / as sysdba"
+RSDSSEGT
+sudo su - oradrp -c "echo 'drop index RSDSSEGT_LOGSYS;' | sqlplus / as sysdba"
+RSDST
+sudo su - oradrp -c "echo 'drop index RSDST_LOGSYS;' | sqlplus / as sysdba"
+RSDSTRANSTRU
+sudo su - oradrp -c "echo 'drop index RSDSTRANSTRU_LOGSYS;' | sqlplus / as sysdba"
+RSDS_QUEUE_DATA
+sudo su - oradrp -c "echo 'drop index RSDS_QUEUE_DATA_LOGSYS;' | sqlplus / as sysdba"
+RSDS_QUEUE_HEAD
+sudo su - oradrp -c "echo 'drop index RSDS_QUEUE_HEAD_LOGSYS;' | sqlplus / as sysdba"
+RSEURO
+sudo su - oradrp -c "echo 'drop index RSEURO_LOGSYS;' | sqlplus / as sysdba"
+RSFBPSOURCE
+sudo su - oradrp -c "echo 'drop index RSFBPSOURCE_SLOGSYS;' | sqlplus / as sysdba"
+RSHIEDIR
+sudo su - oradrp -c "echo 'drop index RSHIEDIR_LOGSYS;' | sqlplus / as sysdba"
+RSISIPTVERS
+sudo su - oradrp -c "echo 'drop index RSISIPTVERS_LOGSYS;' | sqlplus / as sysdba"
+RSISODS
+sudo su - oradrp -c "echo 'drop index RSISODS_LOGSYS;' | sqlplus / as sysdba"
+RSISOFIELD
+sudo su - oradrp -c "echo 'drop index RSISOFIELD_LOGSYS;' | sqlplus / as sysdba"
+RSISOLTP
+sudo su - oradrp -c "echo 'drop index RSISOLTP_LOGSYS;' | sqlplus / as sysdba"
+RSISOSELFD
+sudo su - oradrp -c "echo 'drop index RSISOSELFD_LOGSYS;' | sqlplus / as sysdba"
+RSISOSMAP
+sudo su - oradrp -c "echo 'drop index RSISOSMAP_LOGSYS;' | sqlplus / as sysdba"
+RSLDPIO
+sudo su - oradrp -c "echo 'drop index RSLDPIO_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSCOMP
+sudo su - oradrp -c "echo 'drop index RSLOGSYSCOMP_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSCONTENT
+sudo su - oradrp -c "echo 'drop index RSLOGSYSCONTENT_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSDB
+sudo su - oradrp -c "echo 'drop index RSLOGSYSDB_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSDEST
+sudo su - oradrp -c "echo 'drop index RSLOGSYSDEST_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSMAP
+sudo su - oradrp -c "echo 'drop index RSLOGSYSMAP_LOGSYSORG;' | sqlplus / as sysdba"
+RSLOGSYSMAP
+sudo su - oradrp -c "echo 'drop index RSLOGSYSMAP_LOGSYSNEW;' | sqlplus / as sysdba"
+RSLOGSYSODP
+sudo su - oradrp -c "echo 'drop index RSLOGSYSODP_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSTAB
+sudo su - oradrp -c "echo 'drop index RSLOGSYSTAB_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSUDC
+sudo su - oradrp -c "echo 'drop index RSLOGSYSUDC_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSVIRT
+sudo su - oradrp -c "echo 'drop index RSLOGSYSVIRT_REFERENCED;' | sqlplus / as sysdba"
+RSLOGSYSVIRT
+sudo su - oradrp -c "echo 'drop index RSLOGSYSVIRT_LOGSYS;' | sqlplus / as sysdba"
+RSLOGSYSWS
+sudo su - oradrp -c "echo 'drop index RSLOGSYSWS_LOGSYS;' | sqlplus / as sysdba"
+RSMDATASTATELOGS
+sudo su - oradrp -c "echo 'drop index RSMDATASTATELOGS_LOGSYS;' | sqlplus / as sysdba"
+RSMDATASTATE_DMI
+sudo su - oradrp -c "echo 'drop index RSMDATASTATE_DMI_LOGSYS;' | sqlplus / as sysdba"
+RSMDATASTATE_DMO
+sudo su - oradrp -c "echo 'drop index RSMDATASTATE_DMO_LOGSYS;' | sqlplus / as sysdba"
+RSMONENQ
+sudo su - oradrp -c "echo 'drop index RSMONENQ_LOGSYS;' | sqlplus / as sysdba"
+RSOACUBE_DSOURCE
+sudo su - oradrp -c "echo 'drop index RSOACUBE_DSOURCE_LOGSYS;' | sqlplus / as sysdba"
+RSOACUBE_LOGSYS
+sudo su - oradrp -c "echo 'drop index RSOACUBE_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+RSOAPPL
+sudo su - oradrp -c "echo 'drop index RSOAPPL_LOGSYS;' | sqlplus / as sysdba"
+RSOAPPLT
+sudo su - oradrp -c "echo 'drop index RSOAPPLT_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPHIECOM
+sudo su - oradrp -c "echo 'drop index RSOLTPHIECOM_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPIBU
+sudo su - oradrp -c "echo 'drop index RSOLTPIBU_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPNDP
+sudo su - oradrp -c "echo 'drop index RSOLTPNDP_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCE
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCE_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCEFIE
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCEFIE_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCEFIET
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCEFIET_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCESEG
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESEG_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCESEGT
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESEGT_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCESFI
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESFI_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCESFIT
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESFIT_LOGSYS;' | sqlplus / as sysdba"
+RSOLTPSOURCET
+sudo su - oradrp -c "echo 'drop index RSOLTPSOURCET_LOGSYS;' | sqlplus / as sysdba"
+RSOSC_SW_REPL
+sudo su - oradrp -c "echo 'drop index RSOSC_SW_REPL_LOGSYS;' | sqlplus / as sysdba"
+RSOSFIELDMAP
+sudo su - oradrp -c "echo 'drop index RSOSFIELDMAP_LOGSYS;' | sqlplus / as sysdba"
+RSOSOATTFD
+sudo su - oradrp -c "echo 'drop index RSOSOATTFD_LOGSYS;' | sqlplus / as sysdba"
+RSOSOFIELD
+sudo su - oradrp -c "echo 'drop index RSOSOFIELD_LOGSYS;' | sqlplus / as sysdba"
+RSOSOHIE
+sudo su - oradrp -c "echo 'drop index RSOSOHIE_LOGSYS;' | sqlplus / as sysdba"
+RSOSOHIET
+sudo su - oradrp -c "echo 'drop index RSOSOHIET_LOGSYS;' | sqlplus / as sysdba"
+RSOSOLTP
+sudo su - oradrp -c "echo 'drop index RSOSOLTP_LOGSYS;' | sqlplus / as sysdba"
+RSOSOSELFD
+sudo su - oradrp -c "echo 'drop index RSOSOSELFD_LOGSYS;' | sqlplus / as sysdba"
+RSOSSEGFIEMAP
+sudo su - oradrp -c "echo 'drop index RSOSSEGFIEMAP_LOGSYS;' | sqlplus / as sysdba"
+RSOSSEGMAP
+sudo su - oradrp -c "echo 'drop index RSOSSEGMAP_LOGSYS;' | sqlplus / as sysdba"
+RSPCLOGCHAIN
+sudo su - oradrp -c "echo 'drop index RSPCLOGCHAIN_META_LOGSYS;' | sqlplus / as sysdba"
+RSPC_BUFFER
+sudo su - oradrp -c "echo 'drop index RSPC_BUFFER_LOGSYS;' | sqlplus / as sysdba"
+RSPRECALCADMIN
+sudo su - oradrp -c "echo 'drop index RSPRECALCADMIN_OBJECT;' | sqlplus / as sysdba"
+RSRADIOMON
+sudo su - oradrp -c "echo 'drop index RSRADIOMON_SYSSEL;' | sqlplus / as sysdba"
+RSREQPROGS
+sudo su - oradrp -c "echo 'drop index RSREQPROGS_LOGSYS;' | sqlplus / as sysdba"
+RSRR_HRNP_SERVER
+sudo su - oradrp -c "echo 'drop index RSRR_HRNP_SERVER_LOGSYS;' | sqlplus / as sysdba"
+RSR_PREC_LOGSYS
+sudo su - oradrp -c "echo 'drop index RSR_PREC_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+RSR_PREC_LOGSYST
+sudo su - oradrp -c "echo 'drop index RSR_PREC_LOGSYST_LOGSYS;' | sqlplus / as sysdba"
+RSR_PREC_QUEUE
+sudo su - oradrp -c "echo 'drop index RSR_PREC_QUEUE_LOGSYS;' | sqlplus / as sysdba"
+RSSDKCON
+sudo su - oradrp -c "echo 'drop index RSSDKCON_LOGSYS;' | sqlplus / as sysdba"
+RSSDKGENMETA
+sudo su - oradrp -c "echo 'drop index RSSDKGENMETA_LOGSYS;' | sqlplus / as sysdba"
+RSSDLCONVEXIT1
+sudo su - oradrp -c "echo 'drop index RSSDLCONVEXIT1_LOGSYS;' | sqlplus / as sysdba"
+RSSDLINIT
+sudo su - oradrp -c "echo 'drop index RSSDLINIT_LOGSYS;' | sqlplus / as sysdba"
+RSSDLINITDEL
+sudo su - oradrp -c "echo 'drop index RSSDLINITDEL_LOGSYS;' | sqlplus / as sysdba"
+RSSDLINITSEL
+sudo su - oradrp -c "echo 'drop index RSSDLINITSEL_LOGSYS;' | sqlplus / as sysdba"
+RSSELDONE
+sudo su - oradrp -c "echo 'drop index RSSELDONE_LOGSYS;' | sqlplus / as sysdba"
+RSSHIPDVERS
+sudo su - oradrp -c "echo 'drop index RSSHIPDVERS_LOGSYS;' | sqlplus / as sysdba"
+RSSOURSYSTEM
+sudo su - oradrp -c "echo 'drop index RSSOURSYSTEM_LOGSYS;' | sqlplus / as sysdba"
+RSSTATMANPART
+sudo su - oradrp -c "echo 'drop index RSSTATMANPART_LOGSYS;' | sqlplus / as sysdba"
+RSSTATMANPSA
+sudo su - oradrp -c "echo 'drop index RSSTATMANPSA_LOGSYS;' | sqlplus / as sysdba"
+RSSTATMAN_SAVE2
+sudo su - oradrp -c "echo 'drop index RSSTATMAN_SAVE2_LOGSYS;' | sqlplus / as sysdba"
+RSSZTDIR
+sudo su - oradrp -c "echo 'drop index RSSZTDIR_LOGSYS;' | sqlplus / as sysdba"
+RSTCMASTERLOAD
+sudo su - oradrp -c "echo 'drop index RSTCMASTERLOAD_LOGSYS;' | sqlplus / as sysdba"
+RSTRANCLUSTINFO
+sudo su - oradrp -c "echo 'drop index RSTRANCLUSTINFO_LOGSYS;' | sqlplus / as sysdba"
+RSTS
+sudo su - oradrp -c "echo 'drop index RSTS_LOGSYS;' | sqlplus / as sysdba"
+RSTSDTEL
+sudo su - oradrp -c "echo 'drop index RSTSDTEL_LOGSYS;' | sqlplus / as sysdba"
+RSTSDTELNEW
+sudo su - oradrp -c "echo 'drop index RSTSDTELNEW_LOGSYS;' | sqlplus / as sysdba"
+RSTT_TDATAL
+sudo su - oradrp -c "echo 'drop index RSTT_TDATAL_SYSDEST;' | sqlplus / as sysdba"
+RSUPDSIMULH
+sudo su - oradrp -c "echo 'drop index RSUPDSIMULH_LOGSYS;' | sqlplus / as sysdba"
+RSWSPLREF
+sudo su - oradrp -c "echo 'drop index RSWSPLREF_LOGSYS;' | sqlplus / as sysdba"
+RSWSPXREF
+sudo su - oradrp -c "echo 'drop index RSWSPXREF_LOGSYS;' | sqlplus / as sysdba"
+RSWSPXREFEX
+sudo su - oradrp -c "echo 'drop index RSWSPXREFEX_LOGSYS;' | sqlplus / as sysdba"
+SADRO
+sudo su - oradrp -c "echo 'drop index SADRO_LOGSYS;' | sqlplus / as sysdba"
+SALRTTRFCB
+sudo su - oradrp -c "echo 'drop index SALRTTRFCB_LOG_SYST;' | sqlplus / as sysdba"
+SAPGUIHC_FAQS
+sudo su - oradrp -c "echo 'drop index SAPGUIHC_FAQS_LOGSYS;' | sqlplus / as sysdba"
+SAPGUIHC_LINKS
+sudo su - oradrp -c "echo 'drop index SAPGUIHC_LINKS_LOGSYS;' | sqlplus / as sysdba"
+SAPGUIHC_NOTES
+sudo su - oradrp -c "echo 'drop index SAPGUIHC_NOTES_LOGSYS;' | sqlplus / as sysdba"
+SCAPPT
+sudo su - oradrp -c "echo 'drop index SCAPPT_LOGSYS;' | sqlplus / as sysdba"
+SCDTLOCK
+sudo su - oradrp -c "echo 'drop index SCDTLOCK_LOGSYS;' | sqlplus / as sysdba"
+SCDTSYNC
+sudo su - oradrp -c "echo 'drop index SCDTSYNC_LOGSYSCORE;' | sqlplus / as sysdba"
+SCPARTICIP
+sudo su - oradrp -c "echo 'drop index SCPARTICIP_LOGSYS;' | sqlplus / as sysdba"
+SEPM_IDOC_RECEIV
+sudo su - oradrp -c "echo 'drop index SEPM_IDOC_RECEIV_RECEIVER_SYSTEM;' | sqlplus / as sysdba"
+SFLIBREL
+sudo su - oradrp -c "echo 'drop index SFLIBREL_LOGSYS_B;' | sqlplus / as sysdba"
+SFLIBREL
+sudo su - oradrp -c "echo 'drop index SFLIBREL_LOGSYS_A;' | sqlplus / as sysdba"
+SFLIBREL
+sudo su - oradrp -c "echo 'drop index SFLIBREL_HOMESYS;' | sqlplus / as sysdba"
+SGOSHIST
+sudo su - oradrp -c "echo 'drop index SGOSHIST_LOGSYS;' | sqlplus / as sysdba"
+SKWG_BREL
+sudo su - oradrp -c "echo 'drop index SKWG_BREL_LOGSYS_B;' | sqlplus / as sysdba"
+SKWG_BREL
+sudo su - oradrp -c "echo 'drop index SKWG_BREL_LOGSYS_A;' | sqlplus / as sysdba"
+SKWG_BREL
+sudo su - oradrp -c "echo 'drop index SKWG_BREL_HOMESYS;' | sqlplus / as sysdba"
+SLCM_EDIS_RUN
+sudo su - oradrp -c "echo 'drop index SLCM_EDIS_RUN_LOGSYS;' | sqlplus / as sysdba"
+SLCM_HIS_BOR_DEL
+sudo su - oradrp -c "echo 'drop index SLCM_HIS_BOR_DEL_LOGSYS;' | sqlplus / as sysdba"
+SLCM_LH_BOR
+sudo su - oradrp -c "echo 'drop index SLCM_LH_BOR_LOGSYS;' | sqlplus / as sysdba"
+SLCM_LOGSYS_RW
+sudo su - oradrp -c "echo 'drop index SLCM_LOGSYS_RW_LOGSYS;' | sqlplus / as sysdba"
+SMBATCH
+sudo su - oradrp -c "echo 'drop index SMBATCH_LOGSYS;' | sqlplus / as sysdba"
+SMCUSTOMER
+sudo su - oradrp -c "echo 'drop index SMCUSTOMER_LOGSYS;' | sqlplus / as sysdba"
+SMEXT
+sudo su - oradrp -c "echo 'drop index SMEXT_LOGSYS;' | sqlplus / as sysdba"
+SMMAIN
+sudo su - oradrp -c "echo 'drop index SMMAIN_LOGSYS;' | sqlplus / as sysdba"
+SMMESSAGE
+sudo su - oradrp -c "echo 'drop index SMMESSAGE_LOGSYS;' | sqlplus / as sysdba"
+SMPARAM
+sudo su - oradrp -c "echo 'drop index SMPARAM_LOGSYS;' | sqlplus / as sysdba"
+SMRL
+sudo su - oradrp -c "echo 'drop index SMRL_LOGSYS;' | sqlplus / as sysdba"
+SMSELKRIT
+sudo su - oradrp -c "echo 'drop index SMSELKRIT_LOGSYS;' | sqlplus / as sysdba"
+SMSPOOL
+sudo su - oradrp -c "echo 'drop index SMSPOOL_LOGSYS;' | sqlplus / as sysdba"
+SMSTATUS
+sudo su - oradrp -c "echo 'drop index SMSTATUS_LOGSYS;' | sqlplus / as sysdba"
+SMSTATUS_HIST
+sudo su - oradrp -c "echo 'drop index SMSTATUS_HIST_LOGSYS;' | sqlplus / as sysdba"
+SMWF
+sudo su - oradrp -c "echo 'drop index SMWF_LOGSYS;' | sqlplus / as sysdba"
+SMYOTREE
+sudo su - oradrp -c "echo 'drop index SMYOTREE_LOGSYS;' | sqlplus / as sysdba"
+SOEP
+sudo su - oradrp -c "echo 'drop index SOEP_LOGSYS;' | sqlplus / as sysdba"
+SOGR
+sudo su - oradrp -c "echo 'drop index SOGR_SYST;' | sqlplus / as sysdba"
+SOXP
+sudo su - oradrp -c "echo 'drop index SOXP_LOGSYS;' | sqlplus / as sysdba"
+SPERS_GMAP
+sudo su - oradrp -c "echo 'drop index SPERS_GMAP_LOGSYS;' | sqlplus / as sysdba"
+SPROXMSGREL
+sudo su - oradrp -c "echo 'drop index SPROXMSGREL_LOGSYS_B;' | sqlplus / as sysdba"
+SPROXMSGREL
+sudo su - oradrp -c "echo 'drop index SPROXMSGREL_LOGSYS_A;' | sqlplus / as sysdba"
+SPROXMSGREL
+sudo su - oradrp -c "echo 'drop index SPROXMSGREL_HOMESYS;' | sqlplus / as sysdba"
+SRBCSBREL
+sudo su - oradrp -c "echo 'drop index SRBCSBREL_LOGSYS_B;' | sqlplus / as sysdba"
+SRBCSBREL
+sudo su - oradrp -c "echo 'drop index SRBCSBREL_LOGSYS_A;' | sqlplus / as sysdba"
+SRBCSBREL
+sudo su - oradrp -c "echo 'drop index SRBCSBREL_HOMESYS;' | sqlplus / as sysdba"
+SRGBTBREL
+sudo su - oradrp -c "echo 'drop index SRGBTBREL_LOGSYS_B;' | sqlplus / as sysdba"
+SRGBTBREL
+sudo su - oradrp -c "echo 'drop index SRGBTBREL_LOGSYS_A;' | sqlplus / as sysdba"
+SRGBTBREL
+sudo su - oradrp -c "echo 'drop index SRGBTBREL_HOMESYS;' | sqlplus / as sysdba"
+SRMAISCN
+sudo su - oradrp -c "echo 'drop index SRMAISCN_LOGSYS_RM;' | sqlplus / as sysdba"
+SRMAISCNAPP
+sudo su - oradrp -c "echo 'drop index SRMAISCNAPP_LOGSYS_APP;' | sqlplus / as sysdba"
+SRMBORCUST
+sudo su - oradrp -c "echo 'drop index SRMBORCUST_LOGSYS;' | sqlplus / as sysdba"
+SROBJINGRP
+sudo su - oradrp -c "echo 'drop index SROBJINGRP_LOGSYS;' | sqlplus / as sysdba"
+SROBLBREL
+sudo su - oradrp -c "echo 'drop index SROBLBREL_LOGSYS_B;' | sqlplus / as sysdba"
+SROBLBREL
+sudo su - oradrp -c "echo 'drop index SROBLBREL_LOGSYS_A;' | sqlplus / as sysdba"
+SROBLBREL
+sudo su - oradrp -c "echo 'drop index SROBLBREL_HOMESYS;' | sqlplus / as sysdba"
+SROBLROLB
+sudo su - oradrp -c "echo 'drop index SROBLROLB_LOGSYS;' | sqlplus / as sysdba"
+SRRELROLES
+sudo su - oradrp -c "echo 'drop index SRRELROLES_LOGSYS;' | sqlplus / as sysdba"
+SRT_CON_SYSTEMS
+sudo su - oradrp -c "echo 'drop index SRT_CON_SYSTEMS_LOGSYS;' | sqlplus / as sysdba"
+SSPICSPRST
+sudo su - oradrp -c "echo 'drop index SSPICSPRST_LOGSYS;' | sqlplus / as sysdba"
+SSPICSTRHEAD
+sudo su - oradrp -c "echo 'drop index SSPICSTRHEAD_LOGSYS;' | sqlplus / as sysdba"
+STXH
+sudo su - oradrp -c "echo 'drop index STXH_LOGSYS;' | sqlplus / as sysdba"
+SUWLNOTIFCFGTBL
+sudo su - oradrp -c "echo 'drop index SUWLNOTIFCFGTBL_SYSTEM_ID;' | sqlplus / as sysdba"
+SUWLNOTIFREGTBL
+sudo su - oradrp -c "echo 'drop index SUWLNOTIFREGTBL_SYSTEM_ID;' | sqlplus / as sysdba"
+SWEINSTCOU
+sudo su - oradrp -c "echo 'drop index SWEINSTCOU_LOGSYS;' | sqlplus / as sysdba"
+SWETYPECOU
+sudo su - oradrp -c "echo 'drop index SWETYPECOU_LOGSYS;' | sqlplus / as sysdba"
+SWFRPROCTR
+sudo su - oradrp -c "echo 'drop index SWFRPROCTR_REM_WI_SYS;' | sqlplus / as sysdba"
+SWFRSTP
+sudo su - oradrp -c "echo 'drop index SWFRSTP_REMOTE_SYS;' | sqlplus / as sysdba"
+SWLIGL
+sudo su - oradrp -c "echo 'drop index SWLIGL_LOGSYS;' | sqlplus / as sysdba"
+SWLIR
+sudo su - oradrp -c "echo 'drop index SWLIR_LOGSYS;' | sqlplus / as sysdba"
+SWLWPHANDT
+sudo su - oradrp -c "echo 'drop index SWLWPHANDT_LOGSYS;' | sqlplus / as sysdba"
+SWLWPLOGSYS
+sudo su - oradrp -c "echo 'drop index SWLWPLOGSYS_LOGSYS;' | sqlplus / as sysdba"
+SWLWPS
+sudo su - oradrp -c "echo 'drop index SWLWPS_LOGSYS;' | sqlplus / as sysdba"
+SWLWPTSSID
+sudo su - oradrp -c "echo 'drop index SWLWPTSSID_LOGSYS;' | sqlplus / as sysdba"
+SWP_HEADER
+sudo su - oradrp -c "echo 'drop index SWP_HEADER_REQ_SYSTEM;' | sqlplus / as sysdba"
+SWWWIHEAD
+sudo su - oradrp -c "echo 'drop index SWWWIHEAD_REMOTE_SYS;' | sqlplus / as sysdba"
+SWW_CONTOB
+sudo su - oradrp -c "echo 'drop index SWW_CONTOB_LOGSYS;' | sqlplus / as sysdba"
+SXMSMSGINDCUS
+sudo su - oradrp -c "echo 'drop index SXMSMSGINDCUS_LOGSYS;' | sqlplus / as sysdba"
+T000
+sudo su - oradrp -c "echo 'drop index T000_LOGSYS;' | sqlplus / as sysdba"
+T77ALESIN
+sudo su - oradrp -c "echo 'drop index T77ALESIN_SNDSYSTEM;' | sqlplus / as sysdba"
+T77ALESOUT
+sudo su - oradrp -c "echo 'drop index T77ALESOUT_RCVSYSTEM;' | sqlplus / as sysdba"
+T77GMLSRFC
+sudo su - oradrp -c "echo 'drop index T77GMLSRFC_LOGSYS;' | sqlplus / as sysdba"
+T77GMOTYPE
+sudo su - oradrp -c "echo 'drop index T77GMOTYPE_LOGSYS;' | sqlplus / as sysdba"
+T77GMOTYPT
+sudo su - oradrp -c "echo 'drop index T77GMOTYPT_LOGSYS;' | sqlplus / as sysdba"
+T77MWBBWS
+sudo su - oradrp -c "echo 'drop index T77MWBBWS_LOGSYS;' | sqlplus / as sysdba"
+TBD00
+sudo su - oradrp -c "echo 'drop index TBD00_OWNER_LOGS;' | sqlplus / as sysdba"
+TBD03
+sudo su - oradrp -c "echo 'drop index TBD03_SNDSYSTEM;' | sqlplus / as sysdba"
+TBD03
+sudo su - oradrp -c "echo 'drop index TBD03_RCVSYSTEM;' | sqlplus / as sysdba"
+TBD05
+sudo su - oradrp -c "echo 'drop index TBD05_SNDSYSTEM;' | sqlplus / as sysdba"
+TBD05
+sudo su - oradrp -c "echo 'drop index TBD05_RCVSYSTEM;' | sqlplus / as sysdba"
+TBD06
+sudo su - oradrp -c "echo 'drop index TBD06_SNDSYSTEM;' | sqlplus / as sysdba"
+TBD06
+sudo su - oradrp -c "echo 'drop index TBD06_RCVSYSTEM;' | sqlplus / as sysdba"
+TBD41
+sudo su - oradrp -c "echo 'drop index TBD41_LOGSYS;' | sqlplus / as sysdba"
+TBD61
+sudo su - oradrp -c "echo 'drop index TBD61_OWNER_LS;' | sqlplus / as sysdba"
+TBD61
+sudo su - oradrp -c "echo 'drop index TBD61_INITI_LS;' | sqlplus / as sysdba"
+TBD611
+sudo su - oradrp -c "echo 'drop index TBD611_OWNER_LS;' | sqlplus / as sysdba"
+TBD611
+sudo su - oradrp -c "echo 'drop index TBD611_LOGSYS_Y;' | sqlplus / as sysdba"
+TBD611
+sudo su - oradrp -c "echo 'drop index TBD611_LOGSYS_X;' | sqlplus / as sysdba"
+TBD61B
+sudo su - oradrp -c "echo 'drop index TBD61B_OWNER_LS;' | sqlplus / as sysdba"
+TBD61B
+sudo su - oradrp -c "echo 'drop index TBD61B_LOGSYS_Y;' | sqlplus / as sysdba"
+TBD61B
+sudo su - oradrp -c "echo 'drop index TBD61B_LOGSYS_X;' | sqlplus / as sysdba"
+TBD61B
+sudo su - oradrp -c "echo 'drop index TBD61B_INITI_LS;' | sqlplus / as sysdba"
+TBD71
+sudo su - oradrp -c "echo 'drop index TBD71_OWNER_LOGS;' | sqlplus / as sysdba"
+TBD73
+sudo su - oradrp -c "echo 'drop index TBD73_PARLOGSYS;' | sqlplus / as sysdba"
+TBD74
+sudo su - oradrp -c "echo 'drop index TBD74_PARLOGSYS;' | sqlplus / as sysdba"
+TBDBANK
+sudo su - oradrp -c "echo 'drop index TBDBANK_LOGSYS_BANK;' | sqlplus / as sysdba"
+TBDBANKC
+sudo su - oradrp -c "echo 'drop index TBDBANKC_LOGSYS_BANK;' | sqlplus / as sysdba"
+TBDBR
+sudo su - oradrp -c "echo 'drop index TBDBR_SND_SYSTEM;' | sqlplus / as sysdba"
+TBDBR
+sudo su - oradrp -c "echo 'drop index TBDBR_RCV_SYSTEM;' | sqlplus / as sysdba"
+TBDBRF
+sudo su - oradrp -c "echo 'drop index TBDBRF_SND_SYSTEM;' | sqlplus / as sysdba"
+TBDBRF
+sudo su - oradrp -c "echo 'drop index TBDBRF_RCV_SYSTEM;' | sqlplus / as sysdba"
+TBDIBAN
+sudo su - oradrp -c "echo 'drop index TBDIBAN_LOGSYS_IBAN;' | sqlplus / as sysdba"
+TBDLI
+sudo su - oradrp -c "echo 'drop index TBDLI_LOGSYSTEM;' | sqlplus / as sysdba"
+TBDLS
+sudo su - oradrp -c "echo 'drop index TBDLS_LOGSYS;' | sqlplus / as sysdba"
+TBDLST
+sudo su - oradrp -c "echo 'drop index TBDLST_LOGSYS;' | sqlplus / as sysdba"
+TBDLT
+sudo su - oradrp -c "echo 'drop index TBDLT_LOGSYSTEM;' | sqlplus / as sysdba"
+TBLSYSDEST
+sudo su - oradrp -c "echo 'drop index TBLSYSDEST_LOGSYS;' | sqlplus / as sysdba"
+TBSPECDEST
+sudo su - oradrp -c "echo 'drop index TBSPECDEST_LOGSYS;' | sqlplus / as sysdba"
+TCL_ATINN_IDENT
+sudo su - oradrp -c "echo 'drop index TCL_ATINN_IDENT_SOURCE;' | sqlplus / as sysdba"
+TCL_CLINT_IDENT
+sudo su - oradrp -c "echo 'drop index TCL_CLINT_IDENT_SOURCE;' | sqlplus / as sysdba"
+TCL_CUOBJ_IDENT
+sudo su - oradrp -c "echo 'drop index TCL_CUOBJ_IDENT_SOURCE;' | sqlplus / as sysdba"
+TCL_KLART_IDENT
+sudo su - oradrp -c "echo 'drop index TCL_KLART_IDENT_SOURCE;' | sqlplus / as sysdba"
+TCL_OBTAB_IDENT
+sudo su - oradrp -c "echo 'drop index TCL_OBTAB_IDENT_SOURCE;' | sqlplus / as sysdba"
+TLDA_LOG
+sudo su - oradrp -c "echo 'drop index TLDA_LOG_LOGSYS;' | sqlplus / as sysdba"
+TLDA_MSG
+sudo su - oradrp -c "echo 'drop index TLDA_MSG_LOGSYS;' | sqlplus / as sysdba"
+TP38
+sudo su - oradrp -c "echo 'drop index TP38_LOGSYS;' | sqlplus / as sysdba"
+TP42
+sudo su - oradrp -c "echo 'drop index TP42_LOGSYS;' | sqlplus / as sysdba"
+TP44
+sudo su - oradrp -c "echo 'drop index TP44_LOGSYS;' | sqlplus / as sysdba"
+TSTRMAPP
+sudo su - oradrp -c "echo 'drop index TSTRMAPP_OBJSYS;' | sqlplus / as sysdba"
+TSYIMPSTAT
+sudo su - oradrp -c "echo 'drop index TSYIMPSTAT_ALESYSNAM;' | sqlplus / as sysdba"
+TSYSYNCSYS
+sudo su - oradrp -c "echo 'drop index TSYSYNCSYS_ALESYSNAM;' | sqlplus / as sysdba"
+TTZEX
+sudo su - oradrp -c "echo 'drop index TTZEX_LOGSYS;' | sqlplus / as sysdba"
+TTZIN
+sudo su - oradrp -c "echo 'drop index TTZIN_LOGSYS;' | sqlplus / as sysdba"
+TUPS05
+sudo su - oradrp -c "echo 'drop index TUPS05_LOGSYS;' | sqlplus / as sysdba"
+TUPS_X02LOGSYS
+sudo su - oradrp -c "echo 'drop index TUPS_X02LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+TUTYPASYS
+sudo su - oradrp -c "echo 'drop index TUTYPASYS_SUBSYSTEM;' | sqlplus / as sysdba"
+TUTYPNOWSYS
+sudo su - oradrp -c "echo 'drop index TUTYPNOWSYS_SUBSYSTEM;' | sqlplus / as sysdba"
+TUZUSSYS
+sudo su - oradrp -c "echo 'drop index TUZUSSYS_SUBSYSTEM;' | sqlplus / as sysdba"
+TWPLGRPLNG
+sudo su - oradrp -c "echo 'drop index TWPLGRPLNG_LOGSYS;' | sqlplus / as sysdba"
+TWPOBJOBJ
+sudo su - oradrp -c "echo 'drop index TWPOBJOBJ_TARGET_SYS;' | sqlplus / as sysdba"
+TWPOBJOBJ
+sudo su - oradrp -c "echo 'drop index TWPOBJOBJ_SOURCE_SYS;' | sqlplus / as sysdba"
+TWPSRVCLSS
+sudo su - oradrp -c "echo 'drop index TWPSRVCLSS_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVDEVI
+sudo su - oradrp -c "echo 'drop index TWPSRVDEVI_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVLOGS
+sudo su - oradrp -c "echo 'drop index TWPSRVLOGS_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVOBJ
+sudo su - oradrp -c "echo 'drop index TWPSRVOBJ_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVPARM
+sudo su - oradrp -c "echo 'drop index TWPSRVPARM_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVPART
+sudo su - oradrp -c "echo 'drop index TWPSRVPART_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVSFIN
+sudo su - oradrp -c "echo 'drop index TWPSRVSFIN_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVTAB
+sudo su - oradrp -c "echo 'drop index TWPSRVTAB_LOGSYS;' | sqlplus / as sysdba"
+TWPSRVTXTS
+sudo su - oradrp -c "echo 'drop index TWPSRVTXTS_LOGSYS;' | sqlplus / as sysdba"
+TWPURLSVR
+sudo su - oradrp -c "echo 'drop index TWPURLSVR_LOGSYS;' | sqlplus / as sysdba"
+UACC_BATCH
+sudo su - oradrp -c "echo 'drop index UACC_BATCH_LOGSYS;' | sqlplus / as sysdba"
+UPSHDR
+sudo su - oradrp -c "echo 'drop index UPSHDR_LOGSYS;' | sqlplus / as sysdba"
+USAPPLREF
+sudo su - oradrp -c "echo 'drop index USAPPLREF_SUBSYSTEM;' | sqlplus / as sysdba"
+USARC_CD
+sudo su - oradrp -c "echo 'drop index USARC_CD_SUBSYSTEM;' | sqlplus / as sysdba"
+USL04
+sudo su - oradrp -c "echo 'drop index USL04_SUBSYSTEM;' | sqlplus / as sysdba"
+USLA04
+sudo su - oradrp -c "echo 'drop index USLA04_SUBSYSTEM;' | sqlplus / as sysdba"
+USR06SYS
+sudo su - oradrp -c "echo 'drop index USR06SYS_RCVSYSTEM;' | sqlplus / as sysdba"
+USRSYSACT
+sudo su - oradrp -c "echo 'drop index USRSYSACT_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSACTT
+sudo su - oradrp -c "echo 'drop index USRSYSACTT_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSLNG
+sudo su - oradrp -c "echo 'drop index USRSYSLNG_LOGSYS;' | sqlplus / as sysdba"
+USRSYSPRF
+sudo su - oradrp -c "echo 'drop index USRSYSPRF_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSPRFT
+sudo su - oradrp -c "echo 'drop index USRSYSPRFT_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSUPL
+sudo su - oradrp -c "echo 'drop index USRSYSUPL_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSUPPL
+sudo su - oradrp -c "echo 'drop index USRSYSUPPL_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSUTPA
+sudo su - oradrp -c "echo 'drop index USRSYSUTPA_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSUTYP
+sudo su - oradrp -c "echo 'drop index USRSYSUTYP_SUBSYSTEM;' | sqlplus / as sysdba"
+USRSYSUZUS
+sudo su - oradrp -c "echo 'drop index USRSYSUZUS_SUBSYSTEM;' | sqlplus / as sysdba"
+USRURLSVR
+sudo su - oradrp -c "echo 'drop index USRURLSVR_LOGSYS;' | sqlplus / as sysdba"
+USZBVLNDRC
+sudo su - oradrp -c "echo 'drop index USZBVLNDRC_RCVSYSTEM;' | sqlplus / as sysdba"
+USZBVLNDSC
+sudo su - oradrp -c "echo 'drop index USZBVLNDSC_SENDSYSTEM;' | sqlplus / as sysdba"
+USZBVPROT
+sudo su - oradrp -c "echo 'drop index USZBVPROT_SUBSYSTEM;' | sqlplus / as sysdba"
+USZBVPROTC
+sudo su - oradrp -c "echo 'drop index USZBVPROTC_SUBSYSTEM;' | sqlplus / as sysdba"
+USZBVSYS
+sudo su - oradrp -c "echo 'drop index USZBVSYS_SUBSYSTEM;' | sqlplus / as sysdba"
+USZBVSYSC
+sudo su - oradrp -c "echo 'drop index USZBVSYSC_SUBSYSTEM;' | sqlplus / as sysdba"
+WDR_ACF_WL_CERT
+sudo su - oradrp -c "echo 'drop index WDR_ACF_WL_CERT_ORG_LOGSYS;' | sqlplus / as sysdba"
+WP3ROLEAGR
+sudo su - oradrp -c "echo 'drop index WP3ROLEAGR_LOGSYS;' | sqlplus / as sysdba"
+WP3ROLEHIER
+sudo su - oradrp -c "echo 'drop index WP3ROLEHIER_LOGSYS;' | sqlplus / as sysdba"
+WP3ROLESRV
+sudo su - oradrp -c "echo 'drop index WP3ROLESRV_LOGSYS;' | sqlplus / as sysdba"

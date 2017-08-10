@@ -1,0 +1,4 @@
+export
+client=000
+file='/home/qrpadm/EDIPHONE.dat'
+select * from EDIPHONE

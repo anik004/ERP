@@ -1,0 +1,4 @@
+export
+client=000
+file='/home/qrpadm/RFCATTRIB.dat'
+select * from RFCATTRIB

@@ -1,0 +1,4 @@
+export
+client=000
+file='/home/qrpadm/DLV_SYSTC.dat'
+select * from DLV_SYSTC

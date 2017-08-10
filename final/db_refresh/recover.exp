@@ -1,0 +1,20 @@
+#!/usr/bin/expect -f
+set timeout -1
+set targethost [lindex $argv 0]
+set targetuser [lindex $argv 1]
+set targetpassword [lindex $argv 2]
+set user_db [lindex $argv 3]
+#set test [lindex $argv 6]
+#append test "adm"
+#$test
+#puts $test
+#log_user 0
+spawn ssh -o StrictHostKeyChecking=no $targetuser@$targethost
+expect "password: "
+send -- "$targetpassword\r"
+expect "$targethost"
+send -- "sudo su -  $user_db  -c \"echo \'recover database using backup controlfile until cancel \'| sqlplus / as sysdba\"\r"
+#expect "Specify log:*"
+expect "*erpadm*"
+send -- "exit\r"
+#expect eof

@@ -1,0 +1,4 @@
+export
+client=001
+file='/home/erpadm/TLOCK.dat'
+select * from TLOCK

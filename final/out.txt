@@ -1,0 +1,1123 @@
+/home/soladm/gem/geminyo/final/lin16.py:30:        command = 'sudo su - ' + user_sap + ' -c \'cd ' + profile_path + ' ; ls | grep -i ' + host + ' | grep -v "\." | grep -v "ASC" | cut -d"_" -f2\''
+/home/soladm/gem/geminyo/final/lin16.py:34:        command = 'sudo su - ' + user_sap + ' -c \'startsap -c |grep -i ' + status.strip() + ' --color=never | tail -n -1 | cut -d" " -f4\''
+/home/soladm/gem/geminyo/final/lin16.py:43:            command = "sudo su - " + user_sap + " -c 'ps -ef | grep -i " + user_sap + " | grep -i /usr/sap | grep -v # |  cut -d\" \" -f4'"
+/home/soladm/gem/geminyo/final/lin16.py:48:                command = "sudo su - " + user_sap + ' -c "kill -9 ' + proc + '"'
+/home/soladm/gem/geminyo/final/lin16.py:56:            command = 'sudo su - ' + user_sap + ' -c "startsap r3 '  + host + '"'
+/home/soladm/gem/geminyo/final/lin16.py:69:	command = 'sudo su - ' + appuser + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin16.py:79:                command = 'sudo su - ' + dbuser + ' -c "echo \'Truncate TABLE ' + schema + '.' + i + ';\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/lin16.py:89:            command = 'sudo su - ' + dbuser + ' -c "echo \'COMMIT;\' | sqlplus / as sysdba" | grep -i --color=never "Commit complete."'
+/home/soladm/gem/geminyo/final/lin17.py:28:        command = 'sudo su - ' + user_sap + ' -c \'cd ' + profile_path + ' ; ls | grep -i ' + host + ' | grep -v "\." | grep -v "ASC" | cut -d"_" -f2\''
+/home/soladm/gem/geminyo/final/lin17.py:34:        command = 'sudo su - ' + user_sap + ' -c \'startsap -c |grep -i ' + status.strip() + ' --color=never | tail -n -1 | cut -d" " -f4\''
+/home/soladm/gem/geminyo/final/lin17.py:44:        command = 'sudo su - ' + user_sap + ' -c "stopsap r3 '  + host + '"'
+/home/soladm/gem/geminyo/final/lin17.py:57:        command = "sudo su - " + user_sap + " -c 'ps -ef | grep -i " + user_sap + " | grep -i /usr/sap | grep -v # | grep -i " + host + " |  cut -d\" \" -f4'"
+/home/soladm/gem/geminyo/final/lin17.py:62:                command = "sudo su - " + user_sap + ' -c "kill -9 ' + proc + '"'
+/home/soladm/gem/geminyo/final/lin18.py:38:    command = 'sudo chmod 777 /' + path.strip('/') + '/' + filename.strip()
+/home/soladm/gem/geminyo/final/lin18.py:44:        command = 'sudo su - ' + appuser + ' -c \'R3trans -w /home/' + appuser +  '/' + filename + '.log /home/' + appuser + '/' + filename + '\''
+/home/soladm/gem/geminyo/final/lin29.py:29:        schema = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin29.py:33:        command = "sudo su - " + user + " -c \"echo 'update " + schema + ".USR02 set UFLAG=0 where BNAME='\\'SAP\\*\\'' and MANDT=" + clientname + ";' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/lin29.py:37:            command = "sudo su - " + user + " -c \"echo 'delete from " + schema + ".USR02 where BNAME='\\'SAP\\*\\'' and MANDT=" + clientname + ";' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/test_bdls.txt:2:sudo su - oradrp -c "echo 'drop index TBTCO_RECLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:4:sudo su - oradrp -c "echo 'drop index ZSHBDLS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:18:sudo su - oradrp -c "echo 'drop index AGR_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:20:sudo su - oradrp -c "echo 'drop index AMYOTREE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:22:sudo su - oradrp -c "echo 'drop index BBP_CAT_ENTITY_CATALOG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:24:sudo su - oradrp -c "echo 'drop index BCST_BOR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:26:sudo su - oradrp -c "echo 'drop index BDAUDQUEUE_SND_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:28:sudo su - oradrp -c "echo 'drop index BDAUDQUEUE_RCV_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:30:sudo su - oradrp -c "echo 'drop index BDAUDSTATE_SND_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:32:sudo su - oradrp -c "echo 'drop index BDAUDSTATE_RCV_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:34:sudo su - oradrp -c "echo 'drop index BDLSHDR_LOGSYS_OLD;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:36:sudo su - oradrp -c "echo 'drop index BDLSHDR_LOGSYS_NEW;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:38:sudo su - oradrp -c "echo 'drop index BDOC_TRACK_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:40:sudo su - oradrp -c "echo 'drop index BDSX_CON04_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:42:sudo su - oradrp -c "echo 'drop index BDS_BAR_IN_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:44:sudo su - oradrp -c "echo 'drop index BDS_BAR_IN_REF_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:46:sudo su - oradrp -c "echo 'drop index BDS_CON020_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:48:sudo su - oradrp -c "echo 'drop index BDS_CONN00_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:50:sudo su - oradrp -c "echo 'drop index BDS_CONN01_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:52:sudo su - oradrp -c "echo 'drop index BDS_CONN02_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:54:sudo su - oradrp -c "echo 'drop index BDS_CONN03_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:56:sudo su - oradrp -c "echo 'drop index BDS_CONN04_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:58:sudo su - oradrp -c "echo 'drop index BDS_CONN05_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:60:sudo su - oradrp -c "echo 'drop index BDS_CONN06_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:62:sudo su - oradrp -c "echo 'drop index BDS_CONN07_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:64:sudo su - oradrp -c "echo 'drop index BDS_CONN08_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:66:sudo su - oradrp -c "echo 'drop index BDS_CONN09_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:68:sudo su - oradrp -c "echo 'drop index BDS_CONN111_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:70:sudo su - oradrp -c "echo 'drop index BDS_CONN14_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:72:sudo su - oradrp -c "echo 'drop index BDS_CONN16_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:74:sudo su - oradrp -c "echo 'drop index BDS_CONN18_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:76:sudo su - oradrp -c "echo 'drop index BDS_CONN20_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:78:sudo su - oradrp -c "echo 'drop index BDS_CONN21_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:80:sudo su - oradrp -c "echo 'drop index BDS_CONN22_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:82:sudo su - oradrp -c "echo 'drop index BDS_CONN24A_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:84:sudo su - oradrp -c "echo 'drop index BDS_CONN31_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:86:sudo su - oradrp -c "echo 'drop index BDS_LOG_LOG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:88:sudo su - oradrp -c "echo 'drop index BRR_HEADER_CREA_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:90:sudo su - oradrp -c "echo 'drop index BRR_HEADER_CHG_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:92:sudo su - oradrp -c "echo 'drop index BRR_HEADER_C_CREA_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:94:sudo su - oradrp -c "echo 'drop index BRR_HEADER_C_CHG_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:96:sudo su - oradrp -c "echo 'drop index BUT000_BU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:98:sudo su - oradrp -c "echo 'drop index BUT000_TD_BU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:100:sudo su - oradrp -c "echo 'drop index BUT000_TDS_BU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:102:sudo su - oradrp -c "echo 'drop index BUT0VP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:104:sudo su - oradrp -c "echo 'drop index BUT_FRG0010_HOME_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:106:sudo su - oradrp -c "echo 'drop index BUT_HIER_TREE_HOME_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:108:sudo su - oradrp -c "echo 'drop index CCC_CHECK_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:110:sudo su - oradrp -c "echo 'drop index CHARACTERTEXT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:112:sudo su - oradrp -c "echo 'drop index CHARACTERTEXTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:114:sudo su - oradrp -c "echo 'drop index CHARACTER_DMLDB_ORG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:116:sudo su - oradrp -c "echo 'drop index CHARACTER_DMLH_ORG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:118:sudo su - oradrp -c "echo 'drop index CME_ST_CHARATR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:120:sudo su - oradrp -c "echo 'drop index CME_ST_FORMAT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:122:sudo su - oradrp -c "echo 'drop index CME_ST_FORMAT1_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:124:sudo su - oradrp -c "echo 'drop index CME_ST_ISO_AT1_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:126:sudo su - oradrp -c "echo 'drop index CME_ST_ISO_ATA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:128:sudo su - oradrp -c "echo 'drop index CME_ST_ISO_ATB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:130:sudo su - oradrp -c "echo 'drop index CME_ST_ISO_ATBH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:132:sudo su - oradrp -c "echo 'drop index CME_ST_R3_ATTR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:134:sudo su - oradrp -c "echo 'drop index CME_ST_R3_DEP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:136:sudo su - oradrp -c "echo 'drop index CME_ST_R3_DEPH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:138:sudo su - oradrp -c "echo 'drop index CME_ST_REF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:140:sudo su - oradrp -c "echo 'drop index CME_ST_REFH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:142:sudo su - oradrp -c "echo 'drop index CME_ST_VALUE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:144:sudo su - oradrp -c "echo 'drop index CME_ST_VALUEH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:146:sudo su - oradrp -c "echo 'drop index CME_ST_VAL_TXT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:148:sudo su - oradrp -c "echo 'drop index CME_ST_VAL_TXTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:150:sudo su - oradrp -c "echo 'drop index COMC_CLEAR_ACT_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:152:sudo su - oradrp -c "echo 'drop index COMC_KEYTYPE_CST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:154:sudo su - oradrp -c "echo 'drop index COMC_KEYTYPE_PCU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:156:sudo su - oradrp -c "echo 'drop index COMC_LOGSYS_MAP_ZIEL;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:158:sudo su - oradrp -c "echo 'drop index COMC_LOGSYS_MAP_QUELLE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:160:sudo su - oradrp -c "echo 'drop index COMC_MINITP_DATA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:162:sudo su - oradrp -c "echo 'drop index COMC_MINITP_DATH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:164:sudo su - oradrp -c "echo 'drop index COMC_MINITP_DATS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:166:sudo su - oradrp -c "echo 'drop index COMC_MINITP_REG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:168:sudo su - oradrp -c "echo 'drop index COMC_MINITP_REGH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:170:sudo su - oradrp -c "echo 'drop index COMC_MINITP_REL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:172:sudo su - oradrp -c "echo 'drop index COMC_MINITP_RELH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:174:sudo su - oradrp -c "echo 'drop index COMC_PR_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:176:sudo su - oradrp -c "echo 'drop index COMC_PR_RFCDEST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:178:sudo su - oradrp -c "echo 'drop index COMC_PR_TEMPLATE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:180:sudo su - oradrp -c "echo 'drop index COMC_SETTYPE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:182:sudo su - oradrp -c "echo 'drop index COMC_VALAREA_R3_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:184:sudo su - oradrp -c "echo 'drop index COMM_ATTR_ALIAS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:186:sudo su - oradrp -c "echo 'drop index COMM_ATTR_ALIASH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:188:sudo su - oradrp -c "echo 'drop index COMM_CATEGORY_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:190:sudo su - oradrp -c "echo 'drop index COMM_CATEGORYDEL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:192:sudo su - oradrp -c "echo 'drop index COMM_CATEGORYH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:194:sudo su - oradrp -c "echo 'drop index COMM_CATEGORYT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:196:sudo su - oradrp -c "echo 'drop index COMM_CATEGORYTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:198:sudo su - oradrp -c "echo 'drop index COMM_CATFRGR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:200:sudo su - oradrp -c "echo 'drop index COMM_CATFRGRH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:202:sudo su - oradrp -c "echo 'drop index COMM_CLEAR_STACK_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:204:sudo su - oradrp -c "echo 'drop index COMM_EXTENSIONH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:206:sudo su - oradrp -c "echo 'drop index COMM_FRGTYPE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:208:sudo su - oradrp -c "echo 'drop index COMM_HIERARCHY_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:210:sudo su - oradrp -c "echo 'drop index COMM_HIERARCHYH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:212:sudo su - oradrp -c "echo 'drop index COMM_HIERARCHYT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:214:sudo su - oradrp -c "echo 'drop index COMM_HIERARCHYTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:216:sudo su - oradrp -c "echo 'drop index COMM_IL_ACCESS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:218:sudo su - oradrp -c "echo 'drop index COMM_IL_ACCESS_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:220:sudo su - oradrp -c "echo 'drop index COMM_IL_COMPET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:222:sudo su - oradrp -c "echo 'drop index COMM_IL_DSCOPE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:224:sudo su - oradrp -c "echo 'drop index COMM_IL_DSCOPE_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:226:sudo su - oradrp -c "echo 'drop index COMM_IL_DTYPE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:228:sudo su - oradrp -c "echo 'drop index COMM_IL_DTYPE_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:230:sudo su - oradrp -c "echo 'drop index COMM_IL_ECMCHG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:232:sudo su - oradrp -c "echo 'drop index COMM_IL_ECMCHG_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:234:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDBP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:236:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDBP_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:238:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCPN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:240:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCPN_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:242:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCTP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:244:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDCTP_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:246:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMPN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:248:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMPN_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:250:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMRK_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:252:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDMRK_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:254:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDVND_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:256:sudo su - oradrp -c "echo 'drop index COMM_IL_PRDVND_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:258:sudo su - oradrp -c "echo 'drop index COMM_IL_PROREF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:260:sudo su - oradrp -c "echo 'drop index COMM_IL_PROREF_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:262:sudo su - oradrp -c "echo 'drop index COMM_IL_SCPCHR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:264:sudo su - oradrp -c "echo 'drop index COMM_IL_SCPCHR_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:266:sudo su - oradrp -c "echo 'drop index COMM_IL_SERVI_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:268:sudo su - oradrp -c "echo 'drop index COMM_IL_SERVI_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:270:sudo su - oradrp -c "echo 'drop index COMM_IL_SPARE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:272:sudo su - oradrp -c "echo 'drop index COMM_IL_SPARE_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:274:sudo su - oradrp -c "echo 'drop index COMM_IPRODUCT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:276:sudo su - oradrp -c "echo 'drop index COMM_PME_CAT_MAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:278:sudo su - oradrp -c "echo 'drop index COMM_PME_PRD_MAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:280:sudo su - oradrp -c "echo 'drop index COMM_PME_SET_MAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:282:sudo su - oradrp -c "echo 'drop index COMM_PRCAT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:284:sudo su - oradrp -c "echo 'drop index COMM_PRCATFRGR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:286:sudo su - oradrp -c "echo 'drop index COMM_PRCATFRGRH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:288:sudo su - oradrp -c "echo 'drop index COMM_PRCATH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:290:sudo su - oradrp -c "echo 'drop index COMM_PRCAT_IL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:292:sudo su - oradrp -c "echo 'drop index COMM_PRCAT_ILH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:294:sudo su - oradrp -c "echo 'drop index COMM_PRFREEATTR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:296:sudo su - oradrp -c "echo 'drop index COMM_PRFREEATTRH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:298:sudo su - oradrp -c "echo 'drop index COMM_PRODUCT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:300:sudo su - oradrp -c "echo 'drop index COMM_PRODUCTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:302:sudo su - oradrp -c "echo 'drop index COMM_PRODUCT_IDX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:304:sudo su - oradrp -c "echo 'drop index COMM_PRPRDCATR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:306:sudo su - oradrp -c "echo 'drop index COMM_PRPRDCATRH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:308:sudo su - oradrp -c "echo 'drop index COMM_PRSHTEXT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:310:sudo su - oradrp -c "echo 'drop index COMM_PRSHTEXTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:312:sudo su - oradrp -c "echo 'drop index COMM_PRVIEW_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:314:sudo su - oradrp -c "echo 'drop index COMM_PRVIEWH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:316:sudo su - oradrp -c "echo 'drop index COMM_PRVIEWT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:318:sudo su - oradrp -c "echo 'drop index COMM_PRVIEWTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:320:sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_REG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:322:sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_REGH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:324:sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_REL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:326:sudo su - oradrp -c "echo 'drop index COMM_PR_FRG_RELH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:328:sudo su - oradrp -c "echo 'drop index COMM_PR_GTIN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:330:sudo su - oradrp -c "echo 'drop index COMM_PR_GTINH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:332:sudo su - oradrp -c "echo 'drop index COMM_PR_PUR_1_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:334:sudo su - oradrp -c "echo 'drop index COMM_PR_UNIT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:336:sudo su - oradrp -c "echo 'drop index COMM_PR_UNITH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:338:sudo su - oradrp -c "echo 'drop index COMM_SCHEME_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:340:sudo su - oradrp -c "echo 'drop index COMM_SETTP_TEMP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:342:sudo su - oradrp -c "echo 'drop index COMS_KEYTYPE_PCU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:344:sudo su - oradrp -c "echo 'drop index COMT_EXT_TEMP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:346:sudo su - oradrp -c "echo 'drop index COMT_EXT_TEMPH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:348:sudo su - oradrp -c "echo 'drop index COMT_EXT_TEMP_DB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:350:sudo su - oradrp -c "echo 'drop index COMT_SETT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:352:sudo su - oradrp -c "echo 'drop index COMT_SETT_ML_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:354:sudo su - oradrp -c "echo 'drop index COMT_SETT_ML_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:356:sudo su - oradrp -c "echo 'drop index COMT_SETT_X_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:358:sudo su - oradrp -c "echo 'drop index COMT_SETT_XML_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:360:sudo su - oradrp -c "echo 'drop index COMT_SETT_XML_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:362:sudo su - oradrp -c "echo 'drop index COMT_SETT_X_H_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:364:sudo su - oradrp -c "echo 'drop index COMT_TEMPLATE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:366:sudo su - oradrp -c "echo 'drop index COMT_TEMP_MR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:368:sudo su - oradrp -c "echo 'drop index COMT_TEMP_MRH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:370:sudo su - oradrp -c "echo 'drop index COMT_TEMP_MR_DB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:372:sudo su - oradrp -c "echo 'drop index COM_COMMERCIAL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:374:sudo su - oradrp -c "echo 'drop index COM_COMMERCIALH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:376:sudo su - oradrp -c "echo 'drop index COM_TA_MANUFAC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:378:sudo su - oradrp -c "echo 'drop index COM_TA_MANUFACH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:380:sudo su - oradrp -c "echo 'drop index COM_TA_R3_ID_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:382:sudo su - oradrp -c "echo 'drop index COM_TA_R3_IDH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:384:sudo su - oradrp -c "echo 'drop index CPEC_CALCRULE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:386:sudo su - oradrp -c "echo 'drop index CPEC_CALCRULE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:388:sudo su - oradrp -c "echo 'drop index CPEC_CHNGCONTROL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:390:sudo su - oradrp -c "echo 'drop index CPEC_CNVSRCUSED_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:392:sudo su - oradrp -c "echo 'drop index CPEC_CONVERSION_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:394:sudo su - oradrp -c "echo 'drop index CPEC_CONVERS_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:396:sudo su - oradrp -c "echo 'drop index CPEC_CONVPLACE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:398:sudo su - oradrp -c "echo 'drop index CPEC_CONVPLACE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:400:sudo su - oradrp -c "echo 'drop index CPEC_COVMOVE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:402:sudo su - oradrp -c "echo 'drop index CPEC_COVMOVE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:404:sudo su - oradrp -c "echo 'drop index CPEC_EXTENSION_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:406:sudo su - oradrp -c "echo 'drop index CPEC_EXTENSION_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:408:sudo su - oradrp -c "echo 'drop index CPEC_FA_FIELDREL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:410:sudo su - oradrp -c "echo 'drop index CPEC_FA_PRIORITY_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:412:sudo su - oradrp -c "echo 'drop index CPEC_FILTER_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:414:sudo su - oradrp -c "echo 'drop index CPEC_FORMCONV_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:416:sudo su - oradrp -c "echo 'drop index CPEC_FORMROUND_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:418:sudo su - oradrp -c "echo 'drop index CPEC_FORMULA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:420:sudo su - oradrp -c "echo 'drop index CPEC_FORMULA_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:422:sudo su - oradrp -c "echo 'drop index CPEC_LOGSUBMOD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:424:sudo su - oradrp -c "echo 'drop index CPEC_LOGSUBMOD_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:426:sudo su - oradrp -c "echo 'drop index CPEC_MAPPING_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:428:sudo su - oradrp -c "echo 'drop index CPEC_PERIODDET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:430:sudo su - oradrp -c "echo 'drop index CPEC_PERIODDET_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:432:sudo su - oradrp -c "echo 'drop index CPEC_PRCFIXRULE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:434:sudo su - oradrp -c "echo 'drop index CPEC_PRCFIXRULET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:436:sudo su - oradrp -c "echo 'drop index CPEC_QTYCNVSRC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:438:sudo su - oradrp -c "echo 'drop index CPEC_QTYCNVSRC_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:440:sudo su - oradrp -c "echo 'drop index CPEC_QUANCONV_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:442:sudo su - oradrp -c "echo 'drop index CPEC_QUANCONV_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:444:sudo su - oradrp -c "echo 'drop index CPEC_QUOTGROUP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:446:sudo su - oradrp -c "echo 'drop index CPEC_QUOTGROUP_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:448:sudo su - oradrp -c "echo 'drop index CPEC_QUOTGRPPOS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:450:sudo su - oradrp -c "echo 'drop index CPEC_QUOTNAME_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:452:sudo su - oradrp -c "echo 'drop index CPEC_QUOTNAME_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:454:sudo su - oradrp -c "echo 'drop index CPEC_QUOTRULE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:456:sudo su - oradrp -c "echo 'drop index CPEC_QUOTRULE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:458:sudo su - oradrp -c "echo 'drop index CPEC_QUOTSRC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:460:sudo su - oradrp -c "echo 'drop index CPEC_QUOTSRC_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:462:sudo su - oradrp -c "echo 'drop index CPEC_QUOTTYPE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:464:sudo su - oradrp -c "echo 'drop index CPEC_QUOTTYPE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:466:sudo su - oradrp -c "echo 'drop index CPEC_REFDATEROUT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:468:sudo su - oradrp -c "echo 'drop index CPEC_REFDATERT_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:470:sudo su - oradrp -c "echo 'drop index CPEC_RFCDEST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:472:sudo su - oradrp -c "echo 'drop index CPEC_ROUNDRULE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:474:sudo su - oradrp -c "echo 'drop index CPEC_ROUNDRULE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:476:sudo su - oradrp -c "echo 'drop index CPEC_ROUTINE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:478:sudo su - oradrp -c "echo 'drop index CPEC_ROUTINE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:480:sudo su - oradrp -c "echo 'drop index CPEC_SURCHARGE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:482:sudo su - oradrp -c "echo 'drop index CPEC_SURCHARGE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:484:sudo su - oradrp -c "echo 'drop index CPEC_TERM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:486:sudo su - oradrp -c "echo 'drop index CPEC_TERMCONV_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:488:sudo su - oradrp -c "echo 'drop index CPEC_TERMGRP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:490:sudo su - oradrp -c "echo 'drop index CPEC_TERMROUND_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:492:sudo su - oradrp -c "echo 'drop index CPEC_TERMRULE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:494:sudo su - oradrp -c "echo 'drop index CPEC_TERMRULE_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:496:sudo su - oradrp -c "echo 'drop index CPEC_TERMTYPEFLD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:498:sudo su - oradrp -c "echo 'drop index CPEC_TERM_T_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:500:sudo su - oradrp -c "echo 'drop index CPED_FORMDOC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:502:sudo su - oradrp -c "echo 'drop index CPED_PRCQUOT_SIM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:504:sudo su - oradrp -c "echo 'drop index CPED_PRICEQUOT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:506:sudo su - oradrp -c "echo 'drop index CRMD_ORDERADM_H_LOGICAL_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:508:sudo su - oradrp -c "echo 'drop index CRMD_ORDERADM_I_PRODUCT_SRC_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:510:sudo su - oradrp -c "echo 'drop index CRMD_ORDERADM_I_LOG_SYSTEM_EXT;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:512:sudo su - oradrp -c "echo 'drop index CRMD_PARTNER_PARTNER_SRC_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:514:sudo su - oradrp -c "echo 'drop index CRMFILTAB_REM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:516:sudo su - oradrp -c "echo 'drop index CRMM_BUT_FRG0060_HOME_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:518:sudo su - oradrp -c "echo 'drop index CRMM_PR_TAX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:520:sudo su - oradrp -c "echo 'drop index CRMM_PR_TAXH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:522:sudo su - oradrp -c "echo 'drop index CRMOBJECT_REM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:524:sudo su - oradrp -c "echo 'drop index CRMOBJTAB_REM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:526:sudo su - oradrp -c "echo 'drop index CRMPRLS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:528:sudo su - oradrp -c "echo 'drop index CRMRFCPAR_REM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:530:sudo su - oradrp -c "echo 'drop index CSL_CCL_CPPSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:532:sudo su - oradrp -c "echo 'drop index CSL_CCL_CPLSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:534:sudo su - oradrp -c "echo 'drop index CSL_CCL_CIRSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:536:sudo su - oradrp -c "echo 'drop index CSL_CCP_CPPSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:538:sudo su - oradrp -c "echo 'drop index CSL_CCP_CIRSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:540:sudo su - oradrp -c "echo 'drop index CSL_EOAC_MSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:542:sudo su - oradrp -c "echo 'drop index CSL_M_MSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:544:sudo su - oradrp -c "echo 'drop index CSL_MEOM_MSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:546:sudo su - oradrp -c "echo 'drop index CSL_MTLK_MVODSSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:548:sudo su - oradrp -c "echo 'drop index CSL_MTLK_MVISRSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:550:sudo su - oradrp -c "echo 'drop index CSL_MTLK_MSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:552:sudo su - oradrp -c "echo 'drop index CSL_UBR_MSY;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:554:sudo su - oradrp -c "echo 'drop index DEFSCOPETEXT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:556:sudo su - oradrp -c "echo 'drop index DEFSCOPETEXTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:558:sudo su - oradrp -c "echo 'drop index DEFSCOPE_DMLDB_ORG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:560:sudo su - oradrp -c "echo 'drop index DEFSCOPE_DMLH_ORG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:562:sudo su - oradrp -c "echo 'drop index DML_LH_FRG_REG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:564:sudo su - oradrp -c "echo 'drop index DML_LH_FRG_REGH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:566:sudo su - oradrp -c "echo 'drop index DML_ST_TEXT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:568:sudo su - oradrp -c "echo 'drop index DML_ST_TEXTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:570:sudo su - oradrp -c "echo 'drop index DTYPETEXT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:572:sudo su - oradrp -c "echo 'drop index DTYPETEXTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:574:sudo su - oradrp -c "echo 'drop index DTYPE_DMLDB_ORG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:576:sudo su - oradrp -c "echo 'drop index DTYPE_DMLH_ORG_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:578:sudo su - oradrp -c "echo 'drop index ECM_ADM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:580:sudo su - oradrp -c "echo 'drop index ECM_ORD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:582:sudo su - oradrp -c "echo 'drop index ECM_VAL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:584:sudo su - oradrp -c "echo 'drop index ECM_VALH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:586:sudo su - oradrp -c "echo 'drop index ESH_ADM_EXCFLDS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:588:sudo su - oradrp -c "echo 'drop index ESH_ADM_PARAM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:590:sudo su - oradrp -c "echo 'drop index ESH_ADM_RFCDEST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:592:sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CON1_LOGSYS_EXT;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:594:sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CON1_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:596:sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CONN_LOGSYS_EXT;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:598:sudo su - oradrp -c "echo 'drop index ESH_ADM_RFC_CONN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:600:sudo su - oradrp -c "echo 'drop index ESH_ADM_SC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:602:sudo su - oradrp -c "echo 'drop index ESH_AU_AUTH_DATA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:604:sudo su - oradrp -c "echo 'drop index ESH_AU_PRF_AOB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:606:sudo su - oradrp -c "echo 'drop index ESH_AU_PSIZE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:608:sudo su - oradrp -c "echo 'drop index ESH_AU_ROL_PRF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:610:sudo su - oradrp -c "echo 'drop index ESH_AU_USR_AUTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:612:sudo su - oradrp -c "echo 'drop index ESH_AU_USR_MAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:614:sudo su - oradrp -c "echo 'drop index ESH_AU_USR_PRF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:616:sudo su - oradrp -c "echo 'drop index ESH_AU_USR_ROL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:618:sudo su - oradrp -c "echo 'drop index ESH_BIN_EXCFLDS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:620:sudo su - oradrp -c "echo 'drop index ESH_BI_USER_EXTR_SOURCE_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:622:sudo su - oradrp -c "echo 'drop index ESH_BOS_INDEX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:624:sudo su - oradrp -c "echo 'drop index ESH_BOS_INDEXING_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:626:sudo su - oradrp -c "echo 'drop index ESH_BOS_NODE_IND_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:628:sudo su - oradrp -c "echo 'drop index ESH_BOS_SCHEDULE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:630:sudo su - oradrp -c "echo 'drop index ESH_BOS_STATUS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:632:sudo su - oradrp -c "echo 'drop index ESH_CNT_PROC_CHN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:634:sudo su - oradrp -c "echo 'drop index ESH_CRT_AUTHSTAT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:636:sudo su - oradrp -c "echo 'drop index ESH_CRT_INDEX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:638:sudo su - oradrp -c "echo 'drop index ESH_CRT_INDEXING_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:640:sudo su - oradrp -c "echo 'drop index ESH_CRT_OWNER_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:642:sudo su - oradrp -c "echo 'drop index ESH_CRT_PSIZE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:644:sudo su - oradrp -c "echo 'drop index ESH_CRT_SCHEDULE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:646:sudo su - oradrp -c "echo 'drop index ESH_CRT_STATUS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:648:sudo su - oradrp -c "echo 'drop index ESH_CU_FL_SET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:650:sudo su - oradrp -c "echo 'drop index ESH_DBT_ADMIN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:652:sudo su - oradrp -c "echo 'drop index ESH_DBT_CONN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:654:sudo su - oradrp -c "echo 'drop index ESH_EX_CP_STATUS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:656:sudo su - oradrp -c "echo 'drop index ESH_EX_EXTR_USER_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:658:sudo su - oradrp -c "echo 'drop index ESH_EX_FU_ADM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:660:sudo su - oradrp -c "echo 'drop index ESH_EX_FU_FBK_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:662:sudo su - oradrp -c "echo 'drop index ESH_HDB_BINQ_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:664:sudo su - oradrp -c "echo 'drop index ESH_HDB_CALC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:666:sudo su - oradrp -c "echo 'drop index ESH_HDB_CONSTR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:668:sudo su - oradrp -c "echo 'drop index ESH_HDB_DBSCHEMA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:670:sudo su - oradrp -c "echo 'drop index ESH_HDB_FTX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:672:sudo su - oradrp -c "echo 'drop index ESH_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:674:sudo su - oradrp -c "echo 'drop index ESH_QL_AGG_FBK_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:676:sudo su - oradrp -c "echo 'drop index ESH_SE_AUTH_OBJ_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:678:sudo su - oradrp -c "echo 'drop index ESH_SE_AUTH_PATH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:680:sudo su - oradrp -c "echo 'drop index ESH_SE_LOGEX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:682:sudo su - oradrp -c "echo 'drop index ESH_URL_EXCFLDS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:684:sudo su - oradrp -c "echo 'drop index GEOLOC_ADDRLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:686:sudo su - oradrp -c "echo 'drop index GEOOBJR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:688:sudo su - oradrp -c "echo 'drop index HRMDORIGIN_ORIGSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:690:sudo su - oradrp -c "echo 'drop index HRMDRGIN_SNDSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:692:sudo su - oradrp -c "echo 'drop index HRMDRGOUT_RCVSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:694:sudo su - oradrp -c "echo 'drop index HRWL_SUBST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:696:sudo su - oradrp -c "echo 'drop index KFM_KF_ADM_VAR_KF_SRC_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:698:sudo su - oradrp -c "echo 'drop index KFM_KF_ADM_VAR_H_KF_SRC_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:700:sudo su - oradrp -c "echo 'drop index LHM_LEGAL_HOLDS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:702:sudo su - oradrp -c "echo 'drop index LISLOGSYS_ALESYSNAM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:704:sudo su - oradrp -c "echo 'drop index LXE_CSN_HD2_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:706:sudo su - oradrp -c "echo 'drop index OXT_SYSTAB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:708:sudo su - oradrp -c "echo 'drop index PCA_BLOCK_ADMIN_HOME_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:710:sudo su - oradrp -c "echo 'drop index PCA_MASTER_ADMIN_HOME_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:712:sudo su - oradrp -c "echo 'drop index PLMM_ACT_BREL_LOGSYS_B;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:714:sudo su - oradrp -c "echo 'drop index PLMM_ACT_BREL_LOGSYS_A;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:716:sudo su - oradrp -c "echo 'drop index PLMM_ACT_BREL_HOMESYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:718:sudo su - oradrp -c "echo 'drop index PPFTSFFXRU_SD_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:720:sudo su - oradrp -c "echo 'drop index PPFTSFFXRU_RP_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:722:sudo su - oradrp -c "echo 'drop index PPFTSFFXT2_RP_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:724:sudo su - oradrp -c "echo 'drop index PPFTSFFXTE_RP_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:726:sudo su - oradrp -c "echo 'drop index PPFTSFMLRU_SD_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:728:sudo su - oradrp -c "echo 'drop index PPFTSFMLRU_RP_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:730:sudo su - oradrp -c "echo 'drop index PPFTSFMLT2_RP_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:732:sudo su - oradrp -c "echo 'drop index PPFTSFMLTE_RP_LOGSYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:734:sudo su - oradrp -c "echo 'drop index PRREF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:736:sudo su - oradrp -c "echo 'drop index PRREFH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:738:sudo su - oradrp -c "echo 'drop index QRETSTATE_BRSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:740:sudo su - oradrp -c "echo 'drop index RMPS_AI_LOCATION_LOGSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:742:sudo su - oradrp -c "echo 'drop index RMPS_AI_SESS_LOGSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:744:sudo su - oradrp -c "echo 'drop index ROAUTH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:746:sudo su - oradrp -c "echo 'drop index ROBWQTSTAT_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:748:sudo su - oradrp -c "echo 'drop index RODCHABGEN_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:750:sudo su - oradrp -c "echo 'drop index RODCHABGEN_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:752:sudo su - oradrp -c "echo 'drop index ROIDOCPRMS_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:754:sudo su - oradrp -c "echo 'drop index ROISGEN_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:756:sudo su - oradrp -c "echo 'drop index ROISGEN_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:758:sudo su - oradrp -c "echo 'drop index ROOSGEN_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:760:sudo su - oradrp -c "echo 'drop index ROOSGEN_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:762:sudo su - oradrp -c "echo 'drop index ROOSGENDLM_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:764:sudo su - oradrp -c "echo 'drop index ROOSGENRT_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:766:sudo su - oradrp -c "echo 'drop index ROOSGENRT_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:768:sudo su - oradrp -c "echo 'drop index ROOSGENSEG_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:770:sudo su - oradrp -c "echo 'drop index ROOSGENSEG_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:772:sudo su - oradrp -c "echo 'drop index ROOSGENTFSTR_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:774:sudo su - oradrp -c "echo 'drop index ROOSGENTFSTR_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:776:sudo su - oradrp -c "echo 'drop index ROOSPRMS_SRLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:778:sudo su - oradrp -c "echo 'drop index ROOSPRMS_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:780:sudo su - oradrp -c "echo 'drop index ROOSPRMSC_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:782:sudo su - oradrp -c "echo 'drop index ROOSPRMSC_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:784:sudo su - oradrp -c "echo 'drop index ROOSPRMSF_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:786:sudo su - oradrp -c "echo 'drop index ROOSPRMSF_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:788:sudo su - oradrp -c "echo 'drop index ROPROXCONF_REQUESTER;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:790:sudo su - oradrp -c "echo 'drop index ROPXCONF_REQUESTER;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:792:sudo su - oradrp -c "echo 'drop index ROREQUESTPRMS_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:794:sudo su - oradrp -c "echo 'drop index RS3RDFLD_RFCLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:796:sudo su - oradrp -c "echo 'drop index RS3RDFLDNEW_RFCLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:798:sudo su - oradrp -c "echo 'drop index RS3RDFLDNEWT_RFCLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:800:sudo su - oradrp -c "echo 'drop index RS3RDFLDT_RFCLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:802:sudo su - oradrp -c "echo 'drop index RSBASIDOC_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:804:sudo su - oradrp -c "echo 'drop index RSBASIDOC_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:806:sudo su - oradrp -c "echo 'drop index RSBBS_RSRR_URL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:808:sudo su - oradrp -c "echo 'drop index RSBFILE_DOTNETLS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:810:sudo su - oradrp -c "echo 'drop index RSBIWBENCH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:812:sudo su - oradrp -c "echo 'drop index RSBOBJDS_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:814:sudo su - oradrp -c "echo 'drop index RSBOHDEST_SOURCELOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:816:sudo su - oradrp -c "echo 'drop index RSCONTACT_COL_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:818:sudo su - oradrp -c "echo 'drop index RSCONTACT_SIZE_RSLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:820:sudo su - oradrp -c "echo 'drop index RSCONTACT_SOURCE_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:822:sudo su - oradrp -c "echo 'drop index RSCONTACT_SOUR_2_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:824:sudo su - oradrp -c "echo 'drop index RSCONTCHECKCROSS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:826:sudo su - oradrp -c "echo 'drop index RSCONTENTCHECK_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:828:sudo su - oradrp -c "echo 'drop index RSCONTENTCHECK_C_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:830:sudo su - oradrp -c "echo 'drop index RSCONTENTPROP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:832:sudo su - oradrp -c "echo 'drop index RSCONT_T_SYSSET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:834:sudo su - oradrp -c "echo 'drop index RSCRT_DTA_DS_LG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:836:sudo su - oradrp -c "echo 'drop index RSCRT_RDA_LOG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:838:sudo su - oradrp -c "echo 'drop index RSCRT_RDA_TID_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:840:sudo su - oradrp -c "echo 'drop index RSCURR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:842:sudo su - oradrp -c "echo 'drop index RSDCHABAS_OBN_SYS_ALIAS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:844:sudo su - oradrp -c "echo 'drop index RSDCUBE_SVSLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:846:sudo su - oradrp -c "echo 'drop index RSDCUBE_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:848:sudo su - oradrp -c "echo 'drop index RSDDSTATDTP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:850:sudo su - oradrp -c "echo 'drop index RSDDSTATEXTRACT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:852:sudo su - oradrp -c "echo 'drop index RSDDSTATWHM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:854:sudo su - oradrp -c "echo 'drop index RSDLTABLES_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:856:sudo su - oradrp -c "echo 'drop index RSDMCHGRQ_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:858:sudo su - oradrp -c "echo 'drop index RSDMCHGRQ_REQUID;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:860:sudo su - oradrp -c "echo 'drop index RSDMDELTA_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:862:sudo su - oradrp -c "echo 'drop index RSDMSTAT_RLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:864:sudo su - oradrp -c "echo 'drop index RSDS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:866:sudo su - oradrp -c "echo 'drop index RSDSACCESSACTLOG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:868:sudo su - oradrp -c "echo 'drop index RSDSACCESSATTR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:870:sudo su - oradrp -c "echo 'drop index RSDSESRMAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:872:sudo su - oradrp -c "echo 'drop index RSDSEXPORT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:874:sudo su - oradrp -c "echo 'drop index RSDSEXTOBJ_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:876:sudo su - oradrp -c "echo 'drop index RSDSGENDELTA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:878:sudo su - oradrp -c "echo 'drop index RSDSGENDELTADP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:880:sudo su - oradrp -c "echo 'drop index RSDSRTCOUNT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:882:sudo su - oradrp -c "echo 'drop index RSDSRTSEGCOUNT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:884:sudo su - oradrp -c "echo 'drop index RSDSSEG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:886:sudo su - oradrp -c "echo 'drop index RSDSSEGFD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:888:sudo su - oradrp -c "echo 'drop index RSDSSEGFDT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:890:sudo su - oradrp -c "echo 'drop index RSDSSEGT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:892:sudo su - oradrp -c "echo 'drop index RSDST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:894:sudo su - oradrp -c "echo 'drop index RSDSTRANSTRU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:896:sudo su - oradrp -c "echo 'drop index RSDS_QUEUE_DATA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:898:sudo su - oradrp -c "echo 'drop index RSDS_QUEUE_HEAD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:900:sudo su - oradrp -c "echo 'drop index RSEURO_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:902:sudo su - oradrp -c "echo 'drop index RSFBPSOURCE_SLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:904:sudo su - oradrp -c "echo 'drop index RSHIEDIR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:906:sudo su - oradrp -c "echo 'drop index RSISIPTVERS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:908:sudo su - oradrp -c "echo 'drop index RSISODS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:910:sudo su - oradrp -c "echo 'drop index RSISOFIELD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:912:sudo su - oradrp -c "echo 'drop index RSISOLTP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:914:sudo su - oradrp -c "echo 'drop index RSISOSELFD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:916:sudo su - oradrp -c "echo 'drop index RSISOSMAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:918:sudo su - oradrp -c "echo 'drop index RSLDPIO_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:920:sudo su - oradrp -c "echo 'drop index RSLOGSYSCOMP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:922:sudo su - oradrp -c "echo 'drop index RSLOGSYSCONTENT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:924:sudo su - oradrp -c "echo 'drop index RSLOGSYSDB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:926:sudo su - oradrp -c "echo 'drop index RSLOGSYSDEST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:928:sudo su - oradrp -c "echo 'drop index RSLOGSYSMAP_LOGSYSORG;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:930:sudo su - oradrp -c "echo 'drop index RSLOGSYSMAP_LOGSYSNEW;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:932:sudo su - oradrp -c "echo 'drop index RSLOGSYSODP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:934:sudo su - oradrp -c "echo 'drop index RSLOGSYSTAB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:936:sudo su - oradrp -c "echo 'drop index RSLOGSYSUDC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:938:sudo su - oradrp -c "echo 'drop index RSLOGSYSVIRT_REFERENCED;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:940:sudo su - oradrp -c "echo 'drop index RSLOGSYSVIRT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:942:sudo su - oradrp -c "echo 'drop index RSLOGSYSWS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:944:sudo su - oradrp -c "echo 'drop index RSMDATASTATELOGS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:946:sudo su - oradrp -c "echo 'drop index RSMDATASTATE_DMI_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:948:sudo su - oradrp -c "echo 'drop index RSMDATASTATE_DMO_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:950:sudo su - oradrp -c "echo 'drop index RSMONENQ_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:952:sudo su - oradrp -c "echo 'drop index RSOACUBE_DSOURCE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:954:sudo su - oradrp -c "echo 'drop index RSOACUBE_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:956:sudo su - oradrp -c "echo 'drop index RSOAPPL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:958:sudo su - oradrp -c "echo 'drop index RSOAPPLT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:960:sudo su - oradrp -c "echo 'drop index RSOLTPHIECOM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:962:sudo su - oradrp -c "echo 'drop index RSOLTPIBU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:964:sudo su - oradrp -c "echo 'drop index RSOLTPNDP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:966:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:968:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCEFIE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:970:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCEFIET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:972:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESEG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:974:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESEGT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:976:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESFI_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:978:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCESFIT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:980:sudo su - oradrp -c "echo 'drop index RSOLTPSOURCET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:982:sudo su - oradrp -c "echo 'drop index RSOSC_SW_REPL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:984:sudo su - oradrp -c "echo 'drop index RSOSFIELDMAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:986:sudo su - oradrp -c "echo 'drop index RSOSOATTFD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:988:sudo su - oradrp -c "echo 'drop index RSOSOFIELD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:990:sudo su - oradrp -c "echo 'drop index RSOSOHIE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:992:sudo su - oradrp -c "echo 'drop index RSOSOHIET_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:994:sudo su - oradrp -c "echo 'drop index RSOSOLTP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:996:sudo su - oradrp -c "echo 'drop index RSOSOSELFD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:998:sudo su - oradrp -c "echo 'drop index RSOSSEGFIEMAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1000:sudo su - oradrp -c "echo 'drop index RSOSSEGMAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1002:sudo su - oradrp -c "echo 'drop index RSPCLOGCHAIN_META_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1004:sudo su - oradrp -c "echo 'drop index RSPC_BUFFER_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1006:sudo su - oradrp -c "echo 'drop index RSPRECALCADMIN_OBJECT;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1008:sudo su - oradrp -c "echo 'drop index RSRADIOMON_SYSSEL;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1010:sudo su - oradrp -c "echo 'drop index RSREQPROGS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1012:sudo su - oradrp -c "echo 'drop index RSRR_HRNP_SERVER_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1014:sudo su - oradrp -c "echo 'drop index RSR_PREC_LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1016:sudo su - oradrp -c "echo 'drop index RSR_PREC_LOGSYST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1018:sudo su - oradrp -c "echo 'drop index RSR_PREC_QUEUE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1020:sudo su - oradrp -c "echo 'drop index RSSDKCON_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1022:sudo su - oradrp -c "echo 'drop index RSSDKGENMETA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1024:sudo su - oradrp -c "echo 'drop index RSSDLCONVEXIT1_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1026:sudo su - oradrp -c "echo 'drop index RSSDLINIT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1028:sudo su - oradrp -c "echo 'drop index RSSDLINITDEL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1030:sudo su - oradrp -c "echo 'drop index RSSDLINITSEL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1032:sudo su - oradrp -c "echo 'drop index RSSELDONE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1034:sudo su - oradrp -c "echo 'drop index RSSHIPDVERS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1036:sudo su - oradrp -c "echo 'drop index RSSOURSYSTEM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1038:sudo su - oradrp -c "echo 'drop index RSSTATMANPART_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1040:sudo su - oradrp -c "echo 'drop index RSSTATMANPSA_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1042:sudo su - oradrp -c "echo 'drop index RSSTATMAN_SAVE2_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1044:sudo su - oradrp -c "echo 'drop index RSSZTDIR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1046:sudo su - oradrp -c "echo 'drop index RSTCMASTERLOAD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1048:sudo su - oradrp -c "echo 'drop index RSTRANCLUSTINFO_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1050:sudo su - oradrp -c "echo 'drop index RSTS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1052:sudo su - oradrp -c "echo 'drop index RSTSDTEL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1054:sudo su - oradrp -c "echo 'drop index RSTSDTELNEW_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1056:sudo su - oradrp -c "echo 'drop index RSTT_TDATAL_SYSDEST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1058:sudo su - oradrp -c "echo 'drop index RSUPDSIMULH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1060:sudo su - oradrp -c "echo 'drop index RSWSPLREF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1062:sudo su - oradrp -c "echo 'drop index RSWSPXREF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1064:sudo su - oradrp -c "echo 'drop index RSWSPXREFEX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1066:sudo su - oradrp -c "echo 'drop index SADRO_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1068:sudo su - oradrp -c "echo 'drop index SALRTTRFCB_LOG_SYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1070:sudo su - oradrp -c "echo 'drop index SAPGUIHC_FAQS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1072:sudo su - oradrp -c "echo 'drop index SAPGUIHC_LINKS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1074:sudo su - oradrp -c "echo 'drop index SAPGUIHC_NOTES_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1076:sudo su - oradrp -c "echo 'drop index SCAPPT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1078:sudo su - oradrp -c "echo 'drop index SCDTLOCK_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1080:sudo su - oradrp -c "echo 'drop index SCDTSYNC_LOGSYSCORE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1082:sudo su - oradrp -c "echo 'drop index SCPARTICIP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1084:sudo su - oradrp -c "echo 'drop index SEPM_IDOC_RECEIV_RECEIVER_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1086:sudo su - oradrp -c "echo 'drop index SFLIBREL_LOGSYS_B;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1088:sudo su - oradrp -c "echo 'drop index SFLIBREL_LOGSYS_A;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1090:sudo su - oradrp -c "echo 'drop index SFLIBREL_HOMESYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1092:sudo su - oradrp -c "echo 'drop index SGOSHIST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1094:sudo su - oradrp -c "echo 'drop index SKWG_BREL_LOGSYS_B;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1096:sudo su - oradrp -c "echo 'drop index SKWG_BREL_LOGSYS_A;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1098:sudo su - oradrp -c "echo 'drop index SKWG_BREL_HOMESYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1100:sudo su - oradrp -c "echo 'drop index SLCM_EDIS_RUN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1102:sudo su - oradrp -c "echo 'drop index SLCM_HIS_BOR_DEL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1104:sudo su - oradrp -c "echo 'drop index SLCM_LH_BOR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1106:sudo su - oradrp -c "echo 'drop index SLCM_LOGSYS_RW_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1108:sudo su - oradrp -c "echo 'drop index SMBATCH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1110:sudo su - oradrp -c "echo 'drop index SMCUSTOMER_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1112:sudo su - oradrp -c "echo 'drop index SMEXT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1114:sudo su - oradrp -c "echo 'drop index SMMAIN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1116:sudo su - oradrp -c "echo 'drop index SMMESSAGE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1118:sudo su - oradrp -c "echo 'drop index SMPARAM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1120:sudo su - oradrp -c "echo 'drop index SMRL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1122:sudo su - oradrp -c "echo 'drop index SMSELKRIT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1124:sudo su - oradrp -c "echo 'drop index SMSPOOL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1126:sudo su - oradrp -c "echo 'drop index SMSTATUS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1128:sudo su - oradrp -c "echo 'drop index SMSTATUS_HIST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1130:sudo su - oradrp -c "echo 'drop index SMWF_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1132:sudo su - oradrp -c "echo 'drop index SMYOTREE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1134:sudo su - oradrp -c "echo 'drop index SOEP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1136:sudo su - oradrp -c "echo 'drop index SOGR_SYST;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1138:sudo su - oradrp -c "echo 'drop index SOXP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1140:sudo su - oradrp -c "echo 'drop index SPERS_GMAP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1142:sudo su - oradrp -c "echo 'drop index SPROXMSGREL_LOGSYS_B;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1144:sudo su - oradrp -c "echo 'drop index SPROXMSGREL_LOGSYS_A;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1146:sudo su - oradrp -c "echo 'drop index SPROXMSGREL_HOMESYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1148:sudo su - oradrp -c "echo 'drop index SRBCSBREL_LOGSYS_B;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1150:sudo su - oradrp -c "echo 'drop index SRBCSBREL_LOGSYS_A;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1152:sudo su - oradrp -c "echo 'drop index SRBCSBREL_HOMESYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1154:sudo su - oradrp -c "echo 'drop index SRGBTBREL_LOGSYS_B;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1156:sudo su - oradrp -c "echo 'drop index SRGBTBREL_LOGSYS_A;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1158:sudo su - oradrp -c "echo 'drop index SRGBTBREL_HOMESYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1160:sudo su - oradrp -c "echo 'drop index SRMAISCN_LOGSYS_RM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1162:sudo su - oradrp -c "echo 'drop index SRMAISCNAPP_LOGSYS_APP;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1164:sudo su - oradrp -c "echo 'drop index SRMBORCUST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1166:sudo su - oradrp -c "echo 'drop index SROBJINGRP_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1168:sudo su - oradrp -c "echo 'drop index SROBLBREL_LOGSYS_B;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1170:sudo su - oradrp -c "echo 'drop index SROBLBREL_LOGSYS_A;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1172:sudo su - oradrp -c "echo 'drop index SROBLBREL_HOMESYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1174:sudo su - oradrp -c "echo 'drop index SROBLROLB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1176:sudo su - oradrp -c "echo 'drop index SRRELROLES_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1178:sudo su - oradrp -c "echo 'drop index SRT_CON_SYSTEMS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1180:sudo su - oradrp -c "echo 'drop index SSPICSPRST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1182:sudo su - oradrp -c "echo 'drop index SSPICSTRHEAD_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1184:sudo su - oradrp -c "echo 'drop index STXH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1186:sudo su - oradrp -c "echo 'drop index SUWLNOTIFCFGTBL_SYSTEM_ID;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1188:sudo su - oradrp -c "echo 'drop index SUWLNOTIFREGTBL_SYSTEM_ID;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1190:sudo su - oradrp -c "echo 'drop index SWEINSTCOU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1192:sudo su - oradrp -c "echo 'drop index SWETYPECOU_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1194:sudo su - oradrp -c "echo 'drop index SWFRPROCTR_REM_WI_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1196:sudo su - oradrp -c "echo 'drop index SWFRSTP_REMOTE_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1198:sudo su - oradrp -c "echo 'drop index SWLIGL_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1200:sudo su - oradrp -c "echo 'drop index SWLIR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1202:sudo su - oradrp -c "echo 'drop index SWLWPHANDT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1204:sudo su - oradrp -c "echo 'drop index SWLWPLOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1206:sudo su - oradrp -c "echo 'drop index SWLWPS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1208:sudo su - oradrp -c "echo 'drop index SWLWPTSSID_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1210:sudo su - oradrp -c "echo 'drop index SWP_HEADER_REQ_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1212:sudo su - oradrp -c "echo 'drop index SWWWIHEAD_REMOTE_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1214:sudo su - oradrp -c "echo 'drop index SWW_CONTOB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1216:sudo su - oradrp -c "echo 'drop index SXMSMSGINDCUS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1218:sudo su - oradrp -c "echo 'drop index T000_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1220:sudo su - oradrp -c "echo 'drop index T77ALESIN_SNDSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1222:sudo su - oradrp -c "echo 'drop index T77ALESOUT_RCVSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1224:sudo su - oradrp -c "echo 'drop index T77GMLSRFC_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1226:sudo su - oradrp -c "echo 'drop index T77GMOTYPE_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1228:sudo su - oradrp -c "echo 'drop index T77GMOTYPT_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1230:sudo su - oradrp -c "echo 'drop index T77MWBBWS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1232:sudo su - oradrp -c "echo 'drop index TBD00_OWNER_LOGS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1234:sudo su - oradrp -c "echo 'drop index TBD03_SNDSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1236:sudo su - oradrp -c "echo 'drop index TBD03_RCVSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1238:sudo su - oradrp -c "echo 'drop index TBD05_SNDSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1240:sudo su - oradrp -c "echo 'drop index TBD05_RCVSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1242:sudo su - oradrp -c "echo 'drop index TBD06_SNDSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1244:sudo su - oradrp -c "echo 'drop index TBD06_RCVSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1246:sudo su - oradrp -c "echo 'drop index TBD41_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1248:sudo su - oradrp -c "echo 'drop index TBD61_OWNER_LS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1250:sudo su - oradrp -c "echo 'drop index TBD61_INITI_LS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1252:sudo su - oradrp -c "echo 'drop index TBD611_OWNER_LS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1254:sudo su - oradrp -c "echo 'drop index TBD611_LOGSYS_Y;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1256:sudo su - oradrp -c "echo 'drop index TBD611_LOGSYS_X;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1258:sudo su - oradrp -c "echo 'drop index TBD61B_OWNER_LS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1260:sudo su - oradrp -c "echo 'drop index TBD61B_LOGSYS_Y;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1262:sudo su - oradrp -c "echo 'drop index TBD61B_LOGSYS_X;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1264:sudo su - oradrp -c "echo 'drop index TBD61B_INITI_LS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1266:sudo su - oradrp -c "echo 'drop index TBD71_OWNER_LOGS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1268:sudo su - oradrp -c "echo 'drop index TBD73_PARLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1270:sudo su - oradrp -c "echo 'drop index TBD74_PARLOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1272:sudo su - oradrp -c "echo 'drop index TBDBANK_LOGSYS_BANK;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1274:sudo su - oradrp -c "echo 'drop index TBDBANKC_LOGSYS_BANK;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1276:sudo su - oradrp -c "echo 'drop index TBDBR_SND_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1278:sudo su - oradrp -c "echo 'drop index TBDBR_RCV_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1280:sudo su - oradrp -c "echo 'drop index TBDBRF_SND_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1282:sudo su - oradrp -c "echo 'drop index TBDBRF_RCV_SYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1284:sudo su - oradrp -c "echo 'drop index TBDIBAN_LOGSYS_IBAN;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1286:sudo su - oradrp -c "echo 'drop index TBDLI_LOGSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1288:sudo su - oradrp -c "echo 'drop index TBDLS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1290:sudo su - oradrp -c "echo 'drop index TBDLST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1292:sudo su - oradrp -c "echo 'drop index TBDLT_LOGSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1294:sudo su - oradrp -c "echo 'drop index TBLSYSDEST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1296:sudo su - oradrp -c "echo 'drop index TBSPECDEST_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1298:sudo su - oradrp -c "echo 'drop index TCL_ATINN_IDENT_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1300:sudo su - oradrp -c "echo 'drop index TCL_CLINT_IDENT_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1302:sudo su - oradrp -c "echo 'drop index TCL_CUOBJ_IDENT_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1304:sudo su - oradrp -c "echo 'drop index TCL_KLART_IDENT_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1306:sudo su - oradrp -c "echo 'drop index TCL_OBTAB_IDENT_SOURCE;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1308:sudo su - oradrp -c "echo 'drop index TLDA_LOG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1310:sudo su - oradrp -c "echo 'drop index TLDA_MSG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1312:sudo su - oradrp -c "echo 'drop index TP38_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1314:sudo su - oradrp -c "echo 'drop index TP42_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1316:sudo su - oradrp -c "echo 'drop index TP44_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1318:sudo su - oradrp -c "echo 'drop index TSTRMAPP_OBJSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1320:sudo su - oradrp -c "echo 'drop index TSYIMPSTAT_ALESYSNAM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1322:sudo su - oradrp -c "echo 'drop index TSYSYNCSYS_ALESYSNAM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1324:sudo su - oradrp -c "echo 'drop index TTZEX_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1326:sudo su - oradrp -c "echo 'drop index TTZIN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1328:sudo su - oradrp -c "echo 'drop index TUPS05_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1330:sudo su - oradrp -c "echo 'drop index TUPS_X02LOGSYS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1332:sudo su - oradrp -c "echo 'drop index TUTYPASYS_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1334:sudo su - oradrp -c "echo 'drop index TUTYPNOWSYS_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1336:sudo su - oradrp -c "echo 'drop index TUZUSSYS_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1338:sudo su - oradrp -c "echo 'drop index TWPLGRPLNG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1340:sudo su - oradrp -c "echo 'drop index TWPOBJOBJ_TARGET_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1342:sudo su - oradrp -c "echo 'drop index TWPOBJOBJ_SOURCE_SYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1344:sudo su - oradrp -c "echo 'drop index TWPSRVCLSS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1346:sudo su - oradrp -c "echo 'drop index TWPSRVDEVI_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1348:sudo su - oradrp -c "echo 'drop index TWPSRVLOGS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1350:sudo su - oradrp -c "echo 'drop index TWPSRVOBJ_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1352:sudo su - oradrp -c "echo 'drop index TWPSRVPARM_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1354:sudo su - oradrp -c "echo 'drop index TWPSRVPART_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1356:sudo su - oradrp -c "echo 'drop index TWPSRVSFIN_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1358:sudo su - oradrp -c "echo 'drop index TWPSRVTAB_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1360:sudo su - oradrp -c "echo 'drop index TWPSRVTXTS_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1362:sudo su - oradrp -c "echo 'drop index TWPURLSVR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1364:sudo su - oradrp -c "echo 'drop index UACC_BATCH_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1366:sudo su - oradrp -c "echo 'drop index UPSHDR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1368:sudo su - oradrp -c "echo 'drop index USAPPLREF_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1370:sudo su - oradrp -c "echo 'drop index USARC_CD_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1372:sudo su - oradrp -c "echo 'drop index USL04_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1374:sudo su - oradrp -c "echo 'drop index USLA04_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1376:sudo su - oradrp -c "echo 'drop index USR06SYS_RCVSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1378:sudo su - oradrp -c "echo 'drop index USRSYSACT_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1380:sudo su - oradrp -c "echo 'drop index USRSYSACTT_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1382:sudo su - oradrp -c "echo 'drop index USRSYSLNG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1384:sudo su - oradrp -c "echo 'drop index USRSYSPRF_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1386:sudo su - oradrp -c "echo 'drop index USRSYSPRFT_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1388:sudo su - oradrp -c "echo 'drop index USRSYSUPL_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1390:sudo su - oradrp -c "echo 'drop index USRSYSUPPL_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1392:sudo su - oradrp -c "echo 'drop index USRSYSUTPA_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1394:sudo su - oradrp -c "echo 'drop index USRSYSUTYP_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1396:sudo su - oradrp -c "echo 'drop index USRSYSUZUS_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1398:sudo su - oradrp -c "echo 'drop index USRURLSVR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1400:sudo su - oradrp -c "echo 'drop index USZBVLNDRC_RCVSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1402:sudo su - oradrp -c "echo 'drop index USZBVLNDSC_SENDSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1404:sudo su - oradrp -c "echo 'drop index USZBVPROT_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1406:sudo su - oradrp -c "echo 'drop index USZBVPROTC_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1408:sudo su - oradrp -c "echo 'drop index USZBVSYS_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1410:sudo su - oradrp -c "echo 'drop index USZBVSYSC_SUBSYSTEM;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1412:sudo su - oradrp -c "echo 'drop index WDR_ACF_WL_CERT_ORG_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1414:sudo su - oradrp -c "echo 'drop index WP3ROLEAGR_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1416:sudo su - oradrp -c "echo 'drop index WP3ROLEHIER_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/test_bdls.txt:1418:sudo su - oradrp -c "echo 'drop index WP3ROLESRV_LOGSYS;' | sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/lin22.py:28:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path +';ls | grep -i "' + application_sid.upper() + '_DVE" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin22.py:37:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile.strip() + ' | grep -iw --color=never "rdisp/wp_no_btc" | grep  --color=never -v "#"\''
+/home/soladm/gem/geminyo/final/lin22.py:48:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed "s/' + output + '/rdisp\/wp_no_btc = ' + str(val) + '/g" ' + profilefile + ' >> /tmp/star_value1.txt \''
+/home/soladm/gem/geminyo/final/lin22.py:56:			command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ' ;pwd \''
+/home/soladm/gem/geminyo/final/lin22.py:64:			command = 'sudo mv /tmp/star_value1.txt ' + output.strip()+ '/' + profilefile
+/home/soladm/gem/geminyo/final/lin22.py:73:				command = "sudo rm /tmp/value1.txt"
+/home/soladm/gem/geminyo/final/ax02.py:41:            #command = "sudo su - " + user + " -c \'mv -f /home/" + user + "/control_script_" + database_sid.upper() + ".sql /home/" + user + "/control_script_" + database_sid.upper() + ".bkp.sql\'"
+/home/soladm/gem/geminyo/final/ax02.py:49:	command = 'sudo su - ' + user + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/oracle/' + database_sid.upper() + '/sapreorg/control_script_' + database_sid.upper() + '.sql\\\'\';\' > /oracle/' + database_sid.upper() + '/sapreorg/sql.sql;chmod 777 /oracle/' + database_sid.upper() + '/sapreorg/sql.sql"'
+/home/soladm/gem/geminyo/final/ax02.py:55:	command = 'sudo su - ' + user + ' -c "echo @/oracle/' + database_sid.upper() + '/sapreorg/sql.sql | sqlplus / as sysdba" | grep -i "ERROR"'
+/home/soladm/gem/geminyo/final/lin02.py:23:	command = "sudo ls /oracle/" + database_sid.upper() + " >&1 /dev/null"
+/home/soladm/gem/geminyo/final/lin02.py:31:        command = "sudo ls /home/" + user + "/control_script_" + database_sid.upper() + ".sql >&1 /dev/null"
+/home/soladm/gem/geminyo/final/lin02.py:37:            command = "sudo mv /home/" + user + "/control_script_" + database_sid.upper() + ".sql /home/" + username + "/control_script_" + database_sid.upper() + ".bkp.sql"
+/home/soladm/gem/geminyo/final/lin02.py:43:	command = 'sudo su - ' + user + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/home/' + user + '/control_script_' + database_sid.upper() + '.sql\\\'\';\' > /home/' + user + '/sql.sql;chmod 777 /home/' + user + '/sql.sql"'
+/home/soladm/gem/geminyo/final/lin02.py:47:	command = 'sudo su - ' + user + ' -c "echo @/home/' + user + '/sql.sql | sqlplus system/Welcome2" | grep --color=never -i "ERROR:"'
+/home/soladm/gem/geminyo/final/lin02.py:54:#	command = "sudo su -" + user + " -c ' mv /home/" + user + "/control_script_" + database_sid.upper() + ".sql /home/" + username + "/control_script_" + database_sid.upper() + ".sql'"
+/home/soladm/gem/geminyo/final/lin02.py:59:	command = "sudo ls /home/" + user + "/control_script_" + database_sid.upper() + ".sql >&1 /dev/null"
+/home/soladm/gem/geminyo/final/lin02.py:90:		command = "sudo du -sh "+ each + " | awk '{print $1}'"
+/home/soladm/gem/geminyo/final/lin02.py:100:        command = 'sudo rm -rf /home/' + user + '/sql.sql; sudo rm -rf /home/' + user + '/control_script_' + database_sid.upper() + '.sql '
+/home/soladm/gem/geminyo/final/lin02.py:122:        command = "sudo df -m | awk '{s+=$4} END {print s}'"
+/home/soladm/gem/geminyo/final/lin04.py:14: #       print "usage: python os_user_existence.py <Host> <sudo user> <sudo password> <sid> <DB/AI/CI> <Source/Target>"
+/home/soladm/gem/geminyo/final/lin04.py:32:	command="sudo su - root '-c grep -iw ^" + user+ " /etc/passwd'"
+/home/soladm/gem/geminyo/final/lin04.py:40:                print "PRE:F:User existence check for " + user + " failed using sudo user on" + hostname
+/home/soladm/gem/geminyo/final/lin04.py:44:        	print "PRE:P:User existence check for " + user + " using sudo user ( " + sudo_user + " ) is successful on " + hostname
+/home/soladm/gem/geminyo/final/lin05.py:20:        command = 'sudo su - ' + user + ' -c "echo \'select log_mode from "v\$database";\' | sqlplus / as sysdba" | tail -n 3 | head -n 1'
+/home/soladm/gem/geminyo/final/lin06.py:27:        schema = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin06.py:31:        command = 'sudo su - ' + user + ' -c "echo \'exit;\' | sqlplus -s  ' + schema +'/' + argv[5] + '" | grep -i "ERROR:" | grep -v "#"'
+/home/soladm/gem/geminyo/final/lin07.py:27:        schema = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin07.py:31:        command = 'sudo su - ' + user + ' -c "echo \'exit;\' | sqlplus -s  system/' + argv[5] + '" | grep -i "ERROR:" | grep -v "#"'
+/home/soladm/gem/geminyo/final/lin08.py:10:        print "usage: python PRE.py <Host> <sudo user> <sudo password> <DB/AI/CI> <Source/Target>"
+/home/soladm/gem/geminyo/final/lin08.py:21:	command="sudo su - " + user + " '-c exit'"
+/home/soladm/gem/geminyo/final/lin09.py:14: #       print "usage: python sudo_access.py <Host> <sudo user> <sudo password> <sid> <DB/AI/CI> <Source/Target>"
+/home/soladm/gem/geminyo/final/lin09.py:32:	command="sudo su - " + user + " '-c exit'"
+/home/soladm/gem/geminyo/final/lin09.py:42:                print "PRE:P:Sudo access check to " + user + " for sudo user ( " + sudo_user + " ) is Successful on " + hostname
+/home/soladm/gem/geminyo/final/lin09.py:44:        	print "PRE:F:Sudo access check to " + user + " for sudo user ( " + sudo_user + " ) is not Successful on " + hostname
+/home/soladm/gem/geminyo/final/lin10.py:28:        schema = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin10.py:32:        command = 'sudo su - ' + user + ' -c "echo \'exit;\' | sqlplus -s  ' + argv[5] + '/' + argv[6] + '" | grep -i "ERROR:" | grep -v "#"'
+/home/soladm/gem/geminyo/final/lin30.py:32:        schema = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin30.py:36:        command = "sudo su - " + user + " -c \"echo '@bdls.sql' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/lin30.py:48:	    command = "sudo chmod 777 " + loc + '/' + refid + '_bdls.txt'
+/home/soladm/gem/geminyo/final/lin30.py:63:					command = 'sudo su - ' + user + ' -c "echo \'create bitmap index ' + table_name + '_' + field_name + ' on ' + schema + '.' + table_name + '(' + field_name + ');\' | sqlplus / as sysdba"'
+/home/soladm/gem/geminyo/final/lin19.py:18:    command = "sudo chmod 777 " + path.strip() + '/' + filename
+/home/soladm/gem/geminyo/final/lin19.py:32:    command = "sudo chmod 777 " + '/home/' + appuser
+/home/soladm/gem/geminyo/final/lin19.py:46:    command = 'sudo chmod 777 /' + path.strip('/') + '/' + filename.strip()
+/home/soladm/gem/geminyo/final/lin19.py:52:        command = 'sudo su - ' + appuser + ' -c \'R3trans -w /home/' + appuser +  '/' + filename + '.log /home/' + appuser + '/' + filename + '\''
+/home/soladm/gem/geminyo/final/lin20.py:48:		command = 'sudo su - ' + t_sid.lower() + 'adm -c \'cd ' + profile_path + ' ;ls | grep -i "' + t_sid.upper() + '_DVE" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin20.py:53:        	command = 'sudo su - ' + t_sid.lower() + 'adm -c \'cd ' + profile_path + ' ;cat ' + profilefile + ' | grep -iw "DIR_TRANS" | grep -v "#"\''
+/home/soladm/gem/geminyo/final/lin20.py:82:                command = 'sudo chown ' + t_sid.lower() + 'adm:sapsys ' + t_path + '/' + name + '/' + initial + tr_part + '.' + extension + '; sudo chmod 777 ' + t_path + '/' + name + '/' + initial + tr_part + '.' + extension 
+/home/soladm/gem/geminyo/final/lin20.py:101:        command = 'sudo su - ' + t_sid.lower() + "adm" + ' -c "tp addtobuffer ' + tr_id + " " + t_sid  + ' Client=000 pf=' + t_path + '/bin/TP_' + domain + '.PFL "| grep -i \'tp finished with return code:\' | tail -n 1 | cut -d ":" -f2'
+/home/soladm/gem/geminyo/final/lin20.py:108:            command = 'sudo su - ' + t_sid.lower() + 'adm -c "tp modbuffer ' + tr_id + " " + t_sid + ' mode=u+12 Client=000 pf=' + t_path + '/bin/TP_' + domain + '.PFL" |grep -i \'tp finished with return code:\' | tail -n 1 |cut -d ":" -f2'
+/home/soladm/gem/geminyo/final/lin20.py:115:                command = 'sudo su - ' + t_sid.lower() + 'adm -c "tp import ' + tr_id + " " +  t_sid + ' Client=000 pf=' + t_path + '/bin/TP_' + domain + '.PFL U123689"|grep -i \'tp finished with return code:\' |tail -n 1 | cut -d ":" -f2'
+/home/soladm/gem/geminyo/final/lin24.py:27:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path  + ' ;ls | grep -i "' + application_sid.upper() + '_DVE" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin24.py:35:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile + ' | grep -iw "login/no_automatic_user_sapstar" | grep -v "#"\''
+/home/soladm/gem/geminyo/final/lin24.py:43:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';echo "login/no_automatic_user_sapstar = 1" >> ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/lin24.py:59:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed "s/' + output + '/login\/no_automatic_user_sapstar = 1/g" ' + profilefile + ' >> /tmp/star_one.txt \''
+/home/soladm/gem/geminyo/final/lin24.py:67:		command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';pwd \''
+/home/soladm/gem/geminyo/final/lin24.py:74:                command = 'sudo mv /tmp/star_one.txt ' + output.strip()+ '/' + profilefile
+/home/soladm/gem/geminyo/final/lin26.py:26:        command = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin26.py:36:            command = 'sudo su - ' + user + ' -c "echo \'delete '+ output + '.usr02 where mandt=' + clientname + ' and bname=\'\\\'SAP\\*\\\'\';\' | sqlplus / as sysdba"'
+/home/soladm/gem/geminyo/final/lin31.py:30:        schema = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/lin31.py:34:        command = "sudo su - " + user + " -c \"echo '@bdls.sql' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/lin31.py:53:					command = 'sudo su - ' + user + ' -c "echo \'drop index ' + table_name + '_' + field_name + ';\' | sqlplus / as sysdba"'
+/home/soladm/gem/geminyo/final/db_refresh/archive_change.py:11:command = "sudo ls --color=never /oracle/DRP/oraarch/DQR*"
+/home/soladm/gem/geminyo/final/db_refresh/archive_change.py:22:	command = "sudo ls " + files + "| sed -r \'s#" + "DQR" + "#" + "DRP" + "#\'"
+/home/soladm/gem/geminyo/final/db_refresh/archive_change.py:27:#	command = "sudo mv " + files + " " + filename[0]  
+/home/soladm/gem/geminyo/final/db_refresh/archivecheck.py:20:        command = 'sudo su - ' + user + ' -c "echo \'select log_mode from "v\$database";\' | sqlplus / as sysdba" | tail -n 3 | head -n 1'
+/home/soladm/gem/geminyo/final/db_refresh/arch.py:11:command = "sudo ls /oracle/DRP/oraarch/DQR*"
+/home/soladm/gem/geminyo/final/db_refresh/arch.py:19:	command = "sudo ls " + fi[0] + "| sed -r \'s#" + "DQR" + "#" + "DRP" + "#\'"
+/home/soladm/gem/geminyo/final/db_refresh/arch.py:24:	command = "sudo mv " + fi[0] + " " + filename[0]  
+/home/soladm/gem/geminyo/final/db_refresh/arch_test.py:11:command = "sudo ls /oracle/DRP/oraarch/DRP*[?]$"
+/home/soladm/gem/geminyo/final/db_refresh/arch_test.py:20:	command = "sudo ls " + fi[0] + "| sed -r \'s#" + "?" + "#" + "" + "#\'"
+/home/soladm/gem/geminyo/final/db_refresh/arch_test.py:25:	command = "sudo mv " + fi[0] + " " + filename[0]  
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:21:        command = "sudo ls /oracle/" + database_sid.upper() + " >&1 /dev/null"
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:64:        command = 'sudo sed -i "s/\/oracle\/' + s_db_sid.upper() + '/\/oracle\/' + t_db_sid.upper() + '/g\" /home/' + s_user + '/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:69:        command = 'sudo sed -i \"s/' + s_db_sid.upper() + '/' + t_db_sid.upper() + '/g\" /home/' + s_user + '/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:74:        command = 'sudo sed -i \"/--/d\" /home/' + s_user + '/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:79:        command = "sudo awk '/;/{ print NR; exit }' /home/" + s_user + "/control_script_" + s_db_sid.upper() + ".sql"
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:85:        command = 'sudo sed -i \'' + str(line_no) + ',$d\' /home/' + s_user + '/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:90:        command = 'sudo sed -i \'/^$/d\' /home/' + s_user + '/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:95:        command = 'sudo sed -i \'s/NORESETLOGS/RESETLOGS/\' /home/' + s_user + '/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control_bkp.py:100:        command = 'sudo sed -i \'s/CREATE CONTROLFILE REUSE DATABASE "' + t_db_sid.upper() + '" RESETLOGS/CREATE CONTROLFILE REUSE SET DATABASE "' + t_db_sid.upper() + '" RESETLOGS/\' /home/' + s_user + '/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control.py:86:#	command = 'sudo sed -i "s/\/oracle\/' + s_db_sid.upper() + '/\/oracle\/' + t_db_sid.upper() + '/g\" /home/' + t_user + '/scp/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/control.py:93:	command = "sudo su - ora" + t_db_sid.lower() + " -c \'chmod 777 /oracle/" + t_db_sid.upper() + "/sapreorg/control_script_" + s_db_sid.upper() + ".sql\'"
+/home/soladm/gem/geminyo/final/db_refresh/ctrlrun.py:36:	    command = "sudo su - " + user + ' -c \'echo "startup nomount" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/ctrlrun.py:46:              command = "sudo su - " + user + ' -c \'echo "@/oracle/' + db_sid.upper() + "/sapreorg/control_script_" + db_sid.upper() + '.sql" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/db_begin_mode.py:9:        print "Usage: python db_begin_mode.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/db_begin_mode.py:32:	command = 'sudo su - ' + db_user + ' -c \'echo "alter database begin backup;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/db_end_mode.py:8:        print "Usage: python db_end_mode.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/db_end_mode.py:21:	command = 'sudo su - ' + db_user + ' -c \'echo "alter database end backup;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/dbstop.py:29:        command = 'sudo su - ' + user_db + ' -c \'echo "shutdown immediate" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/dbstop.py:47:        command = 'sudo su - ' + user_db + ' -c \'lsnrctl stop\''
+/home/soladm/gem/geminyo/final/db_refresh/db_version.py:8:        print "Usage: python db_version.py <Target database host> <Target DB sudo user> <Target DB sudo user passwd> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/db_version.py:21:	command = 'sudo su - ' + db_user + ' -c "echo \'select version from v\$instance;\' | sqlplus / as sysdba"'
+/home/soladm/gem/geminyo/final/db_refresh/file_permission.py:11:cmd = "sudo ls /oracle/DRP/oraarch/DQR*"
+/home/soladm/gem/geminyo/final/db_refresh/file_permission.py:18:	cmd = "sudo ls " + b.strip() + "| sed -r \'s#" + "DQR" + "#" + "DRP" + "#\'"
+/home/soladm/gem/geminyo/final/db_refresh/file_permission.py:23:        command = "sudo mv " + b.strip() + " " + filename[0]
+/home/soladm/gem/geminyo/final/db_refresh/file_permission.py:27:cmd = "sudo ls /oracle/DRP/oraarch/*f?"
+/home/soladm/gem/geminyo/final/db_refresh/file_permission.py:32:	cmd = "sudo ls " + b.strip() + "| sed -r \'s#" + "f[?]" + "#" + "f" + "#\'"
+/home/soladm/gem/geminyo/final/db_refresh/file_permission.py:37:	command = "sudo mv " + b.strip() + " " + filename[0]
+/home/soladm/gem/geminyo/final/db_refresh/fscheck.py:51:                command = "sudo du -sh "+ each + " | awk '{print $1}'"
+/home/soladm/gem/geminyo/final/db_refresh/fscheck.py:61:	command = "sudo du -sh /sapmnt/ | awk '{print $1}'"
+/home/soladm/gem/geminyo/final/db_refresh/lsnr_start.py:9:        print "Usage: python lsnr_start.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/lsnr_start.py:29:        command = 'sudo su - ' + db_user + ' -c "lsnrctl start LISTENER"'
+/home/soladm/gem/geminyo/final/db_refresh/mountpoint.py:41:            #command = "sudo su - " + user + " -c \'mv -f /home/" + user + "/control_script_" + database_sid.upper() + ".sql /home/" + user + "/control_script_" + database_sid.upper() + ".bkp.sql\'"
+/home/soladm/gem/geminyo/final/db_refresh/mountpoint.py:49:	command = 'sudo su - ' + user + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/oracle/' + database_sid.upper() + '/sapreorg/control_script_' + database_sid.upper() + '.sql\\\'\';\' > /oracle/' + database_sid.upper() + '/sapreorg/sql.sql;chmod 777 /oracle/' + database_sid.upper() + '/sapreorg/sql.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/mountpoint.py:55:	command = 'sudo su - ' + user + ' -c "echo @/oracle/' + database_sid.upper() + '/sapreorg/sql.sql | sqlplus / as sysdba" | grep -i "ERROR"'
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:39:	command = 'sudo su - ' + user + ' -c \'echo "select username from dba_users;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:41:        command = "sudo su - " + user + " -c 'exit'; echo $?"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:53:            schema = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:63:                status = "sudo su - " + user + " -c \"echo \'SELECT USERNAME FROM DBA_USERS;\' | sqlplus system/" + syspass + "\" | grep -i ops"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:73:                #				command="sudo su - " +  user + " -c \"echo \'CREATE USER " + "\"" + userapp + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\" > /dev/null 2>&1"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:74:                command = "sudo su - " + user + " -c \"echo \'CREATE USER " + "\"" + userapp + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:87:                command = "sudo su - " + user + " -c \"echo \'CREATE USER " + "\"" + userdb + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:97:                command = "sudo su - " + user + " -c \"echo \'GRANT DBA, SAPDBA, CONNECT, RESOURCE TO " + "\"" + userapp + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:107:                command = "sudo su - " + user + " -c \"echo \'GRANT DBA, SAPDBA, CONNECT, RESOURCE TO " + "\"" + userdb + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:117:                command = "sudo su - " + user + " -c \"echo \'GRANT UNLIMITED TABLESPACE TO " + "\"" + userapp + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:127:                command = "sudo su - " + user + " -c \"echo \'GRANT UNLIMITED TABLESPACE TO " + "\"" + userdb + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:137:                #command = "sudo su - " + user + " -c \"echo \'CREATE TABLE " + "\\\"" + userapp + "\\\".SAPUSER" + " (USERID VARCHAR2(256), PASSWD VARCHAR2(256));\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:138:                command = "sudo su - " + user + " -c \"echo \'CREATE TABLE " + "\"" + userapp + "\".SAPUSER" + " (USERID VARCHAR2(256), PASSWD VARCHAR2(256));\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:150:                command = "sudo su - " + user + " -c \"echo \'CREATE TABLE " + "\"" + userdb + "\".SAPUSER" + " (USERID VARCHAR2(256), PASSWD VARCHAR2(256));\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:160:                command = "sudo su - " + user + " -c \"touch /home/" + user + "/insert.sql\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:164:                #command = "sudo su - " + user + " -c \"echo \'INSERT INTO \"" + userapp + "\".SAPUSER VALUES('\\'" + schema[0].strip() + "\\'','\\'" + argv[4] + "\\'');'\" > /home/" + argv[5].lower() + "/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:165:		command = "sudo su - " + user + " -c \"echo \'INSERT INTO \"" + userapp + "\".SAPUSER VALUES('\\'" + schema[0].strip() + "\\'','\\'" + argv[4] + "\\'');'\" > /tmp/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:171:                    #command = "sudo mv /home/" + argv[5].lower() + "/insert.sql" + " /home/" + user + "/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:172:		    command = "sudo mv /tmp/insert.sql" + " /home/" + user + "/insert.sql"	
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:181:                command = "sudo su - " + user + " -c \"echo \'@/home/" + user + "/insert.sql\'" + " | sqlplus / as sysdba\" | grep -i created"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:185:                command = "sudo su - " + user + " -c \"touch /home/" + user + "/insert.sql\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:189:                #command = "sudo su - " + user + " -c \"echo \'INSERT INTO \"" + userdb + "\".SAPUSER VALUES('\\'" + schema[0].strip() + "\\'','\\'" + argv[4] + "\\'');'\" > /home/" + argv[5] + "/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:190:		command = "sudo su - " + user + " -c \"echo \'INSERT INTO \"" + userdb + "\".SAPUSER VALUES('\\'" + schema[0].strip() + "\\'','\\'" + argv[4] + "\\'');'\" > /tmp/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:194:                    #command = "sudo mv /home/" + argv[5].lower() + "/insert.sql" + " /home/" + user + "/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:195:		    command = "sudo mv /tmp/insert.sql" + " /home/" + user + "/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:202:                command = "sudo su - " + user + " -c \"echo \'@/home/" + user + "/insert.sql\'" + " | sqlplus / as sysdba\" | grep -i created"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:206:                command = "sudo rm -rf " + "/home/" + user + "/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:210:                command = "sudo su - " + user + " -c \"echo \'ALTER USER \"" + userapp + "\" TEMPORARY TABLESPACE PSAPTEMP;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:215:                command = "sudo su - " + user + " -c \"echo \'ALTER USER \"" + userdb + "\" TEMPORARY TABLESPACE PSAPTEMP;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops_bkp.py:220:                command = "sudo su - " + user + " -c \"echo \'commit;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops.py:33:	command = "sudo su - " + t_db_user + " -c 'exit'; echo $?"
+/home/soladm/gem/geminyo/final/db_refresh/ops.py:48:		status = "sudo su - " + t_db_user + " -c \"echo \'SELECT USERNAME FROM DBA_USERS;\' | sqlplus / as sysdba \" | grep -w -i --color=never OPS\$" + t_appsid + "ADM"
+/home/soladm/gem/geminyo/final/db_refresh/ops.py:55:			command = "sudo su - " + t_db_user + " -c \"echo \'CREATE USER " + "\"" + t_appuser + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops.py:71:		status = "sudo su - " + t_db_user + " -c \"echo \'SELECT USERNAME FROM DBA_USERS;\' | sqlplus / as sysdba \" | grep -w -i --color=never OPS\$ORA" + t_dbsid.upper()
+/home/soladm/gem/geminyo/final/db_refresh/ops.py:76:                        command = "sudo su - " + t_db_user + " -c \"echo \'CREATE USER " + "\"" + t_dbuser + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops.py:92:		command = "sudo su - " + t_db_user + " -c \"echo \'GRANT DBA, SAPDBA, CONNECT, RESOURCE TO " + "\"" + t_appuser + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/ops.py:105:		command = "sudo su - " + t_db_user + " -c \"echo \'GRANT DBA, SAPDBA, CONNECT, RESOURCE TO " + "\"" + t_dbuser + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/python:1:sudo su - oradrp -c "echo 'recover database using backup controlfile until time '\'20-Oct-2016 03:46:49\'' '|  sqlplus / as sysdba"
+/home/soladm/gem/geminyo/final/db_refresh/r3trans.py:30:        command = 'sudo su - ' + user  + ' -c "R3trans -d | tail -n 1" | awk \'{print $NF}\''
+/home/soladm/gem/geminyo/final/db_refresh/readlog.py:48:command = "sudo su - " + db_user + " -c \"echo \'select value from v\$parameter where name='\'\'background_dump_dest\'\'';' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/recover_db_bkp.py:31:		command = 'sudo su - ' + user_db + ' -c "echo \'recover database using backup controlfile until time \'\\\'' + date + ' ' + time + '\\\'\' \'|  sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/recover_db_bkp.py:48:			cmd = 'sudo su - ' + s_dbuser + ' -c "echo \'ALTER SYSTEM ARCHIVE LOG CURRENT ; \'| sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/recover_db_bkp.py:54:				cmd = 'sudo su - ' + s_dbuser + ' -c "echo \'archive log list \'| sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/recover_db_bkp.py:62:				cmd = "sudo ls /oracle/" + s_dbsid.upper() + "/oraarch/*" + num + "*"
+/home/soladm/gem/geminyo/final/db_refresh/recover_db.py:25:		command = 'sudo su - ' + user_db + ' -c "echo \'recover database using backup controlfile until time \'\\\'' + date + ' ' + time + '\\\'\' \'|  sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/recover_db.py:37:			command = 'sudo su - ' + user_db + ' -c "echo \'SET AUTORECOVERY ON \' > /oracle/' + db_sid.upper() + '/sapreorg/recover.sql;chmod 777 /oracle/' + db_sid.upper() + '/sapreorg/recover.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/recover_db.py:43:			command = 'sudo su - ' + user_db + ' -c "echo \'recover database using backup controlfile until cancel \' >> /oracle/' + db_sid.upper() + '/sapreorg/recover.sql;chmod 777 /oracle/' + db_sid.upper() + '/sapreorg/recover.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/recover_db.py:48:			command = 'sudo su - ' + user_db + ' -c "echo @/oracle/' + db_sid.upper() + '/sapreorg/recover.sql | sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/recover.exp:16:send -- "sudo su -  $user_db  -c \"echo \'recover database using backup controlfile until cancel \'| sqlplus / as sysdba\"\r"
+/home/soladm/gem/geminyo/final/db_refresh/resetlog.py:23:        command = 'sudo su - ' + user + ' -c \"echo \'ALTER DATABASE MOUNT;\' | sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/resetlog.py:31:            command = 'sudo su - ' + user + ' -c \"echo \'ALTER DATABASE OPEN RESETLOGS;\' | sqlplus / as sysdba | grep -i -e \'Database altered\' -e \'a database already open by the instance\'\"'
+/home/soladm/gem/geminyo/final/db_refresh/resetlog.py:42:            #command = 'sudo su - ' + user + ' -c \"echo \'ALTER DATABASE OPEN;\' | sqlplus system/Welcome2 | grep -i -e \\"database altered\\" -e \\"a database already open by the instance\\""'
+/home/soladm/gem/geminyo/final/db_refresh/sapdba_bkp.py:37:	command = 'sudo su - ' + user + ' -c \'echo "select username from dba_users;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/sapdba_bkp.py:53:			command = "sudo su - " + user + " -c \"echo \'drop user \"OPS$" + users + "\" cascade;' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/sapdba_bkp.py:61:	command = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/db_refresh/sapdba_bkp.py:69:            command = 'sudo su - ' + user + ' -c \"cdexe; sqlplus /nolog @sapdba_role.sql ' + schema + '_user UNIX\"'
+/home/soladm/gem/geminyo/final/db_refresh/sapdba.py:35:	command = 'sudo su - ' + user + ' -c \'echo "select username from dba_users;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/sapdba.py:52:			command = "sudo su - " + user + " -c \"echo \'drop user \"OPS\$" + s_app_user.upper() + "\" cascade;' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/sapdba.py:60:			command = "sudo su - " + user + " -c \"echo \'drop user \"OPS\$" + s_db_user.upper() + "\" cascade;' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/sapdba.py:68:	command = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/db_refresh/sapdba.py:77:            command = 'sudo su - ' + user + ' -c \"cdexe; sqlplus /nolog @sapdba_role.sql ' + schema + '_user UNIX\"'
+/home/soladm/gem/geminyo/final/db_refresh/sapstartapp.py:27:        command = 'sudo su - ' + user_sap + ' -c \'cdpro; ls | grep -i ' + host + ' | grep -v "\." | grep -v "ASC" | cut -d"_" -f2\''
+/home/soladm/gem/geminyo/final/db_refresh/sapstartapp.py:33:        command = 'sudo su - ' + user_sap + ' -c \'startsap -c |grep -i ' + status.strip() + ' --color=never | tail -n -1 | cut -d" " -f4\''
+/home/soladm/gem/geminyo/final/db_refresh/sapstartapp.py:42:            command = "sudo su - " + user_sap + " -c 'ps -ef | grep -i " + user_sap + " | grep -i /usr/sap | grep -v # |  cut -d\" \" -f4'"
+/home/soladm/gem/geminyo/final/db_refresh/sapstartapp.py:47:                command = "sudo su - " + user_sap + ' -c "kill -9 ' + proc + '"'
+/home/soladm/gem/geminyo/final/db_refresh/sapstartapp.py:55:            command = 'sudo su - ' + user_sap + ' -c "startsap r3 '  + host + '"'
+/home/soladm/gem/geminyo/final/db_refresh/sapstopapp_bkp.py:27:	command = 'sudo su - ' + user_sap + ' -c "startsap -c" | tail -n -1 | cut -d" " -f4'
+/home/soladm/gem/geminyo/final/db_refresh/sapstopapp_bkp.py:41:            command = 'sudo su - ' + user_sap + ' -c "stopsap r3 '  + host + '"'
+/home/soladm/gem/geminyo/final/db_refresh/sapstopapp_bkp.py:61:        command = 'sudo su - ' + user_sap + ' -c \'cleanipc ' + instance+ ' remove;cleanipc ' + instance + ' remove\''
+/home/soladm/gem/geminyo/final/db_refresh/scparch.exp:21:send -- "sudo scp -r $sourcefile $targetdbuser@$targethost:/oracle/$targetdbsid/oraarch\r"
+/home/soladm/gem/geminyo/final/db_refresh/scparchive_bkp.py:74:#	command = "sudo mv /oracle/" + targetdatabase_sid + "/ /home/" + t_user + "/control_script_" + t_db_sid.upper() + ".sql"
+/home/soladm/gem/geminyo/final/db_refresh/scp_control.py:24:	command = "sudo su - ora" + database_sid.lower()+ " -c \'chmod 777 /oracle/" + database_sid.upper()  + "/sapreorg/\'"
+/home/soladm/gem/geminyo/final/db_refresh/scpfile_bkp.py:27:        command = "sudo ls /oracle/" + sourcedatabase_sid.upper() + " >&1 /dev/null"
+/home/soladm/gem/geminyo/final/db_refresh/scpfile_bkp.py:36:        command = "sudo ls /home/" + user + "/control_script_" + sourcedatabase_sid.upper() + ".sql >&1 /dev/null"
+/home/soladm/gem/geminyo/final/db_refresh/scpfile_bkp.py:40:            command = "sudo mv /home/" + user + "/control_script_" + sourcedatabase_sid.upper() + ".sql /home/" + user + "/control_script_" + sourcedatabase_sid.upper() + ".bkp.sql"
+/home/soladm/gem/geminyo/final/db_refresh/scpfile_bkp.py:44:        command = 'sudo su - ' + user + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/home/' + user + '/control_script_' + sourcedatabase_sid.upper() + '.sql\\\'\';\' > /home/' + user + '/sql.sql;chmod 777 /home/' + user + '/sql.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/scpfile_bkp.py:48:        command = 'sudo su - ' + user + ' -c "echo @/home/' + user + '/sql.sql | sqlplus system/Welcome2" | grep -i "ERROR:"'
+/home/soladm/gem/geminyo/final/db_refresh/scpfile.py:42:			        command = 'sudo su - ora' + database_sid + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/oracle/' + database_sid.upper() + '/sapreorg/control_script_' + database_sid.upper() + '.sql\\\'\';\' > /oracle/' + database_sid.upper() + '/sapreorg/sql.sql;chmod 777 /oracle/' + database_sid.upper() + '/sapreorg/sql.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/scpfile.py:47:			        command = 'sudo su - ora' + database_sid + ' -c "echo @/oracle/' + database_sid.upper() + '/sapreorg/sql.sql | sqlplus / as sysdba" | grep -i "ERROR"'
+/home/soladm/gem/geminyo/final/db_refresh/scpfile.py:78:				command = "sudo su - ora" + database_sid + " -c \'chmod -R 777 " + folder + "\'"
+/home/soladm/gem/geminyo/final/db_refresh/scpfile.py:151:		command = "sudo su - " + user1 + " -c \'chmod 777 " + folder + "\'"
+/home/soladm/gem/geminyo/final/db_refresh/startlsnr.py:31:        command="sudo su - " + user + " -c \'lsnrctl start\'"
+/home/soladm/gem/geminyo/final/db_refresh/startlsnr.py:39:            command="sudo su - " + user + " -c \'lsnrctl start\' | grep -i \'already been started\'"
+/home/soladm/gem/geminyo/final/db_refresh/startlsnr.py:47:                lsnr_status="sudo su - " + user + " -c \'lsnrctl start LISTENER | grep -i \"Linux error: 111\" | cut -d\":\" -f3\'"
+/home/soladm/gem/geminyo/final/db_refresh/tablespace_usage.py:9:        print "Usage: python db_begin_mode.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/tablespace_usage.py:22:	command = 'sudo su - ' + db_user + ' -c \'echo "select * From DBA_TABLESPACE_USAGE_METRICS;" | sqlplus / as sysdba\'| awk \'{print $3}\' | awk \'NR>12\' | head -n -4'
+/home/soladm/gem/geminyo/final/db_refresh/tablespace_usage.py:33:	command = 'sudo su - ' + db_user + ' -c \'echo "select * From DBA_TABLESPACE_USAGE_METRICS;" | sqlplus / as sysdba\'| awk \'{print $2}\' | awk \'NR>12\' | head -n -4'
+/home/soladm/gem/geminyo/final/db_refresh/temptable_bkp.py:16:#        print "usage: python temptable.py <Source DB Host> <Source DB sid> <Target DB Host> <Target DB sid> <Target Application sid> <Source Sudo user> <source sudo pass> <target sudo user> <target sudo pass> <Refersh ID> <Instance ID>"
+/home/soladm/gem/geminyo/final/db_refresh/temptable_bkp.py:60:            path="sudo su - " +  user_source_db + " -c \"echo \'select tablespace_name,file_name from DBA_TEMP_FILES;\' | sqlplus / as sysdba\" | grep \".data\" | grep -v \"asdasd\""
+/home/soladm/gem/geminyo/final/db_refresh/temptable_bkp.py:69:                command = "sudo ls " + actual_path + " >&1 /dev/null"
+/home/soladm/gem/geminyo/final/db_refresh/temptable_bkp.py:95:                    command="sudo su - " + user_target_db + " -c \"echo \'@/home/" + user_target_db + "/sql1.sql;\' | sqlplus / as sysdba | grep -i -e 'Tablespace altered.' -e 'already part of database' | grep -v '#'\""
+/home/soladm/gem/geminyo/final/db_refresh/temptable.py:16:        print "usage: python temptable.py <Source DB Host> <Source Sudo user> <source sudo pass> <Source DB SID> <Target DB Host> <target sudo user> <target sudo pass>  <Target Application sid> <Target DB sid> <Refersh ID> "
+/home/soladm/gem/geminyo/final/db_refresh/temptable.py:54:	cmd = "sudo su - " +  t_dbuser + " -c \"echo \'Select contents from dba_tablespaces where tablespace_name='\\'PSAPTEMP\\'' ; ' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/temptable.py:65:	        path="sudo su - " +  s_dbuser + " -c \"echo \'select tablespace_name,file_name from DBA_TEMP_FILES;\' | sqlplus / as sysdba\" | grep \".data\" | grep -v \"asdasd\""
+/home/soladm/gem/geminyo/final/db_refresh/temptable.py:86:				command="sudo su - " + t_dbuser + " -c \"echo \'@/home/" + t_dbuser + "/sql1.sql;\' | sqlplus / as sysdba | grep -i -e 'Tablespace altered.' -e 'already part of database' | grep -v '#'\""
+/home/soladm/gem/geminyo/final/db_refresh/test.py:8:        print "Usage: python db_begin_mode.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/test.py:25:	command = 'sudo su - ' + db_user + ' -c \'echo "alter database begin backup;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:9:        print "usage: python truncatetable.py <Target Application Hostname> <Target sudo User Name> <Target sudo user password> <Target Application SID> <Target Database Hostname> <Target Database User Name> <Target Database sudo user password> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:33:        command = 'sudo su - ' + appuser + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:38:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:48:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTAIHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:58:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATIORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:68:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATTORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:78:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSNP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:88:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.MONI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:98:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.OSMON;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:108:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.PAHI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:118:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAD;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:128:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAH;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:138:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:148:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAR;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:158:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DDLOG;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:168:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFET;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:178:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFHT;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:188:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TLOCK;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetabl_bkpe.py:198:            command = 'sudo su - ' + orauser + ' -c "echo \'COMMIT;\' | sqlplus / as sysdba" | grep -i --color=never "Commit complete."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:10:        print "usage: python truncatetable.py <Target Application Hostname> <Target sudo User Name> <Target sudo user password> <Target Application SID> <Target Database Hostname> <Target Database User Name> <Target Database sudo user password> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:53:        command = 'sudo su - ' + appuser + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:61:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:71:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTAIHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:81:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATIORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:91:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATTORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:101:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSNP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:111:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.MONI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:121:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.OSMON;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:131:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.PAHI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:141:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAD;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:151:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAH;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:161:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:171:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAR;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:181:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DDLOG;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:191:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFET;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:201:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFHT;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:211:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TLOCK;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/truncatetable.py:221:            command = 'sudo su - ' + orauser + ' -c "echo \'COMMIT;\' | sqlplus / as sysdba" | grep -i --color=never "Commit complete."'
+/home/soladm/gem/geminyo/final/db_refresh/updating_archive.py:23:		cmd = 'sudo su - ' + s_dbuser + ' -c "echo \'ALTER SYSTEM ARCHIVE LOG CURRENT ; \'| sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ctrlrun.py:36:	    command = "sudo su - " + user + ' -c \'echo "startup nomount" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ctrlrun.py:46:              command = "sudo su - " + user + ' -c \'echo "@/oracle/' + db_sid.upper() + "/sapreorg/control_script_" + db_sid.upper() + '.sql" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/db_begin_mode.py:9:        print "Usage: python db_begin_mode.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/db_begin_mode.py:32:	command = 'sudo su - ' + db_user + ' -c \'echo "alter database begin backup;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/db_end_mode.py:8:        print "Usage: python db_end_mode.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/db_end_mode.py:21:	command = 'sudo su - ' + db_user + ' -c \'echo "alter database end backup;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/dbstop.py:29:        command = 'sudo su - ' + user_db + ' -c \'echo "shutdown immediate" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/dbstop.py:47:        command = 'sudo su - ' + user_db + ' -c \'lsnrctl stop\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ops.py:33:	command = "sudo su - " + t_db_user + " -c 'exit'; echo $?"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ops.py:48:		status = "sudo su - " + t_db_user + " -c \"echo \'SELECT USERNAME FROM DBA_USERS;\' | sqlplus / as sysdba \" | grep -w -i --color=never OPS\$" + t_appsid + "ADM"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ops.py:55:			command = "sudo su - " + t_db_user + " -c \"echo \'CREATE USER " + "\"" + t_appuser + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ops.py:71:		status = "sudo su - " + t_db_user + " -c \"echo \'SELECT USERNAME FROM DBA_USERS;\' | sqlplus / as sysdba \" | grep -w -i --color=never OPS\$ORA" + t_dbsid.upper()
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ops.py:76:                        command = "sudo su - " + t_db_user + " -c \"echo \'CREATE USER " + "\"" + t_dbuser + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ops.py:92:		command = "sudo su - " + t_db_user + " -c \"echo \'GRANT DBA, SAPDBA, CONNECT, RESOURCE TO " + "\"" + t_appuser + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/ops.py:105:		command = "sudo su - " + t_db_user + " -c \"echo \'GRANT DBA, SAPDBA, CONNECT, RESOURCE TO " + "\"" + t_dbuser + "\"" + ";\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/r3trans.py:30:        command = 'sudo su - ' + user  + ' -c "R3trans -d | tail -n 1" | awk \'{print $NF}\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/recover.exp:16:send -- "sudo su -  $user_db  -c \"echo \'recover database using backup controlfile until cancel \'| sqlplus / as sysdba\"\r"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/resetlog.py:23:        command = 'sudo su - ' + user + ' -c \"echo \'ALTER DATABASE MOUNT;\' | sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/resetlog.py:31:            command = 'sudo su - ' + user + ' -c \"echo \'ALTER DATABASE OPEN RESETLOGS;\' | sqlplus / as sysdba | grep -i -e \'database altered\' -e \'a database already open by the instance\'\"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/resetlog.py:42:            #command = 'sudo su - ' + user + ' -c \"echo \'ALTER DATABASE OPEN;\' | sqlplus system/Welcome2 | grep -i -e \\"database altered\\" -e \\"a database already open by the instance\\""'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapdba.py:35:	command = 'sudo su - ' + user + ' -c \'echo "select username from dba_users;" | sqlplus / as sysdba\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapdba.py:52:			command = "sudo su - " + user + " -c \"echo \'drop user \"OPS\$" + s_app_user.upper() + "\" cascade;' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapdba.py:60:			command = "sudo su - " + user + " -c \"echo \'drop user \"OPS\$" + s_db_user.upper() + "\" cascade;' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapdba.py:68:	command = 'sudo su - ' + user + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapdba.py:77:            command = 'sudo su - ' + user + ' -c \"cdexe; sqlplus /nolog @sapdba_role.sql ' + schema + '_user UNIX\"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstartapp.py:27:        command = 'sudo su - ' + user_sap + ' -c \'cdpro; ls | grep -i ' + host + ' | grep -v "\." | grep -v "ASC" | cut -d"_" -f2\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstartapp.py:33:        command = 'sudo su - ' + user_sap + ' -c \'startsap -c |grep -i ' + status.strip() + ' --color=never | tail -n -1 | cut -d" " -f4\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstartapp.py:42:            command = "sudo su - " + user_sap + " -c 'ps -ef | grep -i " + user_sap + " | grep -i /usr/sap | grep -v # |  cut -d\" \" -f4'"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstartapp.py:47:                command = "sudo su - " + user_sap + ' -c "kill -9 ' + proc + '"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstartapp.py:55:            command = 'sudo su - ' + user_sap + ' -c "startsap r3 '  + host + '"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstopapp.py:27:	command = 'sudo su - ' + user_sap + ' -c "startsap -c" | tail -n -1 | cut -d" " -f4'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstopapp.py:41:            command = 'sudo su - ' + user_sap + ' -c "stopsap r3 '  + host + '"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/sapstopapp.py:62:        command = 'sudo su - ' + user_sap + ' -c \'cleanipc ' + instance+ ' remove;cleanipc ' + instance + ' remove\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scparch.exp:21:send -- "sudo scp -r $sourcefile $targetuser@$targethost:/oracle/$targetdbsid/oraarch\r"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scpfile.py:41:			        command = 'sudo su - ' + user + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/oracle/' + database_sid.upper() + '/sapreorg/control_script_' + database_sid.upper() + '.sql\\\'\';\' > /oracle/' + database_sid.upper() + '/sapreorg/sql.sql;chmod 777 /oracle/' + database_sid.upper() + '/sapreorg/sql.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scpfile.py:45:			        command = 'sudo su - ' + user + ' -c "echo @/oracle/' + database_sid.upper() + '/sapreorg/sql.sql | sqlplus system/Welcome2" | grep -i "ERROR"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scpfile.py:74:				command = "sudo su - " + user + " -c \'chmod -R 777 " + folder + "\'"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scpfile.py:147:		command = "sudo su - " + user1 + " -c \'chmod 777 " + folder + "\'"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/temptable.py:16:        print "usage: python temptable.py <Source DB Host> <Source Sudo user> <source sudo pass> <Source DB SID> <Target DB Host> <target sudo user> <target sudo pass>  <Target Application sid> <Target DB sid> <Refersh ID> "
+/home/soladm/gem/geminyo/final/db_refresh/scripts/temptable.py:54:	cmd = "sudo su - " +  t_dbuser + " -c \"echo \'Select contents from dba_tablespaces where tablespace_name='\\'PSAPTEMP\\'' ; ' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/temptable.py:65:	        path="sudo su - " +  s_dbuser + " -c \"echo \'select tablespace_name,file_name from DBA_TEMP_FILES;\' | sqlplus / as sysdba\" | grep \".data\" | grep -v \"asdasd\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/temptable.py:86:				command="sudo su - " + t_dbuser + " -c \"echo \'@/home/" + t_dbuser + "/sql1.sql;\' | sqlplus / as sysdba | grep -i -e 'Tablespace altered.' -e 'already part of database' | grep -v '#'\""
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:10:        print "usage: python truncatetable.py <Target Application Hostname> <Target sudo User Name> <Target sudo user password> <Target Application SID> <Target Database Hostname> <Target Database User Name> <Target Database sudo user password> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:53:        command = 'sudo su - ' + appuser + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:61:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:71:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTAIHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:81:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATIORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:91:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATTORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:101:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSNP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:111:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.MONI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:121:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.OSMON;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:131:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.PAHI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:141:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAD;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:151:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAH;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:161:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:171:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAR;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:181:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DDLOG;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:191:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFET;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:201:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFHT;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:211:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TLOCK;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/truncatetable.py:221:            command = 'sudo su - ' + orauser + ' -c "echo \'COMMIT;\' | sqlplus / as sysdba" | grep -i --color=never "Commit complete."'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/updating_archive.py:23:		cmd = 'sudo su - ' + s_dbuser + ' -c "echo \'ALTER SYSTEM ARCHIVE LOG CURRENT ; \'| sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/mountpoint.py:50:            #command = "sudo su - " + user + " -c \'mv -f /home/" + user + "/control_script_" + database_sid.upper() + ".sql /home/" + user + "/control_script_" + database_sid.upper() + ".bkp.sql\'"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/mountpoint.py:58:	command = 'sudo su - ' + user + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/oracle/' + database_sid.upper() + '/sapreorg/control_script_' + database_sid.upper() + '.sql\\\'\';\' > /oracle/' + database_sid.upper() + '/sapreorg/sql.sql;chmod 777 /oracle/' + database_sid.upper() + '/sapreorg/sql.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/mountpoint.py:64:	command = 'sudo su - ' + user + ' -c "echo @/oracle/' + database_sid.upper() + '/sapreorg/sql.sql | sqlplus / as sysdba" | grep -i "ERROR"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/db_version.py:8:        print "Usage: python db_version.py <Target database host> <Target DB sudo user> <Target DB sudo user passwd> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/db_version.py:22:	command = 'sudo su - ' + db_user + ' -c \'echo select version from v\$"instance;" | sqlplus / as sysdba \' '
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scpfileeee.py:30:			        command = 'sudo su - ' + user + ' -c "echo \'alter database backup controlfile to trace as \'\\\'/home/' + user + '/control_script_' + database_sid.upper() + '.sql\\\'\';\' > /home/' + user + '/sql.sql;chmod 777 /home/' + user + '/sql.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scpfileeee.py:34:			        command = 'sudo su - ' + user + ' -c "echo @/home/' + user + '/sql.sql | sqlplus system/Welcome2" | grep -i "ERROR:"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/recover_db.py:25:		command = 'sudo su - ' + user_db + ' -c "echo \'recover database using backup controlfile until time \'\\\'' + date + ' ' + time + '\\\'\' \'|  sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/recover_db.py:37:			command = 'sudo su - ' + user_db + ' -c "echo \'SET AUTORECOVERY ON \' > /oracle/' + db_sid.upper() + '/sapreorg/recover.sql;chmod 777 /oracle/' + db_sid.upper() + '/sapreorg/recover.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/recover_db.py:43:			command = 'sudo su - ' + user_db + ' -c "echo \'recover database using backup controlfile until cancel \' >> /oracle/' + db_sid.upper() + '/sapreorg/recover.sql;chmod 777 /oracle/' + db_sid.upper() + '/sapreorg/recover.sql"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/recover_db.py:48:			command = 'sudo su - ' + user_db + ' -c "echo @/oracle/' + db_sid.upper() + '/sapreorg/recover.sql | sqlplus / as sysdba\"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/lsnr_start.py:9:        print "Usage: python lsnr_start.py <Source database host> <Source sudo user> <Source sudo user passwd> <Source Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/lsnr_start.py:25:        command = 'sudo su - ' + db_user + ' -c "lsnrctl start LISTENER"'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/scp_control.py:24:	command = "sudo su - ora" + database_sid.lower()+ " -c \'chmod 777 /oracle/" + database_sid.upper()  + "/sapreorg/\'"
+/home/soladm/gem/geminyo/final/db_refresh/scripts/control.py:86:#	command = 'sudo sed -i "s/\/oracle\/' + s_db_sid.upper() + '/\/oracle\/' + t_db_sid.upper() + '/g\" /home/' + t_user + '/scp/control_script_' + s_db_sid.upper() + '.sql'
+/home/soladm/gem/geminyo/final/db_refresh/scripts/control.py:93:	command = "sudo su - ora" + t_db_sid.lower() + " -c \'chmod 777 /oracle/" + t_db_sid.upper() + "/sapreorg/control_script_" + s_db_sid.upper() + ".sql\'"
+/home/soladm/gem/geminyo/final/db_refresh/windows_oracle/control_trans.py:9:#		print "usage: python control_trans.py <Source POST host> <Source POST sudo user> <Source POST sudo user pass> <source POST sid> <Target POST host> <Target POST sudo user> <Target POST sudo user pass> <Target POST sid>"
+/home/soladm/gem/geminyo/final/db_refresh/windows_oracle/ops.py:47:                #				command="sudo su - " +  user + " -c \"echo \'CREATE USER " + "\"" + userapp + "\"" + " DEFAULT TABLESPACE SYSTEM TEMPORARY TABLESPACE PSAPTEMP IDENTIFIED EXTERNALLY;\' | sqlplus / as sysdba\" > /dev/null 2>&1"
+/home/soladm/gem/geminyo/final/db_refresh/windows_oracle/ops.py:109:                #command = "sudo su - " + user + " -c \"echo \'CREATE TABLE " + "\\\"" + userapp + "\\\".SAPUSER" + " (USERID VARCHAR2(256), PASSWD VARCHAR2(256));\' | sqlplus / as sysdba\""
+/home/soladm/gem/geminyo/final/db_refresh/windows_oracle/ops.py:132:                #command = "sudo su - " + user + " -c \"echo \'INSERT INTO \"" + userapp + "\".SAPUSER VALUES('\\'" + schema.strip() + "\\'','\\'" + argv[4] + "\\'');'\" > /home/" + argv[5].lower() + "/insert.sql"
+/home/soladm/gem/geminyo/final/db_refresh/windows_oracle/resetlog.py:32:            #command = 'sudo su - ' + user + ' -c \"echo \'ALTER DATABASE OPEN;\' | sqlplus system/Welcome2 | grep -i -e \\"database altered\\" -e \\"a database already open by the instance\\""'
+/home/soladm/gem/geminyo/final/db_refresh/windows_oracle/temptable.py:16:#        print "usage: python temptable.py <Source DB Host> <Source DB sid> <Target DB Host> <Target DB sid> <Target Application sid> <Source Sudo user> <source sudo pass> <target sudo user> <target sudo pass> <Refersh ID> <Instance ID>"
+/home/soladm/gem/geminyo/final/db_refresh/windows_oracle/truncatetable.py:8:#        print "usage: python truncatetable.py <Target Application Hostname> <Target sudo User Name> <Target sudo user password> <Target Application SID> <Target Database Hostname> <Target Database User Name> <Target Database sudo user password> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/db_refresh/sapstopapp.py:27:	command = 'sudo su - ' + user_sap + ' -c "startsap -c" | tail -n -1 | cut -d" " -f4'
+/home/soladm/gem/geminyo/final/db_refresh/sapstopapp.py:42:            command = 'sudo su - ' + user_sap + ' -c "stopsap r3 '  + instance + '"'
+/home/soladm/gem/geminyo/final/db_refresh/sapstopapp.py:63:        command = 'sudo su - ' + user_sap + ' -c \'cleanipc ' + instance+ ' remove;cleanipc ' + instance + ' remove\''
+/home/soladm/gem/geminyo/final/lin25.py:26:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';ls | grep -i "' + application_sid.upper() + '_DVEBMGS" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin25.py:34:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile + ' | grep -iw "login/no_automatic_user_sapstar" | grep -v "#"\''
+/home/soladm/gem/geminyo/final/lin25.py:42:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';echo "login/no_automatic_user_sapstar = 0" >> ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/lin25.py:57:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed "s/' + output + '/login\/no_automatic_user_sapstar = 0/g" ' + profilefile + ' >> /home/' + application_sid.lower() + 'adm/paramstar.txt \''
+/home/soladm/gem/geminyo/final/lin25.py:65:		command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';pwd \''
+/home/soladm/gem/geminyo/final/lin25.py:72:		command = 'sudo mv /home/' + application_sid.lower() + 'adm/paramstar.txt ' + output.strip()+ '/' + profilefile
+/home/soladm/gem/geminyo/final/lin25.py:81:			command = "sudo rm /home/" + application_sid.lower() + "adm/paramstar.txt"
+/home/soladm/gem/geminyo/final/lin27.py:41:        command = 'sudo su - ' + t_user + ' -c \'cd ' + profile_path + ';ls | grep -i "' + t_sid.upper() + '_DVE" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin27.py:47:	command = 'sudo su - ' + t_user + ' -c \'cd ' + profile_path + ';cat ' + profilefile + ' | grep -iw "DIR_TRANS" | grep -v "#"\''
+/home/soladm/gem/geminyo/final/lin27.py:81:                command = 'sudo chown ' + t_sid.lower() + 'adm:sapsys ' + t_path + '/' + name + '/' + initial + tr_part + '.' + s_sid + '; sudo chmod 777 ' + t_path + '/' + name + '/' + initial + tr_part + '.' + s_sid
+/home/soladm/gem/geminyo/final/lin27.py:94:        command = 'sudo su - ' + t_sid.lower() + "adm" + ' -c "tp addtobuffer ' + tr_id + " " + t_sid  + ' Client=000 pf=' + t_path + '/bin/TP_' + domain + '.PFL "| grep -i \'tp finished with return code:\' | tail -n 1 | cut -d ":" -f2'
+/home/soladm/gem/geminyo/final/lin27.py:100:            command = 'sudo su - ' + t_sid.lower() + 'adm -c "tp modbuffer ' + tr_id + " " + t_sid + ' mode=u+12 Client=000 pf=' + t_path + '/bin/TP_' + domain + '.PFL" |grep -i \'tp finished with return code:\' | tail -n 1 |cut -d ":" -f2'
+/home/soladm/gem/geminyo/final/lin27.py:106:                command = 'sudo su - ' + t_sid.lower() + 'adm -c "tp import ' + tr_id + " " +  t_sid + ' Client=000 pf=' + t_path + '/bin/TP_' + domain + '.PFL U123689"|grep -i \'tp finished with return code:\' |tail -n 1 | cut -d ":" -f2'
+/home/soladm/gem/geminyo/final/cleanupjob.py:10:        print "usage: python truncatetable.py <Target Application Hostname> <Target sudo User Name> <Target sudo user password> <Target Application SID> <Target Database Hostname> <Target Database User Name> <Target Database sudo user password> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/cleanupjob.py:53:        command = 'sudo su - ' + appuser + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/cleanupjob.py:63:            	command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.' + i + ';\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/lin32.py:27:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';ls | grep -i "' + application_sid.upper() + '_DVE" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin32.py:35:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile.strip() + ' | grep -iw --color=never "rdisp/wp_no_btc" | grep  --color=never "#"\''
+/home/soladm/gem/geminyo/final/lin32.py:42:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';echo "rdisp/wp_no_btc = 5" >> ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/lin32.py:58:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed "s/' + output + '/rdisp\/wp_no_btc = ' + str(val) + '/g" ' + profilefile + ' >> /tmp/star_value1.txt \''
+/home/soladm/gem/geminyo/final/lin32.py:66:		command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed "s/rdisp\/wp_no_btc = 0/#rdisp\/wp_no_btc = 0/g" /tmp/star_value1.txt >> /tmp/star_value.txt \''
+/home/soladm/gem/geminyo/final/lin32.py:75:			command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';pwd \''
+/home/soladm/gem/geminyo/final/lin32.py:83:			command = 'sudo cp /tmp/star_value.txt ' + output.strip()+ '/' + profilefile
+/home/soladm/gem/geminyo/final/lin32.py:92:				command = "sudo rm /tmp/star_value1.txt /tmp/star_value.txt"
+/home/soladm/gem/geminyo/final/lin32.py:104:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile + ' | grep -iwn "rdisp/wp_no_btc" | grep -v "#" | head -n -1 | cut -d ":" -f 1\''
+/home/soladm/gem/geminyo/final/lin32.py:113:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed -i "' + numbers + '" ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/lin32.py:118:                command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed -i "s/' + output + '/rdisp\/wp_no_btc = 5/g" ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/geminyo.txt:1:sudo su - erpadm -c 'cd /usr/sap/ERP/SYS/profile;ls | grep -i "ERP_DVE" | grep -v "\."': " 2017-07-05 06:56:48 ":3
+/home/soladm/gem/geminyo/final/lin23.py:10:        command = "sudo rm -rf /tmp/re_assign_value1.txt /tmp/re_assign_value2.txt /tmp/re_assign_value.txt /tmp/assign_value.txt /tmp/assign_value1.txt"
+/home/soladm/gem/geminyo/final/lin23.py:20:	command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile + ' | grep -iw --color=never "#rdisp/wp_no_btc = 0" \''
+/home/soladm/gem/geminyo/final/lin23.py:28:        	command = "sudo su - " + user + ' -c \'cd ' + profile_path + ';sed "s/#rdisp\/wp_no_btc = 0/rdisp\/wp_no_btc = 0/ " /tmp/assign_value1.txt >> /tmp/assign_value.txt \''
+/home/soladm/gem/geminyo/final/lin23.py:43:        	command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';echo "rdisp/wp_no_btc = 0" >> /tmp/assign_value1.txt \''
+/home/soladm/gem/geminyo/final/lin23.py:60:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';pwd \''
+/home/soladm/gem/geminyo/final/lin23.py:69:	command = "sudo su - " + user + ' -c \'cd ' + profile_path + ';cp /tmp/'+ file_name + ' ' + output.strip() + '/' + profilefile + ' \''
+/home/soladm/gem/geminyo/final/lin23.py:104:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';ls | grep -i "' + application_sid.upper() + '_DVEBMGS" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin23.py:112:	command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';ls ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/lin23.py:121:		command = "sudo su - " + user + " -c \'cd ' + profile_path + ';cp " + profilefile + " " + "profilefile_autom_bkp \'"
+/home/soladm/gem/geminyo/final/lin23.py:140:        command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile + ' | grep -iw "rdisp/wp_no_btc" | grep -v "#"\''
+/home/soladm/gem/geminyo/final/lin23.py:155:	    command = "sudo su - " + user + ' -c \'cd ' + profile_path + ';sed "s/' + output + '/# ' + output + '/g" ' + profilefile + ' >> /tmp/assign_value1.txt \''
+/home/soladm/gem/geminyo/final/lin23.py:174:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';cat ' + profilefile + '.bkp | grep -iwn "rdisp/wp_no_btc" | grep -v "#" | head -n -1 | cut -d ":" -f 1\''
+/home/soladm/gem/geminyo/final/lin23.py:189:            command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed -i "' + numbers + '" ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/lin23.py:198:                command = 'sudo su - ' + user + ' -c \'cd ' + profile_path + ';sed -i "s/' + output + '/rdisp\/wp_no_btc = 0/g" ' + profilefile + '\''
+/home/soladm/gem/geminyo/final/llwin30.py:49:        command = 'sudo su - ' + appuser + ' -c \'saplikey pf=' + profilepath + '/' + filename + ' -show | grep -v "Software Product Limit" | grep -v "System Number"\''
+/home/soladm/gem/geminyo/final/llwin30.py:91:            command = 'sudo su - ' + appuser + ' -c \'saplikey pf=' + profilepath + '/' + filename + ' -delete ' + sids[i] + ' ' + keys[i] + ' ' + prods[i] + '\''
+/home/soladm/gem/geminyo/final/llwin30.py:99:        command = 'sudo su - ' + appuser + ' -c \'saplikey pf=' + profilepath + '/' + filename + ' -install /home/' + appuser + '/' + license_file + '\''
+/home/soladm/gem/geminyo/final/lin33.py:30:        command = 'sudo su - ' + user_sap + ' -c \'cd ' + profile_path + ' ; ls | grep -i ' + host + ' | grep -v "\." | grep -v "ASC" | cut -d"_" -f2\''
+/home/soladm/gem/geminyo/final/lin33.py:34:        command = 'sudo su - ' + user_sap + ' -c \'startsap -c |grep -i ' + status.strip() + ' --color=never | tail -n -1 | cut -d" " -f4\''
+/home/soladm/gem/geminyo/final/lin33.py:43:            command = "sudo su - " + user_sap + " -c 'ps -ef | grep -i " + user_sap + " | grep -i /usr/sap | grep -v # |  cut -d\" \" -f4'"
+/home/soladm/gem/geminyo/final/lin33.py:48:                command = "sudo su - " + user_sap + ' -c "kill -9 ' + proc + '"'
+/home/soladm/gem/geminyo/final/lin33.py:56:            command = 'sudo su - ' + user_sap + ' -c "startsap r3 '  + host + '"'
+/home/soladm/gem/geminyo/final/lin28.py:36:  command = 'sudo su - ' + appuser + ' -c \'cd ' + profile_path + ';ls | grep -i "' + appsid.upper() + '_DVEBMGS" | grep -v "\."\''
+/home/soladm/gem/geminyo/final/lin28.py:104:  command = 'sudo su - ' + appuser + ' -c "saplikey pf=' + profilepath + '/' + profilefile + ' -delete \'*\' \'*\' \'*\'"'
+/home/soladm/gem/geminyo/final/lin28.py:111:  command = 'sudo su - ' + appuser + ' -c \'saplikey pf=' + profilepath + '/' + profilefile + ' -install /tmp/' + license_file + '\''
+/home/soladm/gem/geminyo/final/truncatetable.py:10:        print "usage: python truncatetable.py <Target Application Hostname> <Target sudo User Name> <Target sudo user password> <Target Application SID> <Target Database Hostname> <Target Database User Name> <Target Database sudo user password> <Target Database SID> <Refresh ID>"
+/home/soladm/gem/geminyo/final/truncatetable.py:53:        command = 'sudo su - ' + appuser + ' -c \'echo $dbs_ora_schema\''
+/home/soladm/gem/geminyo/final/truncatetable.py:61:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:71:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTAIHORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:81:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATIORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:91:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSTATTORA;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:101:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DBSNP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:111:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.MONI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:121:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.OSMON;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:131:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.PAHI;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:141:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAD;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:151:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAH;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:161:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAP;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:171:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.SDBAR;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:181:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.DDLOG;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:191:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFET;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:201:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TPFHT;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:211:            command = 'sudo su - ' + orauser + ' -c "echo \'Truncate TABLE ' + schema + '.TLOCK;\' | sqlplus / as sysdba" | grep -i --color=never "Table truncated."'
+/home/soladm/gem/geminyo/final/truncatetable.py:221:            command = 'sudo su - ' + orauser + ' -c "echo \'COMMIT;\' | sqlplus / as sysdba" | grep -i --color=never "Commit complete."'
+/home/soladm/gem/geminyo/final/cleanupjobsyb.py:47:	command = "sudo su - " + user + " -c \' isql -U" + db_user + " -P" + db_password + " -S"+ database_sid.upper() +" -X -i/tmp/truncatetable.sql \'"""

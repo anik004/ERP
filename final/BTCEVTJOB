@@ -1,0 +1,4 @@
+export
+client=000
+file='/home/qrpadm/BTCEVTJOB.dat'
+select * from BTCEVTJOB

@@ -1,0 +1,4 @@
+export
+client=000
+file='/home/qrpadm/TBD00.dat'
+select * from TBD00

@@ -1,0 +1,25 @@
+#!/usr/bin/expect -f
+set timeout -1
+set sourcehost [lindex $argv 0]
+set sourceuser [lindex $argv 1]
+set sourcepassword [lindex $argv 2]
+set targethost [lindex $argv 3]
+set targetdbuser [lindex $argv 4]
+set targetdbpassword [lindex $argv 5]
+set sourcefile [lindex $argv 6]
+set targetdbsid [lindex $argv 7]
+#append test "adm"
+#$test
+#puts $test
+#log_user 0
+send -- "$sourcepassword\r"
+spawn ssh -o StrictHostKeyChecking=no $sourceuser@$sourcehost
+expect "*Password* "
+send -- "$sourcepassword\r"
+expect "*$sourcehost*"
+send -- "scp -r $sourcefile $targetdbuser@$targethost:/oracle/$targetdbsid/sapreorg\r"
+expect "*password* "
+send -- "$targetdbpassword\r"
+expect "*$sourcehost*"
+send -- "exit\r"
+expect eof

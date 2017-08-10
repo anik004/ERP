@@ -1,0 +1,194 @@
+win18: This command is used to do dir and search :3
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py srpadm:Welcome2@10.115.117.107 "dir F:\usr\sap\SRP\SYS\profile /s /b | findstr DVEBMGS*":4
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\SRP\SYS\profile\SRP_DVEBMGS00_PPMDemo2
+
+:5
+This command is used to get the content and set the parameter:6
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py srpadm:Welcome2@10.115.117.107 "powershell.exe;"\"get-content  | select-string login/no_automatic_user_sapstar\""":7
+win18: This command is used to do dir and search :8
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":9
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:10
+This command is used to get the content and set the parameter:2
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":3
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:4
+POST:F:GERR_1212:Argument/s missing for the script:5
+win18: This command is used to do dir and search :6
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":7
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:8
+This command is used to get the content and set the parameter:9
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":10
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:2
+POST:F:GERR_1212:Argument/s missing for the script:3
+win18: This command is used to do dir and search :4
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":5
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:6
+This command is used to get the content and set the parameter:7
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":8
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:9
+POST:F:GERR_1212:Argument/s missing for the script:10
+win18: This command is used to do dir and search :2
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":3
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:4
+This command is used to get the content and set the parameter:5
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":6
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:7
+POST:F:GERR_1212:Argument/s missing for the script:8
+win18: This command is used to do dir and search :9
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":10
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:2
+This command is used to get the content and set the parameter:3
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":4
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:5
+POST:F:GERR_1212:Argument/s missing for the script:6
+win18: This command is used to do dir and search :7
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":8
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:9
+This command is used to get the content and set the parameter:10
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":2
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:3
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"(Get-Content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3) -Replace('login/no_automatic_user_sapstar = 1','login/no_automatic_user_sapstar = 0') | set-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3"\"":4
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+:5
+win18: This command is used to do dir and search :6
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":7
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:8
+This command is used to get the content and set the parameter:9
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":10
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:2
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"(Get-Content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3) -Replace('login/no_automatic_user_sapstar = 1','login/no_automatic_user_sapstar = 0') | set-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3"\"":3
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+:4
+win18: This command is used to do dir and search :5
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":6
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:7
+This command is used to get the content and set the parameter:8
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":9
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 1
+
+
+
+:10
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"(Get-Content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3).Replace('login/no_automatic_user_sapstar = 1','login/no_automatic_user_sapstar = 0') | set-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3"\"":2
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+:3
+win18: This command is used to do dir and search :4
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "dir F:\usr\sap\DRL\SYS\profile /s /b | findstr DVEBMGS*":5
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3
+F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3.1
+
+:6
+This command is used to get the content and set the parameter:7
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"get-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3 | select-string login/no_automatic_user_sapstar\""":8
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+login/no_automatic_user_sapstar = 0
+
+
+
+:9
+c:\python27\python D:\Users\surpriya\Desktop\bauer_final_log\wmiexec.py administrator:Welcome1234$@10.115.117.110 "powershell.exe;"\"(Get-Content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3).Replace('login/no_automatic_user_sapstar = 0','login/no_automatic_user_sapstar = 0') | set-content F:\usr\sap\DRL\SYS\profile\DRL_DVEBMGS00_PPMDemo3"\"":10
+Impacket v0.9.16-dev - Copyright 2002-2017 Core Security Technologies
+
+
+:2

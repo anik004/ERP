@@ -1,0 +1,20 @@
+POST:F: TR KT00032 is failed with the error code: ERROR: : transport request parameter is invalid [/bas/749_REL/src/cts/tp/tp.c,9271]:3
+POST:F: TR SOLK900032 is failed with the error code: 247:4
+POST:F: TR SOLK900038 is failed with the error code: 247:5
+POST:F: [Errno 2] No such file or directory: '/usr/sap/trans/cofiles/K900038.QRP':6
+POST:F: [Errno 2] No such file or directory: '/usr/sap/trans/cofiles/K900038.SOL':7
+POST:P: The File K900038.SOL has been transfered successfully.:8
+POST:P: The File R900038.SOL has been transfered successfully.:9
+POST:P: The File K900038.SOL has been transfered successfully.:10
+POST:P: The File R900038.SOL has been transfered successfully.:2
+POST:F: TR SOLK900038 import is failed with the error code: 203:3
+POST:P: The File K900038.SOL has been transfered successfully.:4
+POST:P: The File R900038.SOL has been transfered successfully.:5
+POST:F: TR SOLK900038 import is failed with the error code: 203:6
+POST:P: The File K900038.SOL has been transfered successfully.:7
+POST:P: The File R900038.SOL has been transfered successfully.:8
+POST:P: The File K900038.SOL has been transfered successfully.:9
+POST:P: The File R900038.SOL has been transfered successfully.:10
+POST:P: The File K900038.SOL has been transfered successfully.:2
+POST:P: The File R900038.SOL has been transfered successfully.:3
+POST:F: TR SOLK900038 import is failed with the error code: 8:4

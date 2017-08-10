@@ -1,0 +1,25 @@
+POST:P: The File K900267.SOL has been transfered successfully.:3
+POST:P: The File R900267.SOL has been transfered successfully.:4
+POST:F: TR SOLK900267 is failed with the error code: Error in /usr/sap/trans/bin/TP_SOL.PFL: transdir not set.:5
+POST:F: name 'client' is not defined:6
+POST:P: The File K900267.SOL has been transfered successfully.:7
+POST:P: The File R900267.SOL has been transfered successfully.:8
+POST:F: TR SOLK900267 is failed with the error code: Error in /usr/sap/trans/bin/TP_DOMAIN_SOL.PFL: transdir not set.:9
+POST:P: The File K900267.SOL has been transfered successfully.:10
+POST:P: The File R900267.SOL has been transfered successfully.:2
+POST:F: TR SOLK900267 is failed with the error code: Error in /usr/sap/trans/bin/TP_DOMAIN_SOL.PFL: transdir not set.:3
+POST:P: The File K900267.SOL has been transfered successfully.:4
+POST:P: The File R900267.SOL has been transfered successfully.:5
+POST:F: TR SOLK900267 import is failed with the error code: 8:6
+POST:P: The File K900267.SOL has been transfered successfully.:7
+POST:P: The File R900267.SOL has been transfered successfully.:8
+POST:F: TR SOLK900267 import is failed with the error code: 8:9
+POST:P: The File K900267.SOL has been transfered successfully.:10
+POST:P: The File R900267.SOL has been transfered successfully.:2
+POST:F: TR SOLK900267 import is failed with the error code: 8:3
+POST:P: The File K900267.SOL has been transfered successfully.:4
+POST:P: The File R900267.SOL has been transfered successfully.:5
+POST:F: TR SOLK900267 import is failed with the error code: 8:6
+POST:P: The File K900267.SOL has been transfered successfully.:7
+POST:P: The File R900267.SOL has been transfered successfully.:8
+POST:F: TR SOLK900267 import is failed with the error code: 8:9
