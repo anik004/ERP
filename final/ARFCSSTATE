@@ -1,4 +1,0 @@
-export
-client=000
-file='/home/qrpadm/ARFCSSTATE.dat'
-select * from ARFCSSTATE

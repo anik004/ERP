@@ -1,1 +1,0 @@
-sudo su - erpadm -c 'cd /usr/sap/ERP/SYS/profile;ls | grep -i "ERP_DVE" | grep -v "\."': " 2017-07-05 06:56:48 ":3

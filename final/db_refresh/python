@@ -1,2 +1,0 @@
-sudo su - oradrp -c "echo 'recover database using backup controlfile until time '\'20-Oct-2016 03:46:49\'' '|  sqlplus / as sysdba"
-DBSTOP:F:GERR_1302:Argument/s missing for the script

@@ -1,5 +1,0 @@
-import
-client=000
-file='/home/qrpadm/USER_DIR.dat'
-delete * from USER_DIR
-select * from USER_DIR

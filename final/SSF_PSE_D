@@ -1,4 +1,0 @@
-export
-client=000
-file='/home/qrpadm/SSF_PSE_D.dat'
-select * from SSF_PSE_D

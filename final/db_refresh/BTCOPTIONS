@@ -1,4 +1,0 @@
-import
-client=001
-file='/home/erpadm/BTCOPTIONS.dat'
-select * from BTCOPTIONS

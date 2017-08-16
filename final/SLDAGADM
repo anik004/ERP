@@ -1,4 +1,0 @@
-export
-client=000
-file='/home/qrpadm/SLDAGADM.dat'
-select * from SLDAGADM
